@@ -1,0 +1,642 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - generic [ref=e4]: המועצה האזורית · גוש עציון
+      - generic [ref=e5]: המכלול · אגף שירותים חברתיים · ספריית דו״חות
+      - generic [ref=e6]: מאי 2026
+    - tablist "דו״חות" [ref=e7]:
+      - tab "סקירה רשותית דו״ח רווחה דמוגרפיה, ישובים, נזקקות, תקציב · אפריל 2026" [selected] [ref=e8] [cursor=pointer]:
+        - generic [ref=e9]: סקירה רשותית
+        - generic [ref=e10]:
+          - text: דו״ח
+          - emphasis [ref=e11]: רווחה
+        - generic [ref=e12]: דמוגרפיה, ישובים, נזקקות, תקציב · אפריל 2026
+      - tab "תזכיר אסטרטגי השקעה חברתית תשתיות טיפול, יעדים, פרויקטים · ‎T26 / AHTML" [ref=e13] [cursor=pointer]:
+        - generic [ref=e14]: תזכיר אסטרטגי
+        - generic [ref=e15]:
+          - text: השקעה
+          - emphasis [ref=e16]: חברתית
+        - generic [ref=e17]: תשתיות טיפול, יעדים, פרויקטים · ‎T26 / AHTML
+      - tab "פניות שירות דו״ח פניות 1,456 פניות, 17 חודשים · 2025–2026" [ref=e18] [cursor=pointer]:
+        - generic [ref=e19]: פניות שירות
+        - generic [ref=e20]:
+          - text: דו״ח
+          - emphasis [ref=e21]: פניות
+        - generic [ref=e22]: 1,456 פניות, 17 חודשים · 2025–2026
+    - generic [ref=e23]:
+      - generic [ref=e24]:
+        - strong [ref=e25]: תמונת מצב רשותית מלאה
+        - text: "לחודש אפריל 2026: 26,500 תושבים, 4,415 מקבלי שירות, פילוח דמוגרפי וטריטוריאלי, נזקקויות, תנועה בתיקים, תקציב וביצוע, ומסגרות הטיפול. כולל"
+        - emphasis [ref=e26]: מפה אינטראקטיבית
+        - text: של 14 הישובים — ריחוף מציג שיעור מקבלי שירות, אשכול סוציו־אקונומי ופירוט מספרי.
+      - generic [ref=e27]:
+        - generic [ref=e28]: מקור · מערכת הרווחה + הלמ״ס
+        - generic [ref=e29]: דוחות־על · T33 (תקציב שנתי) · T36 (ביצוע חודשי)
+        - generic [ref=e30]:
+          - text: קובץ ·
+          - link "מכלול_אקסל_לרשות_אפריל_עם_שמות.xlsx" [ref=e31] [cursor=pointer]:
+            - /url: מכלול_אקסל_לרשות_אפריל_עם_שמות.xlsx
+        - generic [ref=e32]: תקופה · אפריל 2026 (חתך חודשי)
+  - iframe [ref=e35]:
+    - generic [ref=f4e2]:
+      - banner [ref=f4e3]:
+        - generic [ref=f4e4]: המכלול · יחידת מידע
+        - generic [ref=f4e5]: דו״ח רווחה ׀ גוש עציון ׀ אפריל 2026
+        - generic [ref=f4e6]: גליון 04 · כרך XII
+      - generic [ref=f4e7]:
+        - heading "Iתמונת מצב חברתית." [level=1] [ref=f4e8]:
+          - superscript [ref=f4e9]: I
+          - text: תמונת
+          - text: מצב
+          - emphasis [ref=f4e10]: חברתית.
+        - generic [ref=f4e11]:
+          - paragraph [ref=f4e12]:
+            - text: עשרים ושישה אלף וחמש מאות איש חיים בארבע־עשרה ישובי המועצה האזורית;
+            - strong [ref=f4e13]: אחד מכל שישה
+            - text: מקבל בעת הזו שירות ממחלקת הרווחה —
+            - strong [ref=f4e14]: 16.66%
+            - text: ", מעל הממוצע הארצי (15.14%) וברשויות־ייחוס דומות (13.79%). הדו״ח שלפניכם פורש את הדמוגרפיה, הצרכים, המסגרות והתקציבים, חותך לפי ישוב, מנהל ותחום."
+          - generic [ref=f4e15]: נחתם · 13 במאי 2026
+      - generic [ref=f4e17]:
+        - generic [ref=f4e18]:
+          - generic [ref=f4e19]: אוכלוסייה
+          - generic [ref=f4e20]: 26,503
+          - generic [ref=f4e21]:
+            - text: סך תושבים ב־14 ישובים
+            - text: אשכולות סוציו־אקונומיים 2–7
+        - generic [ref=f4e22]:
+          - generic [ref=f4e23]: מקבלי שירות
+          - generic [ref=f4e24]: 4,415
+          - generic [ref=f4e25]:
+            - text: ‎ 16.66% מהאוכלוסייה —
+            - text: גבוה מהממוצע הארצי (15.14%)
+        - generic [ref=f4e26]:
+          - generic [ref=f4e27]: משפחות פעילות
+          - generic [ref=f4e28]: 1,363
+          - generic [ref=f4e29]:
+            - text: 1,821 פרטים עם נזקקות מזוהה
+            - text: 2,605 ללא נזקקות מקודדת (59%) · פער איכות־דיווח
+        - generic [ref=f4e30]:
+          - generic [ref=f4e31]: הקצאה שנתית · ברוטו
+          - generic [ref=f4e32]: 35.77מיליון ₪
+          - generic [ref=f4e33]:
+            - text: סך הקצאה ל־9 תחומי פעולה
+            - text: "מנהל משה: 40.9% מסך התקציב"
+      - generic [ref=f4e34]:
+        - generic [ref=f4e35]:
+          - generic [ref=f4e36]: I.
+          - generic [ref=f4e37]:
+            - generic [ref=f4e38]: קבוצות אוכלוסייה · השוואה
+            - text: שיעור מקבלי שירות לפי קבוצה
+          - generic [ref=f4e39]:
+            - text: "מקור: למ״ס + מערכת רווחה"
+            - text: נכון לאפריל 2026
+        - table [ref=f4e40]:
+          - rowgroup [ref=f4e41]:
+            - row "קבוצה אוכלוסייה מקבלי שירות שיעור ברשות ממוצע ארצי רשויות דומות פער מארצי" [ref=f4e42]:
+              - columnheader "קבוצה" [ref=f4e43]
+              - columnheader "אוכלוסייה" [ref=f4e44]
+              - columnheader "מקבלי שירות" [ref=f4e45]
+              - columnheader "שיעור ברשות" [ref=f4e46]
+              - columnheader "ממוצע ארצי" [ref=f4e47]
+              - columnheader "רשויות דומות" [ref=f4e48]
+              - columnheader "פער מארצי" [ref=f4e49]
+          - rowgroup [ref=f4e50]:
+            - row "מקבלי שירות (כלל) 26,503 4,415 16.66% 15.14% 13.79% +1.52%" [ref=f4e51]:
+              - cell "מקבלי שירות (כלל)" [ref=f4e52]
+              - cell "26,503" [ref=f4e53]
+              - cell "4,415" [ref=f4e54]
+              - cell "16.66%" [ref=f4e55]:
+                - generic [ref=f4e57]: 16.66%
+              - cell "15.14%" [ref=f4e60]
+              - cell "13.79%" [ref=f4e61]
+              - cell "+1.52%" [ref=f4e62]
+            - row "אזרחים ותיקים 1,436 387 26.95% 25.23% 17.78% +1.72%" [ref=f4e63]:
+              - cell "אזרחים ותיקים" [ref=f4e64]
+              - cell "1,436" [ref=f4e65]
+              - cell "387" [ref=f4e66]
+              - cell "26.95%" [ref=f4e67]:
+                - generic [ref=f4e69]: 26.95%
+              - cell "25.23%" [ref=f4e72]
+              - cell "17.78%" [ref=f4e73]
+              - cell "+1.72%" [ref=f4e74]
+            - row "ילדים 0–18 12,153 1,967 16.19% 16.74% 16.17% −0.55%" [ref=f4e75]:
+              - cell "ילדים 0–18" [ref=f4e76]
+              - cell "12,153" [ref=f4e77]
+              - cell "1,967" [ref=f4e78]
+              - cell "16.19%" [ref=f4e79]:
+                - generic [ref=f4e81]: 16.19%
+              - cell "16.74%" [ref=f4e84]
+              - cell "16.17%" [ref=f4e85]
+              - cell "−0.55%" [ref=f4e86]
+            - row "עולים חדשים 907 97 10.69% 11.48% 11.03% −0.79%" [ref=f4e87]:
+              - cell "עולים חדשים" [ref=f4e88]
+              - cell "907" [ref=f4e89]
+              - cell "97" [ref=f4e90]
+              - cell "10.69%" [ref=f4e91]:
+                - generic [ref=f4e93]: 10.69%
+              - cell "11.48%" [ref=f4e96]
+              - cell "11.03%" [ref=f4e97]
+              - cell "−0.79%" [ref=f4e98]
+        - paragraph [ref=f4e99]:
+          - text: ⟵
+          - emphasis [ref=f4e100]: אזרחים ותיקים
+          - text: בולטים — שיעורם הוא הגבוה ביותר מבין ארבע הקבוצות (26.95%), ועומד
+          - strong [ref=f4e101]: ‎9.17 נקודות אחוז
+          - text: מעל הממוצע ברשויות־הייחוס (17.78%). מול הממוצע הארצי הפער קטן בהרבה (+1.72 נ״א).
+      - generic [ref=f4e102]:
+        - generic [ref=f4e103]:
+          - generic [ref=f4e104]: II.
+          - generic [ref=f4e105]:
+            - generic [ref=f4e106]: פילוח מקבלי שירות
+            - text: דמוגרפיה — גיל, מגדר, מצב משפחתי
+          - generic [ref=f4e107]:
+            - text: 4,415 מקבלי שירות
+            - text: חתכי־צלב פנימיים
+        - generic [ref=f4e108]:
+          - generic [ref=f4e109]:
+            - generic [ref=f4e110]:
+              - heading "קבוצת גיל" [level=3] [ref=f4e111]
+              - generic [ref=f4e112]: פירמידה
+            - paragraph [ref=f4e113]:
+              - text: ילדים, נוער ובוגרים עד גיל 49 מהווים
+              - strong [ref=f4e114]: 82.3%
+              - text: ממקבלי השירות. אזרחים ותיקים (65+) —
+              - strong [ref=f4e115]: 8.8%
+              - text: .
+          - generic [ref=f4e118]:
+            - generic [ref=f4e119]:
+              - heading "מגדר" [level=3] [ref=f4e120]
+              - generic [ref=f4e121]: חלוקה
+            - paragraph [ref=f4e122]:
+              - text: "חלוקה כמעט שוויונית:"
+              - strong [ref=f4e123]: 2,214 נשים
+              - text: ו
+              - strong [ref=f4e124]: ־2,201 גברים
+              - text: "(ועוד פרט אחד \"אחר\"). הפער: 13 פרטים — פחות מחצי אחוז."
+          - generic [ref=f4e127]:
+            - generic [ref=f4e128]:
+              - heading "מצב משפחתי" [level=3] [ref=f4e129]
+              - generic [ref=f4e130]: 2,583 בעלי נתון
+            - paragraph [ref=f4e131]:
+              - text: "מבין הבוגרים שמצבם המשפחתי מקודד (2,583):"
+              - strong [ref=f4e132]: נשואים 52.1%
+              - text: ", רווקים 36.0%, גרושים/אלמנים/פרודים 11.4%, ידועים בציבור 0.4%."
+      - generic [ref=f4e135]:
+        - generic [ref=f4e136]:
+          - generic [ref=f4e137]: III.
+          - generic [ref=f4e138]:
+            - generic [ref=f4e139]: חתך טריטוריאלי
+            - text: ארבעה־עשר ישובים
+          - generic [ref=f4e140]:
+            - text: דירוג לפי שיעור מקבלי שירות
+            - text: מתוך כלל תושבי הישוב
+        - generic [ref=f4e141]:
+          - generic [ref=f4e142]:
+            - generic [ref=f4e143]:
+              - generic [ref=f4e144]:
+                - generic [ref=f4e145]: מעלה עמוס
+                - generic [ref=f4e147]: "2"
+                - generic [ref=f4e151]:
+                  - text: 39.0%
+                  - generic [ref=f4e152]: 353 מ־906
+              - generic [ref=f4e153]:
+                - generic [ref=f4e154]: בת עין
+                - generic [ref=f4e156]: "3"
+                - generic [ref=f4e160]:
+                  - text: 38.3%
+                  - generic [ref=f4e161]: 662 מ־1,730
+              - generic [ref=f4e162]:
+                - generic [ref=f4e163]: אספר
+                - generic [ref=f4e165]: "3"
+                - generic [ref=f4e169]:
+                  - text: 27.9%
+                  - generic [ref=f4e170]: 342 מ־1,228
+              - generic [ref=f4e171]:
+                - generic [ref=f4e172]: נוקדים
+                - generic [ref=f4e174]: "5"
+                - generic [ref=f4e178]:
+                  - text: 18.1%
+                  - generic [ref=f4e179]: 561 מ־3,093
+              - generic [ref=f4e180]:
+                - generic [ref=f4e181]: תקוע
+                - generic [ref=f4e183]: "6"
+                - generic [ref=f4e187]:
+                  - text: 17.7%
+                  - generic [ref=f4e188]: 767 מ־4,326
+              - generic [ref=f4e189]:
+                - generic [ref=f4e190]: כרמי צור
+                - generic [ref=f4e192]: "5"
+                - generic [ref=f4e196]:
+                  - text: 16.5%
+                  - generic [ref=f4e197]: 162 מ־979
+              - generic [ref=f4e198]:
+                - generic [ref=f4e199]: אלון שבות
+                - generic [ref=f4e201]: "7"
+                - generic [ref=f4e205]:
+                  - text: 15.4%
+                  - generic [ref=f4e206]: 470 מ־3,046
+              - generic [ref=f4e207]:
+                - generic [ref=f4e208]: נווה דניאל
+                - generic [ref=f4e210]: "7"
+                - generic [ref=f4e214]:
+                  - text: 13.8%
+                  - generic [ref=f4e215]: 325 מ־2,355
+              - generic [ref=f4e216]:
+                - generic [ref=f4e217]: אלעזר
+                - generic [ref=f4e219]: "7"
+                - generic [ref=f4e223]:
+                  - text: 12.4%
+                  - generic [ref=f4e224]: 324 מ־2,615
+              - generic [ref=f4e225]:
+                - generic [ref=f4e226]: ראש צורים
+                - generic [ref=f4e228]: "7"
+                - generic [ref=f4e232]:
+                  - text: 10.6%
+                  - generic [ref=f4e233]: 104 מ־978
+              - generic [ref=f4e234]:
+                - generic [ref=f4e235]: מגדל עוז
+                - generic [ref=f4e237]: "3"
+                - generic [ref=f4e241]:
+                  - text: 9.3%
+                  - generic [ref=f4e242]: 53 מ־572
+              - generic [ref=f4e243]:
+                - generic [ref=f4e244]: קדר
+                - generic [ref=f4e246]: "7"
+                - generic [ref=f4e250]:
+                  - text: 7.9%
+                  - generic [ref=f4e251]: 131 מ־1,649
+              - generic [ref=f4e252]:
+                - generic [ref=f4e253]: הר גילה
+                - generic [ref=f4e255]: "7"
+                - generic [ref=f4e259]:
+                  - text: 6.7%
+                  - generic [ref=f4e260]: 111 מ־1,656
+              - generic [ref=f4e261]:
+                - generic [ref=f4e262]: כפר עציון
+                - generic [ref=f4e264]: "4"
+                - generic [ref=f4e268]:
+                  - text: 5.8%
+                  - generic [ref=f4e269]: 79 מ־1,370
+            - generic [ref=f4e270]:
+              - generic [ref=f4e271]: שיעור מקבלי שירות מתוך תושבי הישוב
+              - generic [ref=f4e273]: "סימוני סולם: 25% · 50%"
+              - generic [ref=f4e275]:
+                - text: –
+                - text: אשכול סוציו־אקונומי (1=חלש, 8=חזק)
+          - generic [ref=f4e278]:
+            - generic [ref=f4e279]:
+              - heading "צמתי תשומת לב" [level=3] [ref=f4e280]
+              - generic [ref=f4e281]: 3 ישובים
+            - paragraph [ref=f4e282]:
+              - text: שלושת הישובים עם שיעור הגבוה ביותר של מקבלי שירות — כולם באשכולות סוציו־אקונומיים 2–3.
+              - strong [ref=f4e283]: מעלה עמוס
+              - text: ו
+              - strong [ref=f4e284]: בת עין
+              - text: מתקרבים ל־40% — קרוב לכפול מהממוצע הרשותי.
+            - generic [ref=f4e285]:
+              - generic [ref=f4e286]:
+                - generic [ref=f4e287]:
+                  - generic [ref=f4e288]: מעלה עמוס
+                  - generic [ref=f4e289]: אשכול 2 · נמוך
+                - generic [ref=f4e290]:
+                  - generic [ref=f4e291]: 38.96%
+                  - generic [ref=f4e292]: 353 מתוך 906
+              - generic [ref=f4e293]:
+                - generic [ref=f4e294]:
+                  - generic [ref=f4e295]: בת עין
+                  - generic [ref=f4e296]: אשכול 3
+                - generic [ref=f4e297]:
+                  - generic [ref=f4e298]: 38.27%
+                  - generic [ref=f4e299]: 662 מתוך 1,730
+              - generic [ref=f4e300]:
+                - generic [ref=f4e301]:
+                  - generic [ref=f4e302]: אספר
+                  - generic [ref=f4e303]: אשכול 3
+                - generic [ref=f4e304]:
+                  - generic [ref=f4e305]: 27.85%
+                  - generic [ref=f4e306]: 342 מתוך 1,228
+      - generic [ref=f4e307]:
+        - generic [ref=f4e308]:
+          - generic [ref=f4e309]: IV.
+          - generic [ref=f4e310]:
+            - generic [ref=f4e311]: נזקקות ומאפיינים
+            - text: מהי המצוקה הנפוצה ביותר?
+          - generic [ref=f4e312]:
+            - text: צמרת עשר הנזקקויות
+            - text: פירוט פרט מול משפחה
+        - generic [ref=f4e313]:
+          - generic [ref=f4e314]:
+            - generic [ref=f4e315]:
+              - heading "בעיני המשפחה" [level=3] [ref=f4e316]:
+                - text: בעיני
+                - emphasis [ref=f4e317]: המשפחה
+              - text: מתוך 1,363 משפחות פעילות
+            - generic [ref=f4e318]:
+              - generic [ref=f4e319]:
+                - generic [ref=f4e320]: "01"
+                - generic [ref=f4e322]: מוגבלות
+                - generic [ref=f4e325]: "343"
+                - generic [ref=f4e326]: 25.2%
+              - generic [ref=f4e327]:
+                - generic [ref=f4e328]: "02"
+                - generic [ref=f4e330]: זקנה · אזרח ותיק
+                - generic [ref=f4e333]: "262"
+                - generic [ref=f4e334]: 19.2%
+              - generic [ref=f4e335]:
+                - generic [ref=f4e336]: "03"
+                - generic [ref=f4e338]: קשיים בין הורים לילדיהם
+                - generic [ref=f4e341]: "180"
+                - generic [ref=f4e342]: 13.2%
+              - generic [ref=f4e343]:
+                - generic [ref=f4e344]: "04"
+                - generic [ref=f4e346]: אירוע ביטחון / חירום
+                - generic [ref=f4e349]: "91"
+                - generic [ref=f4e350]: 6.7%
+              - generic [ref=f4e351]:
+                - generic [ref=f4e352]: "05"
+                - generic [ref=f4e354]: קשיים ביחסים בין בני המשפחה
+                - generic [ref=f4e357]: "70"
+                - generic [ref=f4e358]: 5.1%
+              - generic [ref=f4e359]:
+                - generic [ref=f4e360]: "06"
+                - generic [ref=f4e362]: קשיים ביחסים בין בני הזוג
+                - generic [ref=f4e365]: "67"
+                - generic [ref=f4e366]: 4.9%
+              - generic [ref=f4e367]:
+                - generic [ref=f4e368]: "07"
+                - generic [ref=f4e370]: מצוקה כלכלית זמנית
+                - generic [ref=f4e373]: "66"
+                - generic [ref=f4e374]: 4.8%
+              - generic [ref=f4e375]:
+                - generic [ref=f4e376]: "08"
+                - generic [ref=f4e378]: אי־ביטחון תזונתי
+                - generic [ref=f4e381]: "62"
+                - generic [ref=f4e382]: 4.5%
+              - generic [ref=f4e383]:
+                - generic [ref=f4e384]: "09"
+                - generic [ref=f4e386]: ליקוי בתפקוד הורי
+                - generic [ref=f4e389]: "62"
+                - generic [ref=f4e390]: 4.5%
+              - generic [ref=f4e391]:
+                - generic [ref=f4e392]: "10"
+                - generic [ref=f4e394]: קונפליקט גירושין בעוצמה
+                - generic [ref=f4e397]: "61"
+                - generic [ref=f4e398]: 4.5%
+          - generic [ref=f4e399]:
+            - generic [ref=f4e400]:
+              - heading "בעיני הפרט" [level=3] [ref=f4e401]:
+                - text: בעיני
+                - emphasis [ref=f4e402]: הפרט
+              - text: מתוך 1,821 פרטים עם נזקקות
+            - generic [ref=f4e403]:
+              - generic [ref=f4e404]:
+                - generic [ref=f4e405]: "01"
+                - generic [ref=f4e407]: מצוקה רגשית
+                - generic [ref=f4e410]: "609"
+                - generic [ref=f4e411]: 33.4%
+              - generic [ref=f4e412]:
+                - generic [ref=f4e413]: "02"
+                - generic [ref=f4e415]: קושי בטיפול אישי ומיומנויות יומיומיות
+                - generic [ref=f4e418]: "314"
+                - generic [ref=f4e419]: 17.2%
+              - generic [ref=f4e420]:
+                - generic [ref=f4e421]: "03"
+                - generic [ref=f4e423]: קשיים בצריכת שירותים ומיצוי זכויות
+                - generic [ref=f4e426]: "210"
+                - generic [ref=f4e427]: 11.5%
+              - generic [ref=f4e428]:
+                - generic [ref=f4e429]: "04"
+                - generic [ref=f4e431]: קשיים בהתפתחות הילד
+                - generic [ref=f4e434]: "177"
+                - generic [ref=f4e435]: 9.7%
+              - generic [ref=f4e436]:
+                - generic [ref=f4e437]: "05"
+                - generic [ref=f4e439]: בדידות / היעדר מערכות תמיכה
+                - generic [ref=f4e442]: "143"
+                - generic [ref=f4e443]: 7.8%
+              - generic [ref=f4e444]:
+                - generic [ref=f4e445]: "06"
+                - generic [ref=f4e447]: קשיים במסגרת תעסוקה (18+)
+                - generic [ref=f4e450]: "95"
+                - generic [ref=f4e451]: 5.2%
+              - generic [ref=f4e452]:
+                - generic [ref=f4e453]: "07"
+                - generic [ref=f4e455]: קשיים באינטראקציה בין־אישית/זוגית
+                - generic [ref=f4e458]: "64"
+                - generic [ref=f4e459]: 3.5%
+              - generic [ref=f4e460]:
+                - generic [ref=f4e461]: "08"
+                - generic [ref=f4e463]: קשיים במסגרת חינוכית (עד 21)
+                - generic [ref=f4e466]: "52"
+                - generic [ref=f4e467]: 2.9%
+              - generic [ref=f4e468]:
+                - generic [ref=f4e469]: "09"
+                - generic [ref=f4e471]: התנהגות סיכונית אחרת
+                - generic [ref=f4e474]: "44"
+                - generic [ref=f4e475]: 2.4%
+              - generic [ref=f4e476]:
+                - generic [ref=f4e477]: "10"
+                - generic [ref=f4e479]: חשד או נתון/ה לפגיעה מינית
+                - generic [ref=f4e482]: "41"
+                - generic [ref=f4e483]: 2.3%
+        - paragraph [ref=f4e484]:
+          - text: "ראוי לציין:"
+          - strong [ref=f4e486]: 59% מהפרטים הפעילים
+          - text: אינם משויכים לאף נזקקות, ובפן הנפרד של ה־
+          - emphasis [ref=f4e487]: מאפיינים
+          - text: — 66.8%. הפער הזה מצביע על איכות־דיווח בלתי־אחידה ועל הזדמנות אופרטיבית לטיוב הנתונים השוטף.
+      - generic [ref=f4e488]:
+        - generic [ref=f4e489]:
+          - generic [ref=f4e490]: V.
+          - generic [ref=f4e491]:
+            - generic [ref=f4e492]: תנועה בתיקים
+            - text: שנים־עשר חודשים. שתי שנים.
+          - generic [ref=f4e493]:
+            - text: פתיחת תיקים חודשית
+            - text: חיתוך עקב־מול־ביצועים
+        - generic [ref=f4e494]:
+          - generic [ref=f4e495]:
+            - generic [ref=f4e496]:
+              - heading "פתיחת תיקים חדשים — לפי חודש" [level=3] [ref=f4e497]
+              - paragraph [ref=f4e498]: משווה בין שנת הדיווח הנוכחית (מאי 2025 — אפריל 2026) לשנת היחס שקדמה לה.
+            - generic [ref=f4e499]: חודשי
+          - paragraph [ref=f4e502]:
+            - text: "⟵ נובמבר 2025 מסמן את שיא־השנה:"
+            - strong [ref=f4e503]: 35 פתיחות
+            - text: . בחודשי האביב 2026 נרשמת ירידה רצופה — 12, 11, 5 בפבר׳, מרץ ואפר׳ בהתאמה. ‎
+            - strong [ref=f4e504]: 5 פתיחות באפריל 2026
+            - text: "הוא השפל הנמוך ביותר בשני 12־החודשים האחרונים (השפל הקודם: 8 פתיחות באפר׳ 2025)."
+      - generic [ref=f4e505]:
+        - generic [ref=f4e506]:
+          - generic [ref=f4e507]: VI.
+          - generic [ref=f4e508]:
+            - generic [ref=f4e509]: תקציב וניצול
+            - text: אן הולך הכסף?
+          - generic [ref=f4e510]:
+            - text: הקצאה שנתית 2026 · ביצוע ינואר–אפריל
+            - text: 4 מתוך 12 חודשי שנת התקציב
+        - generic [ref=f4e511]:
+          - generic [ref=f4e512]:
+            - generic [ref=f4e513]:
+              - heading "הקצאה לפי תחום" [level=3] [ref=f4e514]
+              - generic [ref=f4e515]: סה״כ 35.77M ₪
+            - paragraph [ref=f4e516]:
+              - text: סך ההקצאה השנתית הברוטו לפי תחום פעולה
+              - emphasis [ref=f4e517]: "(מקור: דו״ח T33, ברמת המינהל)"
+              - text: ". למעלה ממחצית התקציב מופנה לשני תחומים:"
+              - strong [ref=f4e518]: מנהל משה
+              - text: (מוגבלויות, 40.9%) ו
+              - strong [ref=f4e519]: שירותים לילד ולנוער
+              - text: (17.9%).
+          - generic [ref=f4e522]:
+            - generic [ref=f4e523]:
+              - generic [ref=f4e524]:
+                - heading "ניצול תקציב · 4/12 חודשים" [level=3] [ref=f4e525]:
+                  - text: ניצול תקציב
+                  - emphasis [ref=f4e526]: · 4/12 חודשים
+                - generic [ref=f4e527]: ינואר–אפריל 2026
+              - paragraph [ref=f4e528]: "הסעיפים המנוטרים חודשית (מקור: T36) — תת־קבוצה של ההקצאה הכוללת. סה״כ 11.66M ₪ שנתי, מתוכם 4.35M ₪ הוצאו עד סוף אפריל."
+            - generic [ref=f4e529]:
+              - generic [ref=f4e530]:
+                - generic [ref=f4e531]:
+                  - text: שירותים לילד ולנוער
+                  - generic [ref=f4e532]: תיקי טיפול
+                - generic [ref=f4e533]:
+                  - text: 3.31M
+                  - generic [ref=f4e534]: ₪ שנתי 2026
+                - generic [ref=f4e537]: 33.3% פרורטה
+                - generic [ref=f4e538]: 43.2%
+              - generic [ref=f4e539]:
+                - generic [ref=f4e540]:
+                  - text: מנהל משה
+                  - generic [ref=f4e541]: מוגבלויות
+                - generic [ref=f4e542]:
+                  - text: 2.67M
+                  - generic [ref=f4e543]: ₪ שנתי 2026
+                - generic [ref=f4e546]: 33.3% פרורטה
+                - generic [ref=f4e547]: 41.7%
+              - generic [ref=f4e548]:
+                - generic [ref=f4e549]:
+                  - text: שרותי שיקום
+                  - generic [ref=f4e550]: מסגרות שיקום
+                - generic [ref=f4e551]:
+                  - text: 2.16M
+                  - generic [ref=f4e552]: ₪ שנתי 2026
+                - generic [ref=f4e555]: 33.3% פרורטה
+                - generic [ref=f4e556]: 22.3%
+              - generic [ref=f4e557]:
+                - generic [ref=f4e558]:
+                  - text: רווחת הפרט והמשפחה
+                  - generic [ref=f4e559]: תחנות, מרכזים
+                - generic [ref=f4e560]:
+                  - text: 1.04M
+                  - generic [ref=f4e561]: ₪ שנתי 2026
+                - generic [ref=f4e564]: 33.3% פרורטה
+                - generic [ref=f4e565]: 35.0%
+              - generic [ref=f4e566]:
+                - generic [ref=f4e567]:
+                  - text: שרותי תקון
+                  - generic [ref=f4e568]: תיקון, סדנאות
+                - generic [ref=f4e569]:
+                  - text: 1.03M
+                  - generic [ref=f4e570]: ₪ שנתי 2026
+                - generic [ref=f4e573]: 33.3% פרורטה
+                - generic [ref=f4e574]: 53.9%
+              - generic [ref=f4e575]:
+                - generic [ref=f4e576]:
+                  - text: אזרחים ותיקים
+                  - generic [ref=f4e577]: גיל שלישי
+                - generic [ref=f4e578]:
+                  - text: 0.89M
+                  - generic [ref=f4e579]: ₪ שנתי 2026
+                - generic [ref=f4e582]: 33.3% פרורטה
+                - generic [ref=f4e583]: 27.4%
+              - generic [ref=f4e584]:
+                - generic [ref=f4e585]:
+                  - text: פעילויות בקהילה
+                  - generic [ref=f4e586]: פעולות שגרתיות
+                - generic [ref=f4e587]:
+                  - text: 0.41M
+                  - generic [ref=f4e588]: ₪ שנתי 2026
+                - generic [ref=f4e591]: 33.3% פרורטה
+                - generic [ref=f4e592]: 23.8%
+              - generic [ref=f4e593]:
+                - generic [ref=f4e594]:
+                  - text: מינהל הרווחה
+                  - generic [ref=f4e595]: תקורה
+                - generic [ref=f4e596]:
+                  - text: 0.11M
+                  - generic [ref=f4e597]: ₪ שנתי 2026
+                - generic [ref=f4e600]: 33.3% פרורטה
+                - generic [ref=f4e601]: 53.5%
+              - generic [ref=f4e602]:
+                - generic [ref=f4e603]:
+                  - text: שירותים לעולים
+                  - generic [ref=f4e604]: תוכניות עליה
+                - generic [ref=f4e605]:
+                  - text: 0.04M
+                  - generic [ref=f4e606]: ₪ שנתי 2026
+                - generic [ref=f4e608]: 33.3% פרורטה
+                - generic [ref=f4e609]: 0.0%
+            - paragraph [ref=f4e610]:
+              - text: "קצב פרורטה צפוי לתום אפריל:"
+              - strong [ref=f4e612]: 33.3%
+              - text: (4 מתוך 12 חודשים).
+              - strong [ref=f4e613]: שירותי תקון
+              - text: ו־
+              - strong [ref=f4e614]: מנהל הרווחה
+              - text: מקדימים את הקצב (53.9% ו־53.5% בהתאמה).
+              - strong [ref=f4e615]: שירותי שיקום
+              - text: מתחת לקצב (22.3%) ו
+              - emphasis [ref=f4e616]: שירותים לעולים
+              - text: בלא ניצול כלל (0%).
+      - generic [ref=f4e617]:
+        - generic [ref=f4e618]:
+          - generic [ref=f4e619]: VII.
+          - generic [ref=f4e620]:
+            - generic [ref=f4e621]: תשתית טיפול
+            - text: מסגרות, שלוחות, השמות
+          - generic [ref=f4e622]:
+            - text: 62 מסגרות פעילות ברשות
+            - text: 164 שורות־השמה במסגרות חוצות־רשויות
+        - generic [ref=f4e623]:
+          - generic [ref=f4e624]:
+            - generic [ref=f4e625]:
+              - heading "סוגי מסגרות מובילים" [level=3] [ref=f4e626]
+              - generic [ref=f4e627]: השמות
+            - paragraph [ref=f4e628]: פירוט לפי סוג מסגרת — שילוב של מסגרות ברשות הנוכחית ובמסגרות חוץ.
+          - generic [ref=f4e631]:
+            - generic [ref=f4e632]:
+              - heading "אן מתבצעת ההשמה?" [level=3] [ref=f4e633]
+              - generic [ref=f4e634]: פנים / חוץ
+            - paragraph [ref=f4e635]: חלוקת ההשמות בין מסגרות ברשות הנבחרת ובין מסגרות חוץ — הבדל ברור בין השקעה מקומית לנכסים אזוריים.
+          - generic [ref=f4e638]:
+            - generic [ref=f4e639]:
+              - heading "בקצרה" [level=3] [ref=f4e640]
+              - generic [ref=f4e641]: סטטיסטיקה
+            - generic [ref=f4e642]:
+              - generic [ref=f4e643]:
+                - generic [ref=f4e644]: "730"
+                - generic [ref=f4e645]:
+                  - text: מקבלי שירות עם יעד
+                  - emphasis [ref=f4e646]: הגברת רווחה אישית ושיפור מצב רגשי
+                  - text: — היעד השכיח ביותר.
+              - generic [ref=f4e647]:
+                - generic [ref=f4e648]: "28"
+                - generic [ref=f4e649]: יעדי טיפול שונים פעילים במערכת — מקיף את כל מעגלי הסיוע.
+              - generic [ref=f4e650]:
+                - generic [ref=f4e651]: "19"
+                - generic [ref=f4e652]: משפחות אומנה ברשות — הסוג הנפוץ ביותר של מסגרת חוץ־ביתית.
+      - contentinfo [ref=f4e653]:
+        - generic [ref=f4e654]: † מקור הנתונים
+        - generic [ref=f4e655]:
+          - text: המכלול ׀ המועצה האזורית גוש עציון · נוסח 04 · מאי 2026
+          - text: הוצא לאור עבור הצוות המקצועי. אין להפיץ ללא רשות.
+        - generic [ref=f4e656]: 13.05.2026 · 08:06
+  - contentinfo [ref=e37]:
+    - generic [ref=e38]: המכלול · גוש עציון
+    - generic [ref=e39]:
+      - text: שלושה דו״חות, מקורות נפרדים, אותו צוות מקצועי.
+      - text: לחצו על שמות התבניות כדי לעבור ביניהן. כל דו״ח נשמר כקובץ עצמאי.
+    - generic [ref=e40]: נוסח 01

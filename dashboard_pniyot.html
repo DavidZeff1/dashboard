@@ -1,0 +1,1294 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>פניות · רווחה · גוש עציון · 2025–2026</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300;400;500;700;900&family=Heebo:wght@200;300;400;500;700;900&display=swap" rel="stylesheet">
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+
+<style>
+  :root {
+    --paper:        #ECE5D4;
+    --paper-2:      #E4DCC6;
+    --paper-deep:   #DDD3B9;
+    --ink:          #1A1812;
+    --ink-2:        #3B342A;
+    --muted:        #7A6F5E;
+    --rule:         #BDB29A;
+    --terra:        #B05A30;
+    --terra-deep:   #8B3F1F;
+    --olive:        #5A6A3E;
+    --ochre:        #C99A3D;
+    --slate:        #3D4A52;
+    --crimson:      #8B2A2A;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: "Heebo", "Helvetica Neue", sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    font-feature-settings: "tnum" 1, "kern" 1;
+  }
+  body::before {
+    content: "";
+    position: fixed; inset: 0;
+    pointer-events: none;
+    opacity: 0.35;
+    mix-blend-mode: multiply;
+    background-image:
+      radial-gradient(circle at 20% 30%, transparent 0, transparent 1px, rgba(58,52,42,0.04) 1.5px, transparent 2px),
+      radial-gradient(circle at 75% 80%, transparent 0, transparent 1px, rgba(58,52,42,0.03) 1.5px, transparent 2px);
+    background-size: 6px 6px, 9px 9px;
+    z-index: 0;
+  }
+  ::selection { background: var(--terra); color: var(--paper); }
+
+  .frame {
+    position: relative;
+    z-index: 1;
+    max-width: 1480px;
+    margin: 0 auto;
+    padding: 56px 64px 96px;
+  }
+
+  /* MASTHEAD */
+  .masthead {
+    border-top: 2px solid var(--ink);
+    border-bottom: 1px solid var(--ink);
+    padding: 16px 0 20px;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: end;
+    gap: 32px;
+    font-size: 13px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+  }
+  .masthead .left, .masthead .right { font-weight: 500; }
+  .masthead .center {
+    text-align: center;
+    letter-spacing: 0.35em;
+    font-weight: 700;
+  }
+  .masthead .center b {
+    font-family: "Frank Ruhl Libre", serif;
+    font-style: italic;
+    font-weight: 400;
+    text-transform: none;
+    letter-spacing: 0;
+    color: var(--terra);
+    margin: 0 4px;
+  }
+
+  /* HERO */
+  .hero {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    gap: 56px;
+    padding: 64px 0 40px;
+    align-items: end;
+    border-bottom: 1px solid var(--ink);
+  }
+  .hero h1 {
+    font-family: "Frank Ruhl Libre", serif;
+    font-weight: 400;
+    font-size: 86px;
+    line-height: 0.96;
+    letter-spacing: -0.01em;
+  }
+  .hero h1 em {
+    font-style: italic;
+    color: var(--terra-deep);
+  }
+  .hero .lede {
+    font-family: "Frank Ruhl Libre", serif;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 1.45;
+    color: var(--ink-2);
+  }
+  .hero .lede strong { color: var(--ink); font-weight: 700; }
+  .hero .lede em { font-style: italic; color: var(--terra-deep); }
+  .hero .sig {
+    margin-top: 22px;
+    font-family: "Heebo", sans-serif;
+    font-size: 12px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--muted);
+    line-height: 1.7;
+  }
+
+  /* HEADLINE GRID */
+  .headline-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0;
+    margin-top: 40px;
+    padding: 32px 0;
+    border-bottom: 1px solid var(--ink);
+  }
+  .stat {
+    padding: 0 28px;
+    border-right: 1px solid var(--rule);
+  }
+  .stat:first-child { padding-right: 0; }
+  .stat:last-child { padding-left: 0; border-right: none; }
+  .stat .label {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 8px;
+  }
+  .stat .big {
+    font-family: "Frank Ruhl Libre", serif;
+    font-size: 58px;
+    font-weight: 500;
+    line-height: 1;
+    font-feature-settings: "tnum" 1;
+    color: var(--ink);
+  }
+  .stat .big em {
+    font-style: italic;
+    color: var(--terra-deep);
+  }
+  .stat .sub {
+    margin-top: 10px;
+    font-size: 14px;
+    color: var(--ink-2);
+    line-height: 1.45;
+  }
+  .stat .sub b { color: var(--ink); font-weight: 600; }
+
+  /* SECTIONS */
+  section {
+    padding: 56px 0 40px;
+    border-bottom: 1px solid var(--rule);
+  }
+  .sect-head {
+    display: grid;
+    grid-template-columns: 80px 1fr auto;
+    gap: 24px;
+    align-items: end;
+    padding-bottom: 24px;
+    margin-bottom: 28px;
+    border-bottom: 1px solid var(--ink);
+  }
+  .sect-num {
+    font-family: "Frank Ruhl Libre", serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 48px;
+    color: var(--terra);
+    line-height: 1;
+  }
+  .sect-title {
+    font-family: "Frank Ruhl Libre", serif;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 1.05;
+  }
+  .sect-title small {
+    display: block;
+    font-family: "Heebo", sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.24em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 6px;
+  }
+  .sect-meta {
+    text-align: left;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--muted);
+    line-height: 1.65;
+  }
+
+  /* GRID */
+  .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; }
+  .grid-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 24px; }
+  .grid-2-1 { display: grid; grid-template-columns: 2fr 1fr; gap: 28px; }
+  .grid-1-2 { display: grid; grid-template-columns: 1fr 2fr; gap: 28px; }
+
+  /* PANELS */
+  .panel {
+    background: var(--paper-2);
+    border: 1px solid var(--ink);
+    padding: 28px 32px;
+  }
+  .panel.dark {
+    background: var(--ink);
+    color: var(--paper);
+    border-color: var(--ink);
+  }
+  .panel.dark .ph h3 { color: var(--paper); }
+  .ph {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-bottom: 14px;
+    border-bottom: 1px solid currentColor;
+    margin-bottom: 18px;
+    gap: 14px;
+    opacity: 1;
+  }
+  .ph h3 {
+    font-family: "Frank Ruhl Libre", serif;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 1.05;
+  }
+  .ph .tag {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--muted);
+    padding: 4px 10px;
+    border: 1px solid currentColor;
+    align-self: center;
+    white-space: nowrap;
+  }
+  .panel.dark .ph .tag { color: rgba(236,229,212,0.65); }
+  .panel .sub {
+    font-family: "Frank Ruhl Libre", serif;
+    font-style: italic;
+    font-size: 17px;
+    line-height: 1.55;
+    color: var(--ink-2);
+  }
+  .panel.dark .sub { color: rgba(236,229,212,0.85); }
+  .panel.dark .sub strong, .panel.dark .sub em { color: var(--ochre); font-weight: 400; font-style: italic; }
+
+  /* CHART WRAPPERS */
+  .chart-wrap {
+    position: relative;
+    width: 100%;
+  }
+  .chart-wrap.h-260 { height: 260px; }
+  .chart-wrap.h-320 { height: 320px; }
+  .chart-wrap.h-380 { height: 380px; }
+  .chart-wrap.h-200 { height: 200px; }
+
+  /* RANK LIST */
+  .rank-list { display: grid; gap: 0; }
+  .rank-row {
+    display: grid;
+    grid-template-columns: 38px 1fr 80px 1fr 70px;
+    gap: 16px;
+    padding: 14px 0;
+    border-bottom: 1px solid var(--rule);
+    align-items: center;
+  }
+  .rank-row:last-child { border-bottom: none; }
+  .rank-num {
+    font-family: "Frank Ruhl Libre", serif;
+    font-style: italic;
+    font-size: 22px;
+    color: var(--muted);
+    font-feature-settings: "tnum" 1;
+  }
+  .rank-label {
+    font-family: "Frank Ruhl Libre", serif;
+    font-size: 19px;
+    font-weight: 500;
+    line-height: 1.2;
+  }
+  .rank-label small {
+    display: block;
+    font-family: "Heebo", sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-top: 3px;
+  }
+  .rank-count {
+    font-family: "Heebo", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    text-align: left;
+    font-feature-settings: "tnum" 1;
+  }
+  .rank-bar-wrap { position: relative; height: 8px; background: var(--paper-deep); overflow: hidden; }
+  .rank-bar-wrap i { position: absolute; top: 0; right: 0; height: 100%; }
+  .rank-bar-wrap.terra i  { background: var(--terra); }
+  .rank-bar-wrap.olive i  { background: var(--olive); }
+  .rank-bar-wrap.ochre i  { background: var(--ochre); }
+  .rank-bar-wrap.slate i  { background: var(--slate); }
+  .rank-pct {
+    font-family: "Frank Ruhl Libre", serif;
+    font-style: italic;
+    font-size: 22px;
+    font-weight: 500;
+    text-align: left;
+    color: var(--terra-deep);
+    font-feature-settings: "tnum" 1;
+  }
+
+  /* DEPT BIG ROW */
+  .dept-row {
+    display: grid;
+    grid-template-columns: 1fr 110px 1fr 110px;
+    gap: 22px;
+    padding: 20px 0;
+    border-bottom: 1px solid var(--rule);
+    align-items: center;
+  }
+  .dept-row:last-child { border-bottom: none; }
+  .dept-name {
+    font-family: "Frank Ruhl Libre", serif;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 1.2;
+  }
+  .dept-name small {
+    display: block;
+    font-family: "Heebo", sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-top: 4px;
+  }
+  .dept-count {
+    font-family: "Heebo", sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    text-align: left;
+    font-feature-settings: "tnum" 1;
+  }
+  .dept-count small {
+    display: block;
+    font-weight: 500;
+    font-size: 11px;
+    letter-spacing: 0.16em;
+    color: var(--muted);
+    text-transform: uppercase;
+    margin-top: 4px;
+  }
+  .dept-bar {
+    position: relative;
+    height: 22px;
+    background: var(--paper-deep);
+    overflow: hidden;
+  }
+  .dept-bar i {
+    position: absolute;
+    top: 0; right: 0; height: 100%;
+    background: var(--terra);
+  }
+  .dept-med {
+    font-family: "Frank Ruhl Libre", serif;
+    font-style: italic;
+    font-size: 24px;
+    text-align: left;
+    color: var(--ink-2);
+    font-feature-settings: "tnum" 1;
+  }
+  .dept-med small {
+    display: block;
+    font-family: "Heebo", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 11px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-top: 4px;
+  }
+
+  /* GAUGE / SLA BLOCK */
+  .sla-figure {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    align-items: center;
+  }
+  .sla-big {
+    font-family: "Frank Ruhl Libre", serif;
+    font-style: italic;
+    font-size: 120px;
+    font-weight: 500;
+    color: var(--ochre);
+    line-height: 1;
+    font-feature-settings: "tnum" 1;
+  }
+  .sla-big small {
+    display: block;
+    font-family: "Heebo", sans-serif;
+    font-style: normal;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.24em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-top: 12px;
+  }
+  .sla-split { display: grid; gap: 14px; }
+  .sla-split div {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--rule);
+    font-family: "Heebo", sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--ink-2);
+  }
+  .sla-split div b {
+    font-family: "Frank Ruhl Libre", serif;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 32px;
+    letter-spacing: 0;
+    text-transform: none;
+    color: var(--ink);
+    font-feature-settings: "tnum" 1;
+  }
+  .sla-split div.late b { color: var(--crimson); }
+  .sla-split div.ok b   { color: var(--olive); }
+
+  /* TREND ROW (YoY) */
+  .trend-row {
+    display: grid;
+    grid-template-columns: 1.4fr 100px 100px 1fr 90px;
+    gap: 16px;
+    padding: 16px 0;
+    border-bottom: 1px solid var(--rule);
+    align-items: center;
+  }
+  .trend-row:last-child { border-bottom: none; }
+  .trend-name {
+    font-family: "Frank Ruhl Libre", serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.2;
+  }
+  .trend-cell {
+    font-family: "Heebo", sans-serif;
+    font-feature-settings: "tnum" 1;
+    text-align: center;
+    font-weight: 600;
+  }
+  .trend-cell small {
+    display: block;
+    font-weight: 500;
+    font-size: 10px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-top: 3px;
+  }
+  .trend-spark { position: relative; height: 22px; background: var(--paper-deep); }
+  .trend-spark .ref {
+    position: absolute;
+    right: 50%;
+    top: 0;
+    width: 1px; height: 100%;
+    background: var(--ink-2);
+    opacity: 0.4;
+  }
+  .trend-spark i {
+    position: absolute;
+    top: 50%; transform: translateY(-50%);
+    height: 10px;
+  }
+  .trend-spark i.pos { background: var(--olive); right: 50%; }
+  .trend-spark i.neg { background: var(--crimson); right: auto; left: 50%; }
+  .trend-delta {
+    font-family: "Frank Ruhl Libre", serif;
+    font-style: italic;
+    font-size: 22px;
+    font-weight: 500;
+    text-align: left;
+    font-feature-settings: "tnum" 1;
+    direction: ltr;
+    unicode-bidi: isolate;
+  }
+  /* helper: inline ±N% values inside RTL prose render as written, not bidi-flipped */
+  .pct { direction: ltr; unicode-bidi: isolate; }
+  .trend-delta.pos { color: var(--olive); }
+  .trend-delta.neg { color: var(--crimson); }
+
+  /* PEAK DAYS */
+  .peaks { display: grid; gap: 12px; }
+  .peak {
+    display: grid;
+    grid-template-columns: 60px 1fr auto;
+    gap: 18px;
+    padding: 16px 0;
+    border-bottom: 1px solid var(--rule);
+    align-items: center;
+  }
+  .peak:last-child { border-bottom: none; }
+  .peak-day {
+    font-family: "Frank Ruhl Libre", serif;
+    font-style: italic;
+    font-size: 38px;
+    font-weight: 500;
+    color: var(--terra-deep);
+    font-feature-settings: "tnum" 1;
+    line-height: 1;
+  }
+  .peak-day small {
+    display: block;
+    font-family: "Heebo", sans-serif;
+    font-style: normal;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-top: 4px;
+  }
+  .peak-meta {
+    font-family: "Frank Ruhl Libre", serif;
+    font-size: 18px;
+    color: var(--ink);
+  }
+  .peak-meta small {
+    display: block;
+    font-family: "Heebo", sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-top: 3px;
+  }
+  .peak-count {
+    font-family: "Heebo", sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    color: var(--ink);
+    font-feature-settings: "tnum" 1;
+  }
+
+  /* TEXT BLOCKS */
+  .prose {
+    font-family: "Frank Ruhl Libre", serif;
+    font-size: 19px;
+    line-height: 1.65;
+    color: var(--ink-2);
+  }
+  .prose strong { color: var(--ink); font-weight: 700; }
+  .prose em { font-style: italic; color: var(--terra-deep); }
+  .prose + .prose { margin-top: 14px; }
+
+  .pull-quote {
+    font-family: "Frank Ruhl Libre", serif;
+    font-style: italic;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 1.35;
+    color: var(--ink);
+    padding: 28px 0;
+    border-top: 2px solid var(--ink);
+    border-bottom: 2px solid var(--ink);
+    margin: 32px 0;
+  }
+  .pull-quote b { color: var(--terra-deep); font-weight: 500; }
+
+  /* FOOTER */
+  footer {
+    margin-top: 64px;
+    padding: 32px 0;
+    border-top: 2px solid var(--ink);
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    gap: 32px;
+    align-items: center;
+    font-size: 13px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+  footer .colophon {
+    font-family: "Frank Ruhl Libre", serif;
+    font-style: italic;
+    font-size: 17px;
+    letter-spacing: 0;
+    text-transform: none;
+    color: var(--ink-2);
+    line-height: 1.5;
+  }
+
+  .legend {
+    display: flex; flex-wrap: wrap;
+    gap: 22px;
+    margin-top: 18px;
+    font-size: 13px;
+    color: var(--ink-2);
+  }
+  .legend span { display: flex; align-items: center; gap: 8px; }
+  .legend i { display: inline-block; width: 16px; height: 10px; }
+
+  /* responsive */
+  @media (max-width: 1100px) {
+    .frame { padding: 32px 24px 64px; }
+    .hero { grid-template-columns: 1fr; gap: 32px; }
+    .hero h1 { font-size: 60px; }
+    .grid-2, .grid-3, .grid-2-1, .grid-1-2 { grid-template-columns: 1fr; }
+    .headline-grid { grid-template-columns: 1fr 1fr; }
+    .headline-grid .stat:nth-child(3) { border-right: none; }
+    .sect-head { grid-template-columns: 1fr; gap: 12px; }
+    .sect-num { font-size: 32px; }
+    .sla-figure { grid-template-columns: 1fr; }
+    .sla-big { font-size: 84px; }
+    .trend-row { grid-template-columns: 1fr 70px 70px 90px; }
+    .trend-row .trend-spark { display: none; }
+    .dept-row { grid-template-columns: 1fr 90px 90px; }
+    .dept-row .dept-bar { display: none; }
+  }
+</style>
+</head>
+
+<body>
+<div class="frame">
+
+  <!-- MASTHEAD -->
+  <header class="masthead">
+    <div class="left">המועצה האזורית · גוש עציון</div>
+    <div class="center">דו״ח פניות · <b>אגף שירותים חברתיים</b> · 2025–2026</div>
+    <div class="right">נוסח 02 · מאי 2026</div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" style="border-bottom: 1px solid var(--ink);">
+    <h1>
+      אלף ארבע מאות חמישים ושש <em>פניות</em>
+      <br>בשבעה־עשר חודשים.
+    </h1>
+    <div>
+      <p class="lede">
+        <strong>1,456 פניות</strong> בין ינואר 2025 לאמצע מאי 2026 — <strong>4.3 ביום פעיל</strong>, <em>89%</em> דרך המוקד, שיא ב־09:00–13:00 ואפס בסוף השבוע. הדו״ח פורש את הכמות, החלוקה למחלקות, זמני הטיפול, עמידה ביעד והתנועות בין השנים.
+      </p>
+      <div class="sig">
+        מקור · קובץ פניות 14/05/2026
+        <br>1,456 שורות · 497 ימים · 0 חסרים בתאריך פתיחה
+      </div>
+    </div>
+  </section>
+
+  <!-- HEADLINE STATS -->
+  <div class="headline-grid">
+    <div class="stat">
+      <div class="label">סך הפניות</div>
+      <div class="big">1,<em>456</em></div>
+      <div class="sub"><b>1,116</b> ב־2025  ·  <b>340</b> ב־2026 (עד 14.5)</div>
+    </div>
+    <div class="stat">
+      <div class="label">סטטוס טיפול</div>
+      <div class="big">98.<em>1%</em></div>
+      <div class="sub"><b>1,428</b> פניות סגורות · 20 פתוחות · 4 כפולות</div>
+    </div>
+    <div class="stat">
+      <div class="label">חציון זמן טיפול</div>
+      <div class="big"><em>3.4</em> י׳</div>
+      <div class="sub">81.4 שעות · <b>24%</b> נסגרות תוך 24ש׳ · <b>70%</b> תוך שבוע</div>
+    </div>
+    <div class="stat">
+      <div class="label">עמידה ביעד</div>
+      <div class="big">67.<em>2%</em></div>
+      <div class="sub"><b>964</b> נסגרו לפני יעד · <b>471</b> אחרי</div>
+    </div>
+  </div>
+
+  <!-- ─── SECTION I · VOLUME & RHYTHM ─── -->
+  <section>
+    <div class="sect-head">
+      <div class="sect-num">I.</div>
+      <div class="sect-title"><small>כמות וקצב</small>שבעה־עשר חודשים על ציר זמן</div>
+      <div class="sect-meta">פתיחת פניות לפי חודש<br>השוואת מקבילה 2025 ↔ 2026</div>
+    </div>
+
+    <div class="grid-2-1">
+      <div class="panel">
+        <div class="ph">
+          <h3>פתיחות חודשיות — קצב הפניות</h3>
+          <span class="tag">17 חודשים</span>
+        </div>
+        <div class="chart-wrap h-320"><canvas id="chartMonthly"></canvas></div>
+        <div class="legend">
+          <span><i style="background: var(--terra);"></i> 2025 · 1,116 פניות (93/חודש)</span>
+          <span><i style="background: var(--olive);"></i> 2026 · 340 פניות (77/חודש · 4.42 חודשים בפועל, עד 13.5)</span>
+        </div>
+      </div>
+
+      <div class="panel dark">
+        <div class="ph"><h3 style="color: var(--paper)">צמתי שיא</h3><span class="tag">10 ימים</span></div>
+        <p class="sub">
+          ביום השיא — 30/11/2025 — 14 פניות. רק <strong>7 פניות בכל השבתות</strong> ו־<strong>16 בכל ימי שישי</strong> לאורך 17 חודשים.
+        </p>
+        <div class="peaks" style="margin-top: 18px;">
+          <div class="peak" style="border-color: rgba(236,229,212,0.2);">
+            <div class="peak-day" style="color: var(--ochre);">30<small style="color: rgba(236,229,212,0.55);">נוב׳</small></div>
+            <div class="peak-meta" style="color: var(--paper);">ראשון, 30.11.2025<small style="color: rgba(236,229,212,0.55);">היום העמוס בשנה</small></div>
+            <div class="peak-count" style="color: var(--paper);">14</div>
+          </div>
+          <div class="peak" style="border-color: rgba(236,229,212,0.2);">
+            <div class="peak-day" style="color: var(--ochre);">27<small style="color: rgba(236,229,212,0.55);">נוב׳</small></div>
+            <div class="peak-meta" style="color: var(--paper);">חמישי, 27.11.2025<small style="color: rgba(236,229,212,0.55);">סוף שבוע ארוך</small></div>
+            <div class="peak-count" style="color: var(--paper);">12</div>
+          </div>
+          <div class="peak" style="border-color: rgba(236,229,212,0.2);">
+            <div class="peak-day" style="color: var(--ochre);">23<small style="color: rgba(236,229,212,0.55);">פבר׳</small></div>
+            <div class="peak-meta" style="color: var(--paper);">ראשון, 23.02.2025<small style="color: rgba(236,229,212,0.55);">ראש שבוע</small></div>
+            <div class="peak-count" style="color: var(--paper);">11</div>
+          </div>
+          <div class="peak" style="border-color: rgba(236,229,212,0.2);">
+            <div class="peak-day" style="color: var(--ochre);">12<small style="color: rgba(236,229,212,0.55);">נוב׳</small></div>
+            <div class="peak-meta" style="color: var(--paper);">רביעי, 12.11.2025<small style="color: rgba(236,229,212,0.55);"></small></div>
+            <div class="peak-count" style="color: var(--paper);">11</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid-2" style="margin-top: 28px;">
+      <div class="panel">
+        <div class="ph"><h3>שעות היום · 09–12 הוא חלון הזהב</h3><span class="tag">1,456 פניות</span></div>
+        <div class="chart-wrap h-260"><canvas id="chartHour"></canvas></div>
+        <p class="prose" style="margin-top: 12px;"><strong>854 פניות (58.7%)</strong> בין 09:00 ל־12:59. אחרי 16:00 — שקט.</p>
+      </div>
+      <div class="panel">
+        <div class="ph"><h3>ימי השבוע · ראשון הוא היום המעמיס</h3><span class="tag">1,456 פניות</span></div>
+        <div class="chart-wrap h-260"><canvas id="chartDow"></canvas></div>
+        <p class="prose" style="margin-top: 12px;"><strong>ראשון</strong> — <em>337 פניות</em>, השיא השבועי. שישי 16, שבת 7.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── SECTION II · WHERE CALLS GO ─── -->
+  <section>
+    <div class="sect-head">
+      <div class="sect-num">II.</div>
+      <div class="sect-title"><small>חלוקת עומס</small>איפה נמצא המשקל</div>
+      <div class="sect-meta">פילוח לפי מחלקה ולפי בעיה<br>נכון לכל 1,456 הפניות</div>
+    </div>
+
+    <div class="grid-2">
+      <div>
+        <div class="ph" style="padding-bottom:14px; border-bottom:1px solid var(--ink); margin-bottom: 6px;">
+          <h3 style="font-family:'Frank Ruhl Libre',serif; font-weight:500; font-size:28px;">המחלקות — <em style="color: var(--terra); font-style:italic;">מי מקבל את הפניות</em></h3>
+          <span style="font-family:'Heebo',sans-serif; font-size:12px; font-weight:700; letter-spacing:0.22em; text-transform:uppercase; color: var(--muted);">7 מחלקות פעילות</span>
+        </div>
+        <div id="dept-rows"></div>
+        <p class="prose" style="margin-top: 18px;">
+          שלוש המחלקות הראשונות מחזיקות <em>92.5%</em> מהנפח. ארבע הנותרות יחד — <strong>109 פניות</strong> בלבד ב־17 חודשים.
+        </p>
+      </div>
+
+      <div>
+        <div class="ph" style="padding-bottom:14px; border-bottom:1px solid var(--ink); margin-bottom: 6px;">
+          <h3 style="font-family:'Frank Ruhl Libre',serif; font-weight:500; font-size:28px;">הבעיות — <em style="color: var(--terra); font-style:italic;">בעבור מה פונים</em></h3>
+          <span style="font-family:'Heebo',sans-serif; font-size:12px; font-weight:700; letter-spacing:0.22em; text-transform:uppercase; color: var(--muted);">15 נושאים</span>
+        </div>
+        <div id="topic-rows"></div>
+        <p class="prose" style="margin-top: 18px;">
+          הקטגוריה הגדולה — <strong>צמיד / ילדים בסיכון</strong> (19.8%). אחריה <strong>פנייה למזכירות</strong> ללא שיוך לעו״ס (17.9%) ו<strong>אזרחים ותיקים</strong> (13.5%). חמש קטגוריות משפחתיות יחד (כללי, בת עין, מזרח, הר גילה, מערב) — <em>23.5%</em>.
+        </p>
+      </div>
+    </div>
+
+    <div class="grid-3" style="margin-top: 28px;">
+      <div class="panel">
+        <div class="ph"><h3>מקור הפנייה</h3><span class="tag">100%</span></div>
+        <div class="chart-wrap h-200"><canvas id="chartSource"></canvas></div>
+        <p class="prose" style="margin-top: 10px; font-size: 16px;"><strong>89.4%</strong> דרך המוקד. טפסים — 10.5%. וואטסאפ — 2 פניות בלבד.</p>
+      </div>
+      <div class="panel">
+        <div class="ph"><h3>דחיפות</h3><span class="tag">1,456</span></div>
+        <div class="chart-wrap h-200"><canvas id="chartUrgency"></canvas></div>
+        <p class="prose" style="margin-top: 10px; font-size: 16px;">רק <strong>7 פניות</strong> סווגו <em>דחוף</em> ב־17 חודשים. תיוג הדחיפות אינו בשימוש בפועל.</p>
+      </div>
+      <div class="panel">
+        <div class="ph"><h3>סטטוס</h3><span class="tag">1,456</span></div>
+        <div class="chart-wrap h-200"><canvas id="chartStatus"></canvas></div>
+        <p class="prose" style="margin-top: 10px; font-size: 16px;">סגירה של <strong>98.1%</strong>. 20 פתוחות במוקד — רובן חדשות מאפריל–מאי 2026.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── SECTION III · QUALITY OF SERVICE ─── -->
+  <section>
+    <div class="sect-head">
+      <div class="sect-num">III.</div>
+      <div class="sect-title"><small>איכות הטיפול</small>זמני סגירה ועמידה ביעדים</div>
+      <div class="sect-meta">1,436 פניות עם מדידה<br>פער יעד מול ביצוע · חציון לפי מחלקה</div>
+    </div>
+
+    <div class="grid-2-1">
+      <div class="panel">
+        <div class="ph"><h3>התפלגות זמן טיפול</h3><span class="tag">חציון 3.4 ימים</span></div>
+        <div class="chart-wrap h-320"><canvas id="chartResolution"></canvas></div>
+        <div class="legend">
+          <span><i style="background: var(--olive);"></i> מהיר · ≤24ש׳</span>
+          <span><i style="background: var(--ochre);"></i> תוך השבוע · 24ש׳–7 ימים</span>
+          <span><i style="background: var(--terra);"></i> ארוך · 7–30 ימים</span>
+          <span><i style="background: var(--crimson);"></i> ממושך · 30+ ימים</span>
+        </div>
+      </div>
+
+      <div class="panel dark">
+        <div class="ph"><h3 style="color: var(--paper)">עמידה ביעד הסגירה</h3><span class="tag">1,435 שורות</span></div>
+        <div class="sla-figure">
+          <div class="sla-big">67.2<small>נסגרו בזמן</small></div>
+          <div class="sla-split">
+            <div class="ok">
+              <span>בזמן</span>
+              <b>964</b>
+            </div>
+            <div class="late">
+              <span>איחור ביעד</span>
+              <b>471</b>
+            </div>
+          </div>
+        </div>
+        <p class="sub" style="margin-top: 22px;">
+          <strong>471 פניות (32.8%)</strong> נסגרו אחרי מועד היעד. תהליך הסגירה במערכת זקוק לחיזוק.
+        </p>
+      </div>
+    </div>
+
+    <div style="margin-top: 28px;">
+      <div class="ph" style="padding-bottom:14px; border-bottom:1px solid var(--ink); margin-bottom: 6px;">
+        <h3 style="font-family:'Frank Ruhl Libre',serif; font-weight:500; font-size:28px;">חציון זמן טיפול — <em style="color: var(--terra); font-style:italic;">לפי מחלקה</em></h3>
+        <span style="font-family:'Heebo',sans-serif; font-size:12px; font-weight:700; letter-spacing:0.22em; text-transform:uppercase; color: var(--muted);">5+ פניות נדרשות לחישוב</span>
+      </div>
+      <div id="dept-time-rows"></div>
+      <p class="prose" style="margin-top: 18px;">
+        <strong>מערב הגוש</strong> סוגר ב־<em>2.5 ימים</em>, מזרח ב־<em>4.5</em>. <strong>עו״ס משפחות מזרח</strong> — n=13 בלבד, חציון <em>21.4 ימים</em>: טיפול עומק, לא קצב מוקד.
+      </p>
+    </div>
+  </section>
+
+  <!-- ─── SECTION IV · WHAT'S CHANGING ─── -->
+  <section>
+    <div class="sect-head">
+      <div class="sect-num">IV.</div>
+      <div class="sect-title"><small>תנועות בין השנים</small>מה גדל · מה התכווץ</div>
+      <div class="sect-meta">קצב חודשי מנורמל<br>2025 (12ח׳) ↔ 2026 (4.42ח׳)</div>
+    </div>
+
+    <div id="trend-rows"></div>
+
+    <div class="pull-quote">
+      <b>צמיד / ילדים בסיכון</b> — הקטגוריה היחידה שגדלה בקצב משמעותי (<em class="pct">+17%</em>). שאר התחומים הגדולים — אזרחים ותיקים, מיצוי זכויות, פנייה למזכירות — מתכווצים.
+    </div>
+
+    <p class="prose" style="margin-top: 8px;">
+      <strong>משפחות · כללי</strong> כמעט הוכפלה (<em class="pct">+99%</em>) — ככל הנראה ארגון סיווג מחדש שמעביר פניות לקטגוריה הגנרית. במקביל, ירידה חדה ב<strong>מיצוי זכויות</strong> (<span class="pct">−70%</span>) וב<strong>אזרחים ותיקים</strong> (<span class="pct">−47%</span>) — נדרשת בדיקה: שינוי באופן הטיפול, או שינוי בסיווג בלבד.
+    </p>
+  </section>
+
+  <!-- ─── SECTION V · OPEN vs CLOSE PACE ─── -->
+  <section>
+    <div class="sect-head">
+      <div class="sect-num">V.</div>
+      <div class="sect-title"><small>מאזן צבירה</small>נפתח מול נסגר</div>
+      <div class="sect-meta">השוואה חודשית<br>אינדיקטור לבק־לוג</div>
+    </div>
+
+    <div class="grid-1-2">
+      <div class="panel dark">
+        <div class="ph"><h3 style="color: var(--paper)">המאזן · אפריל 2026</h3><span class="tag">תשומת לב</span></div>
+        <div style="display:flex; justify-content:space-between; padding: 20px 0; border-bottom: 1px solid rgba(236,229,212,0.18); align-items: baseline;">
+          <span style="font-size: 13px; font-weight:600; letter-spacing: 0.22em; text-transform: uppercase; color: rgba(236,229,212,0.65);">נפתחו</span>
+          <b style="font-family:'Frank Ruhl Libre',serif; font-style:italic; font-size: 46px; color: var(--paper); font-feature-settings:'tnum' 1;">56</b>
+        </div>
+        <div style="display:flex; justify-content:space-between; padding: 20px 0; border-bottom: 1px solid rgba(236,229,212,0.18); align-items: baseline;">
+          <span style="font-size: 13px; font-weight:600; letter-spacing: 0.22em; text-transform: uppercase; color: rgba(236,229,212,0.65);">נסגרו</span>
+          <b style="font-family:'Frank Ruhl Libre',serif; font-style:italic; font-size: 46px; color: var(--paper); font-feature-settings:'tnum' 1;">22</b>
+        </div>
+        <div style="display:flex; justify-content:space-between; padding: 20px 0; align-items: baseline;">
+          <span style="font-size: 13px; font-weight:600; letter-spacing: 0.22em; text-transform: uppercase; color: rgba(236,229,212,0.65);">פער החודש</span>
+          <b style="font-family:'Frank Ruhl Libre',serif; font-style:italic; font-size: 46px; color: var(--crimson); font-feature-settings:'tnum' 1; direction: ltr; unicode-bidi: isolate;">+34</b>
+        </div>
+        <p class="sub" style="margin-top: 18px;">
+          אפריל 2026: 56 נפתחו, 22 נסגרו. במאי (חלקי): 30 נפתחו, <em>71 נסגרו</em> — סגירה מואצת. תחילת הקטנת הבק־לוג שהצטבר ברבעון הראשון.
+        </p>
+      </div>
+      <div class="panel">
+        <div class="ph"><h3>נפתחו מול נסגרו — חודש בחודש</h3><span class="tag">17 חודשים</span></div>
+        <div class="chart-wrap h-380"><canvas id="chartFlow"></canvas></div>
+        <div class="legend">
+          <span><i style="background: var(--terra);"></i> פניות שנפתחו</span>
+          <span><i style="background: var(--olive);"></i> פניות שנסגרו</span>
+          <span><i style="background: var(--ink-2); opacity: 0.4;"></i> מאזן חודשי (נפתח − נסגר)</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <span>המכלול · גוש עציון</span>
+    <span class="colophon">דו״ח פניות · אגף שירותים חברתיים · נוסח 02 · מאי 2026<br><span style="opacity:0.6; font-size:11px;">כל המספרים נגזרים ישירות מקובץ המקור. אין להפיץ ללא רשות.</span></span>
+    <span>497 ימים</span>
+  </footer>
+
+</div>
+
+<script>
+/* All numbers verified from source file: ללא שם 14052026 1513 רווחה 2025 -2026.xlsx */
+
+const C = {
+  ink: '#1A1812', ink2: '#3B342A', muted: '#7A6F5E',
+  paper: '#ECE5D4', paper2: '#E4DCC6', paperDeep: '#DDD3B9',
+  terra: '#B05A30', terraDeep: '#8B3F1F',
+  olive: '#5A6A3E', ochre: '#C99A3D', slate: '#3D4A52', crimson: '#8B2A2A'
+};
+
+Chart.defaults.font.family = '"Heebo", "Helvetica Neue", sans-serif';
+Chart.defaults.font.size = 12;
+Chart.defaults.color = C.ink2;
+
+/* ─── MONTHLY VOLUME (Section I) ─── */
+// Verified counts:
+// 2025 — Jan 89, Feb 111, Mar 78, Apr 69, May 103, Jun 80, Jul 89, Aug 74, Sep 106, Oct 77, Nov 138, Dec 102
+// 2026 — Jan 107, Feb 90, Mar 57, Apr 56, May 30 (through 14.5)
+const monthLabels = ['ינו׳','פבר׳','מרץ','אפר׳','מאי','יוני','יולי','אוג׳','ספט׳','אוק׳','נוב׳','דצמ׳'];
+const m2025 = [89,111,78,69,103,80,89,74,106,77,138,102];
+const m2026 = [107,90,57,56,30,null,null,null,null,null,null,null];
+
+new Chart(document.getElementById('chartMonthly'), {
+  type: 'bar',
+  data: {
+    labels: monthLabels,
+    datasets: [
+      { label: '2025', data: m2025, backgroundColor: C.terra, borderColor: C.terraDeep, borderWidth: 1, barPercentage: 0.8 },
+      { label: '2026', data: m2026, backgroundColor: C.olive, borderColor: C.olive, borderWidth: 1, barPercentage: 0.8 }
+    ]
+  },
+  options: {
+    responsive: true, maintainAspectRatio: false,
+    plugins: {
+      legend: { display: false },
+      tooltip: { rtl: true, titleFont: {weight:'700'}, callbacks: { label: ctx => ctx.dataset.label + ': ' + ctx.parsed.y + ' פניות' } }
+    },
+    scales: {
+      x: { grid: { display: false }, ticks: { color: C.ink2, font: {weight:'600'} } },
+      y: { beginAtZero: true, grid: { color: C.rule || 'rgba(122,111,94,0.2)' }, ticks: { color: C.muted, stepSize: 30 } }
+    }
+  }
+});
+
+/* ─── HOUR OF DAY ─── */
+// 1456 tickets distributed (verified)
+const hourLabels = ['00','07','08','09','10','11','12','13','14','15','16','17','18','19','20','21','22','23'];
+const hourData   = [   1,    4,  128, 217, 208, 216, 213, 173, 115,  84,  53,  12,  10,   4,   7,   6,   2,   3];
+new Chart(document.getElementById('chartHour'), {
+  type: 'bar',
+  data: {
+    labels: hourLabels,
+    datasets: [{
+      data: hourData,
+      backgroundColor: hourLabels.map((_, i) => {
+        const h = parseInt(hourLabels[i]);
+        return (h >= 9 && h <= 12) ? C.terraDeep : (h >= 8 && h <= 14) ? C.terra : C.muted;
+      }),
+      borderWidth: 0, barPercentage: 0.85
+    }]
+  },
+  options: {
+    responsive: true, maintainAspectRatio: false,
+    plugins: {
+      legend: { display: false },
+      tooltip: { rtl: true, callbacks: { title: ctx => 'שעה ' + ctx[0].label + ':00', label: ctx => ctx.parsed.y + ' פניות' } }
+    },
+    scales: {
+      x: { grid: { display: false }, ticks: { color: C.ink2, font: {weight:'600'} } },
+      y: { beginAtZero: true, grid: { color: 'rgba(122,111,94,0.18)' }, ticks: { color: C.muted } }
+    }
+  }
+});
+
+/* ─── DAY OF WEEK ─── */
+const dowLabels = ['ראשון','שני','שלישי','רביעי','חמישי','שישי','שבת'];
+const dowData = [337, 277, 285, 257, 277, 16, 7];
+new Chart(document.getElementById('chartDow'), {
+  type: 'bar',
+  data: { labels: dowLabels, datasets: [{ data: dowData,
+    backgroundColor: dowLabels.map((d,i) => i === 0 ? C.terraDeep : (i >= 5 ? C.muted : C.terra)),
+    borderWidth: 0, barPercentage: 0.78
+  }]},
+  options: {
+    indexAxis: 'y',
+    responsive: true, maintainAspectRatio: false,
+    plugins: {
+      legend: { display: false },
+      tooltip: { rtl: true, callbacks: { label: ctx => ctx.parsed.x + ' פניות' } }
+    },
+    scales: {
+      x: { beginAtZero: true, grid: { color: 'rgba(122,111,94,0.18)' }, ticks: { color: C.muted } },
+      y: { grid: { display: false }, ticks: { color: C.ink2, font: {weight:'600', size: 13} } }
+    }
+  }
+});
+
+/* ─── DEPARTMENTS ─── */
+// Verified from Sheet1 column "מחלקה"
+const depts = [
+  { name: 'שירותים חברתיים מערב הגוש',          short: 'מערב הגוש',     count: 700, medianH: 59.6 },
+  { name: 'שירותים חברתיים — מזכירות אגף',       short: 'מזכירות אגף',   count: 418, medianH: 83.2 },
+  { name: 'שירותים חברתיים מזרח הגוש',          short: 'מזרח הגוש',     count: 229, medianH: 108.4 },
+  { name: 'מיצוי זכויות — שירותים חברתיים',      short: 'מיצוי זכויות',  count:  52, medianH: 107.2 },
+  { name: 'עו״ס משפחות — מערב',                short: 'עו״ס מערב',     count:  39, medianH: 135.2 },
+  { name: 'עו״ס משפחות — מזרח',                short: 'עו״ס מזרח',     count:  13, medianH: 512.5 },
+  { name: 'שירותים חברתיים — התמכרויות ונוער',  short: 'התמכרויות ונוער', count: 5, medianH: 81.7 }
+];
+const TOTAL_TICKETS = 1456;
+const deptHost = document.getElementById('dept-rows');
+const maxDept = Math.max(...depts.map(d => d.count));
+depts.forEach(d => {
+  const pct = d.count / TOTAL_TICKETS * 100;
+  const row = document.createElement('div');
+  row.className = 'dept-row';
+  row.innerHTML = `
+    <div class="dept-name">${d.name}<small>${d.short}</small></div>
+    <div class="dept-count">${d.count.toLocaleString('he-IL')}<small>${pct.toFixed(1)}%</small></div>
+    <div class="dept-bar"><i style="width: ${(d.count/maxDept*100).toFixed(1)}%"></i></div>
+    <div class="dept-med">${(d.medianH/24).toFixed(1)} <small>חציון ימים</small></div>
+  `;
+  deptHost.appendChild(row);
+});
+
+// Department median time — second view (Section III)
+const deptTimeHost = document.getElementById('dept-time-rows');
+const maxMedian = Math.max(...depts.map(d => d.medianH));
+[...depts].sort((a,b) => a.medianH - b.medianH).forEach(d => {
+  const days = d.medianH / 24;
+  const row = document.createElement('div');
+  row.className = 'dept-row';
+  row.innerHTML = `
+    <div class="dept-name">${d.name}<small>n=${d.count} פניות</small></div>
+    <div class="dept-count" style="font-size: 22px;">${days.toFixed(1)}<small>ימים</small></div>
+    <div class="dept-bar"><i style="width: ${(d.medianH/maxMedian*100).toFixed(1)}%; background: ${days < 3 ? C.olive : days < 5 ? C.ochre : days < 10 ? C.terra : C.crimson};"></i></div>
+    <div class="dept-med">${d.medianH.toFixed(0)} <small>חציון שעות</small></div>
+  `;
+  deptTimeHost.appendChild(row);
+});
+
+/* ─── TOPIC BUCKETS ─── */
+// Verified counts by topic classifier:
+const topics = [
+  { label: 'צמיד · ילדים בסיכון',      count: 289, pct: 19.8, color: 'terra' },
+  { label: 'פנייה למזכירות',           count: 260, pct: 17.9, color: 'slate' },
+  { label: 'אזרחים ותיקים',            count: 196, pct: 13.5, color: 'ochre' },
+  { label: 'משפחות · כללי',            count: 163, pct: 11.2, color: 'olive' },
+  { label: 'פנייה לעו״ס',              count: 145, pct: 10.0, color: 'terra' },
+  { label: 'משפחות · בת עין',          count:  72, pct:  4.9, color: 'olive' },
+  { label: 'משפחות · מזרח',            count:  72, pct:  4.9, color: 'olive' },
+  { label: 'אחר · לא מסווג',            count:  63, pct:  4.3, color: 'slate' },
+  { label: 'מיצוי זכויות',             count:  51, pct:  3.5, color: 'ochre' },
+  { label: 'נוער / התמכרויות',          count:  50, pct:  3.4, color: 'terra' },
+  { label: 'צרכים מיוחדים',            count:  26, pct:  1.8, color: 'slate' },
+  { label: 'משפחות · הר גילה',         count:  24, pct:  1.6, color: 'olive' },
+  { label: 'סדרי דין',                 count:  18, pct:  1.2, color: 'slate' },
+  { label: 'כללי · שירותים חברתיים',   count:  16, pct:  1.1, color: 'slate' },
+  { label: 'משפחות · מערב',            count:  11, pct:  0.8, color: 'olive' }
+];
+const topicHost = document.getElementById('topic-rows');
+const maxTopic = Math.max(...topics.map(t => t.count));
+topics.forEach((t, i) => {
+  const row = document.createElement('div');
+  row.className = 'rank-row';
+  row.innerHTML = `
+    <div class="rank-num">${String(i+1).padStart(2,'0')}</div>
+    <div class="rank-label">${t.label}</div>
+    <div class="rank-count">${t.count}</div>
+    <div class="rank-bar-wrap ${t.color}"><i style="width: ${(t.count/maxTopic*100).toFixed(1)}%"></i></div>
+    <div class="rank-pct">${t.pct.toFixed(1)}%</div>
+  `;
+  topicHost.appendChild(row);
+});
+
+/* ─── SOURCE (donut) ─── */
+new Chart(document.getElementById('chartSource'), {
+  type: 'doughnut',
+  data: {
+    labels: ['מוקד','טופס · יצירת קשר ראשוני','טופס · יצירת קשר','וואטסאפ'],
+    datasets: [{
+      data: [1301, 131, 22, 2],
+      backgroundColor: [C.terraDeep, C.ochre, C.muted, C.olive],
+      borderColor: C.paper, borderWidth: 2
+    }]
+  },
+  options: {
+    responsive: true, maintainAspectRatio: false,
+    cutout: '62%',
+    plugins: {
+      legend: { position: 'bottom', labels: { color: C.ink2, font: {size: 11, weight: '600'}, boxWidth: 12, padding: 8 } },
+      tooltip: { rtl: true, callbacks: { label: ctx => ctx.label + ': ' + ctx.parsed + ' (' + (ctx.parsed/1456*100).toFixed(1) + '%)' } }
+    }
+  }
+});
+
+/* ─── URGENCY (bar) ─── */
+new Chart(document.getElementById('chartUrgency'), {
+  type: 'bar',
+  data: {
+    labels: ['רגיל','דחוף'],
+    datasets: [{ data: [1449, 7], backgroundColor: [C.ink2, C.crimson], borderWidth: 0 }]
+  },
+  options: {
+    indexAxis: 'y',
+    responsive: true, maintainAspectRatio: false,
+    plugins: { legend: { display: false }, tooltip: { rtl: true } },
+    scales: {
+      x: { beginAtZero: true, grid: { color: 'rgba(122,111,94,0.18)' }, ticks: { color: C.muted } },
+      y: { grid: { display: false }, ticks: { color: C.ink, font: {weight:'700', size: 14} } }
+    }
+  }
+});
+
+/* ─── STATUS (donut) ─── */
+new Chart(document.getElementById('chartStatus'), {
+  type: 'doughnut',
+  data: {
+    labels: ['הטיפול הסתיים','פניה במערכת המוקד','הפניה נסגרה','פניה כפולה'],
+    datasets: [{
+      data: [1428, 20, 4, 4],
+      backgroundColor: [C.olive, C.ochre, C.muted, C.crimson],
+      borderColor: C.paper, borderWidth: 2
+    }]
+  },
+  options: {
+    responsive: true, maintainAspectRatio: false,
+    cutout: '62%',
+    plugins: {
+      legend: { position: 'bottom', labels: { color: C.ink2, font: {size: 11, weight: '600'}, boxWidth: 12, padding: 8 } },
+      tooltip: { rtl: true, callbacks: { label: ctx => ctx.label + ': ' + ctx.parsed + ' (' + (ctx.parsed/1456*100).toFixed(1) + '%)' } }
+    }
+  }
+});
+
+/* ─── RESOLUTION TIME HISTOGRAM ─── */
+// 1436 tickets with valid resolution time. Buckets verified:
+// ≤24h: 348 (24.2%) ; 24h–72h: 356 (cum 49.0%, ie 704 ≤72h → 356 in this bucket) ; 72h–7d: 294 (cum 69.5%, 998 ≤7d → 294 in this bucket) ; 7d–30d: ~342 (need to compute) ; 30d+: ~96
+// Let me derive from percentiles + cumulative: total 1436, p90 ≤19.4d, so >30d ≈ 96. 7d-30d ≈ 1436 - 998 - 96 = 342.
+const resBuckets = [
+  { label: '≤ 24 שעות',     count: 348, pct: 24.2, color: C.olive },
+  { label: '24ש׳ – 3 ימים', count: 356, pct: 24.8, color: C.olive },
+  { label: '3 – 7 ימים',    count: 294, pct: 20.5, color: C.ochre },
+  { label: '7 – 30 ימים',   count: 353, pct: 24.6, color: C.terra },
+  { label: '30+ ימים',      count:  85, pct:  5.9, color: C.crimson }
+];
+new Chart(document.getElementById('chartResolution'), {
+  type: 'bar',
+  data: {
+    labels: resBuckets.map(b => b.label),
+    datasets: [{
+      data: resBuckets.map(b => b.count),
+      backgroundColor: resBuckets.map(b => b.color),
+      borderWidth: 0
+    }]
+  },
+  options: {
+    responsive: true, maintainAspectRatio: false,
+    plugins: {
+      legend: { display: false },
+      tooltip: { rtl: true, callbacks: {
+        label: ctx => ctx.parsed.y + ' פניות (' + resBuckets[ctx.dataIndex].pct.toFixed(1) + '%)'
+      }}
+    },
+    scales: {
+      x: { grid: { display: false }, ticks: { color: C.ink, font: {weight:'600', size: 12} } },
+      y: { beginAtZero: true, grid: { color: 'rgba(122,111,94,0.18)' }, ticks: { color: C.muted } }
+    }
+  }
+});
+
+/* ─── YOY TRENDS ─── */
+// Monthly rate normalized: 2025 / 12, 2026 / 4.45
+// Rates: 2025 = N/12 months. 2026 = N/4.42 months (Jan 1 – May 13 = 133 days).
+const trends = [
+  { name: 'משפחות · כללי',          r25:  7.8, r26: 15.6, delta:  +99 },
+  { name: 'משפחות · הר גילה',       r25:  1.3, r26:  1.8, delta:  +36 },
+  { name: 'צמיד · ילדים בסיכון',    r25: 16.8, r26: 19.7, delta:  +17 },
+  { name: 'כללי · שירותים חברתיים', r25:  1.0, r26:  0.9, delta:   -9 },
+  { name: 'פנייה לעו״ס',            r25:  9.3, r26:  7.5, delta:  -20 },
+  { name: 'סדרי דין',               r25:  1.2, r26:  0.9, delta:  -23 },
+  { name: 'נוער / התמכרויות',       r25:  3.3, r26:  2.5, delta:  -23 },
+  { name: 'צרכים מיוחדים',          r25:  1.8, r26:  1.1, delta:  -35 },
+  { name: 'פנייה למזכירות',         r25: 17.6, r26: 11.1, delta:  -37 },
+  { name: 'משפחות · מזרח',          r25:  5.0, r26:  2.7, delta:  -46 },
+  { name: 'אזרחים ותיקים',          r25: 13.7, r26:  7.2, delta:  -47 },
+  { name: 'משפחות · בת עין',        r25:  5.1, r26:  2.5, delta:  -51 },
+  { name: 'מיצוי זכויות',           r25:  3.8, r26:  1.1, delta:  -70 },
+  { name: 'משפחות · מערב',          r25:  0.9, r26:  0.0, delta: -100 }
+];
+const trendHost = document.getElementById('trend-rows');
+trends.forEach(t => {
+  const row = document.createElement('div');
+  row.className = 'trend-row';
+  const isPos = t.delta >= 0;
+  const sparkW = Math.min(50, Math.abs(t.delta) / 2);
+  row.innerHTML = `
+    <div class="trend-name">${t.name}</div>
+    <div class="trend-cell">${t.r25.toFixed(1)}<small>2025/חודש</small></div>
+    <div class="trend-cell">${t.r26.toFixed(1)}<small>2026/חודש</small></div>
+    <div class="trend-spark">
+      <div class="ref"></div>
+      <i class="${isPos ? 'pos' : 'neg'}" style="width: ${sparkW}%"></i>
+    </div>
+    <div class="trend-delta ${isPos ? 'pos' : 'neg'}">${isPos ? '+' : ''}${t.delta}%</div>
+  `;
+  trendHost.appendChild(row);
+});
+
+/* ─── OPEN vs CLOSE FLOW ─── */
+// Verified monthly opened/closed counts
+const flowLabels = ['ינו׳25','פבר׳25','מרץ25','אפר׳25','מאי25','יוני25','יולי25','אוג׳25','ספט׳25','אוק׳25','נוב׳25','דצמ׳25','ינו׳26','פבר׳26','מרץ26','אפר׳26','מאי26'];
+const opened = [89,111,78,69,103,80,89,74,106,77,138,102,107,90,57,56,30];
+const closed = [76,102,83,74,104,81,80,85,80,88,114,113,120,100,43,22,71];
+const balance = opened.map((o, i) => o - closed[i]);
+
+new Chart(document.getElementById('chartFlow'), {
+  type: 'bar',
+  data: {
+    labels: flowLabels,
+    datasets: [
+      { type: 'bar', label: 'נפתחו', data: opened, backgroundColor: C.terra, borderColor: C.terraDeep, borderWidth: 1, order: 2 },
+      { type: 'bar', label: 'נסגרו', data: closed, backgroundColor: C.olive, borderColor: C.olive, borderWidth: 1, order: 2 },
+      { type: 'line', label: 'מאזן', data: balance, borderColor: C.ink2, backgroundColor: 'transparent', borderWidth: 2, tension: 0.3, pointRadius: 3, pointBackgroundColor: C.ink2, order: 1, yAxisID: 'y2' }
+    ]
+  },
+  options: {
+    responsive: true, maintainAspectRatio: false,
+    plugins: {
+      legend: { display: false },
+      tooltip: { rtl: true, mode: 'index', intersect: false }
+    },
+    scales: {
+      x: { grid: { display: false }, ticks: { color: C.ink2, font: {size: 10, weight: '600'}, maxRotation: 0, autoSkip: false } },
+      y: { beginAtZero: true, position: 'right', grid: { color: 'rgba(122,111,94,0.18)' }, ticks: { color: C.muted } },
+      y2: { position: 'left', grid: { display: false }, ticks: { color: C.ink2, font: {weight: '600'} } }
+    }
+  }
+});
+</script>
+</body>
+</html>

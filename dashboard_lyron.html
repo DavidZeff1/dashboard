@@ -1,0 +1,1288 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>השקעה חברתית · תזכיר אסטרטגי · גוש עציון</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300;400;500;700;900&family=Heebo:wght@200;300;400;500;700;900&display=swap" rel="stylesheet">
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+
+<style>
+  :root {
+    --bg:        #0F1A18;
+    --bg-2:      #18241F;
+    --bg-3:      #21302A;
+    --ink:       #ECE5D2;
+    --ink-2:     #C8BEA4;
+    --muted:     #7D7560;
+    --rule:      #2A3833;
+    --rule-2:    #3A4A43;
+    --amber:     #E8923D;
+    --amber-d:   #B86E20;
+    --sage:      #8FA181;
+    --sage-d:    #5D7053;
+    --crimson:   #C75547;
+    --crimson-d: #9C3A2D;
+    --cream:     #F5EBD3;
+    --cream-d:   #E6D9B8;
+    --shadow:    0 1px 0 rgba(255,255,255,0.04), 0 30px 60px -30px rgba(0,0,0,0.6);
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html, body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: "Heebo", "Helvetica Neue", sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    font-feature-settings: "tnum" 1, "kern" 1;
+  }
+
+  /* atmospheric texture */
+  body::before {
+    content: "";
+    position: fixed; inset: 0;
+    pointer-events: none;
+    background:
+      radial-gradient(ellipse at 20% 0%, rgba(232,146,61,0.06) 0%, transparent 50%),
+      radial-gradient(ellipse at 80% 100%, rgba(143,161,129,0.05) 0%, transparent 50%);
+    z-index: 0;
+  }
+  body::after {
+    content: "";
+    position: fixed; inset: 0;
+    pointer-events: none;
+    opacity: 0.4;
+    mix-blend-mode: overlay;
+    background-image:
+      radial-gradient(circle at 30% 20%, transparent 0, transparent 1px, rgba(236,229,210,0.025) 1.5px, transparent 2px),
+      radial-gradient(circle at 70% 60%, transparent 0, transparent 1px, rgba(236,229,210,0.02) 1.5px, transparent 2px);
+    background-size: 8px 8px, 11px 11px;
+    z-index: 0;
+  }
+
+  ::selection { background: var(--amber); color: var(--bg); }
+
+  .frame {
+    position: relative;
+    z-index: 1;
+    max-width: 1480px;
+    margin: 0 auto;
+    padding: 56px 64px 96px;
+  }
+
+  /* ─── MASTHEAD ─── */
+  .masthead {
+    border-top: 1px solid var(--ink);
+    border-bottom: 1px solid var(--rule-2);
+    padding: 18px 0 20px;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: end;
+    gap: 32px;
+    font-family: "Heebo", sans-serif;
+    font-size: 13px;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--ink-2);
+  }
+  .masthead .center {
+    text-align: center;
+    font-weight: 600;
+    color: var(--ink);
+  }
+  .masthead .center b {
+    font-family: "Frank Ruhl Libre", serif;
+    font-style: italic;
+    font-weight: 400;
+    text-transform: none;
+    letter-spacing: 0;
+    color: var(--amber);
+    margin: 0 6px;
+  }
+  .masthead .right {
+    color: var(--amber);
+    font-weight: 600;
+  }
+
+  /* ─── HERO MANIFESTO ─── */
+  .hero {
+    padding: 96px 0 80px;
+    border-bottom: 1px solid var(--rule-2);
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 56px;
+    position: relative;
+  }
+  .hero .eyebrow {
+    font-family: "Heebo", sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.35em;
+    text-transform: uppercase;
+    color: var(--amber);
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  .hero .eyebrow::before {
+    content: "";
+    display: inline-block;
+    width: 56px;
+    height: 1px;
+    background: var(--amber);
+  }
+  .hero h1 {
+    font-family: "Frank Ruhl Libre", serif;
+    font-weight: 500;
+    font-size: 128px;
+    line-height: 0.95;
+    letter-spacing: -0.025em;
+    color: var(--ink);
+    max-width: 16ch;
+  }
+  .hero h1 em {
+    font-style: italic;
+    font-weight: 400;
+    color: var(--amber);
+  }
+  .hero h1 .sage {
+    color: var(--sage);
+    font-style: italic;
+    font-weight: 400;
+  }
+  .hero .lede-block {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 56px;
+    align-items: start;
+  }
+  .hero .lede {
+    font-family: "Frank Ruhl Libre", serif;
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 1.55;
+    color: var(--ink-2);
+  }
+  .hero .lede strong {
+    font-weight: 500;
+    color: var(--amber);
+    font-style: italic;
+  }
+  .hero .questions {
+    border-right: 1px solid var(--rule-2);
+    padding-right: 32px;
+  }
+  .hero .questions h3 {
+    font-family: "Heebo", sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 20px;
+  }
+  .hero .questions ol {
+    list-style: none;
+    counter-reset: q;
+  }
+  .hero .questions li {
+    counter-increment: q;
+    font-family: "Frank Ruhl Libre", serif;
+    font-style: italic;
+    font-size: 20px;
+    color: var(--ink-2);
+    padding: 12px 0;
+    border-bottom: 1px solid var(--rule);
+    display: grid;
+    grid-template-columns: 36px 1fr;
+    gap: 16px;
+    align-items: baseline;
+  }
+  .hero .questions li:last-child { border-bottom: none; }
+  .hero .questions li::before {
+    content: counter(q, decimal-leading-zero);
+    font-family: "Heebo", sans-serif;
+    font-style: normal;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+    color: var(--amber);
+  }
+
+  /* ─── SECTION ─── */
+  section {
+    padding: 80px 0 24px;
+    border-bottom: 1px solid var(--rule-2);
+    position: relative;
+  }
+  section:last-of-type { border-bottom: none; }
+
+  .sect-head {
+    display: grid;
+    grid-template-columns: 90px 1fr auto;
+    gap: 32px;
+    align-items: baseline;
+    margin-bottom: 56px;
+  }
+  .sect-num {
+    font-family: "Frank Ruhl Libre", serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 60px;
+    color: var(--amber);
+    line-height: 1;
+    text-align: left;
+  }
+  .sect-title {
+    font-family: "Frank Ruhl Libre", serif;
+    font-weight: 500;
+    font-size: 52px;
+    line-height: 1.05;
+    letter-spacing: -0.015em;
+    color: var(--ink);
+  }
+  .sect-title em {
+    font-style: italic;
+    color: var(--amber);
+    font-weight: 400;
+  }
+  .sect-title small {
+    display: block;
+    font-family: "Heebo", sans-serif;
+    font-weight: 600;
+    font-size: 13px;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: var(--amber);
+    margin-bottom: 14px;
+  }
+  .sect-meta {
+    font-family: "Heebo", sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--muted);
+    text-align: left;
+    line-height: 1.75;
+  }
+  .sect-meta b { color: var(--ink-2); }
+
+  /* ─── ARGUMENT: 11x COST RATIO ─── */
+  .ratio-stage {
+    background: var(--bg-2);
+    border: 1px solid var(--rule-2);
+    padding: 60px 56px;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    gap: 48px;
+    align-items: center;
+    box-shadow: var(--shadow);
+    margin-bottom: 32px;
+  }
+  .ratio-side {
+    text-align: center;
+  }
+  .ratio-side .label {
+    font-family: "Heebo", sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 16px;
+  }
+  .ratio-side .kind {
+    font-family: "Frank Ruhl Libre", serif;
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 8px;
+  }
+  .ratio-side .num {
+    font-family: "Frank Ruhl Libre", serif;
+    font-weight: 500;
+    font-size: 96px;
+    line-height: 1;
+    letter-spacing: -0.025em;
+    font-feature-settings: "tnum" 1;
+    margin: 24px 0 8px;
+  }
+  .ratio-side .num .unit {
+    font-family: "Heebo", sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    color: var(--muted);
+    margin-right: 4px;
+  }
+  .ratio-side .sub {
+    font-family: "Frank Ruhl Libre", serif;
+    font-style: italic;
+    font-size: 18px;
+    color: var(--ink-2);
+    margin-top: 12px;
+  }
+  .ratio-side.cheap .kind { color: var(--sage); }
+  .ratio-side.cheap .num  { color: var(--sage); }
+  .ratio-side.expensive .kind { color: var(--crimson); }
+  .ratio-side.expensive .num  { color: var(--crimson); }
+
+  .ratio-vs {
+    text-align: center;
+  }
+  .ratio-vs .x {
+    font-family: "Frank Ruhl Libre", serif;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 160px;
+    line-height: 1;
+    color: var(--amber);
+    letter-spacing: -0.04em;
+  }
+  .ratio-vs .x-label {
+    font-family: "Heebo", sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-top: 12px;
+  }
+
+  .ratio-detail {
+    background: var(--bg-2);
+    border: 1px solid var(--rule-2);
+    padding: 32px 36px;
+  }
+  .ratio-detail h3 {
+    font-family: "Frank Ruhl Libre", serif;
+    font-weight: 500;
+    font-size: 28px;
+    margin-bottom: 24px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--rule-2);
+  }
+  .ratio-detail h3 em { font-style: italic; color: var(--amber); }
+
+  .cost-row {
+    display: grid;
+    grid-template-columns: 1.4fr 90px 1fr 90px;
+    gap: 24px;
+    padding: 14px 0;
+    border-bottom: 1px solid var(--rule);
+    align-items: center;
+    font-feature-settings: "tnum" 1;
+  }
+  .cost-row:last-child { border-bottom: none; }
+  .cost-row .name {
+    font-family: "Frank Ruhl Libre", serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--ink);
+  }
+  .cost-row .name small {
+    display: block;
+    font-family: "Heebo", sans-serif;
+    font-weight: 500;
+    font-size: 11px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    margin-top: 2px;
+  }
+  .cost-row .name small.cheap { color: var(--sage); }
+  .cost-row .name small.expensive { color: var(--crimson); }
+  .cost-row .n {
+    font-family: "Heebo", sans-serif;
+    font-size: 14px;
+    color: var(--muted);
+    text-align: left;
+  }
+  .cost-bar {
+    position: relative;
+    height: 22px;
+    background: var(--bg);
+    border: 1px solid var(--rule);
+    overflow: hidden;
+  }
+  .cost-bar .fill {
+    position: absolute;
+    top: 0; right: 0; height: 100%;
+  }
+  .cost-bar.cheap .fill { background: var(--sage); }
+  .cost-bar.expensive .fill { background: var(--crimson); }
+  .cost-amt {
+    font-family: "Frank Ruhl Libre", serif;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 22px;
+    text-align: left;
+  }
+  .cost-amt.cheap { color: var(--sage); }
+  .cost-amt.expensive { color: var(--crimson); }
+
+  /* ─── HYPOTHETICAL SAVINGS ─── */
+  .scenario {
+    background: linear-gradient(135deg, var(--bg-3) 0%, var(--bg-2) 100%);
+    border: 1px solid var(--amber-d);
+    padding: 36px 42px;
+    margin-top: 32px;
+    position: relative;
+  }
+  .scenario::before {
+    content: "תרחיש";
+    position: absolute;
+    top: -10px;
+    right: 32px;
+    background: var(--amber);
+    color: var(--bg);
+    font-family: "Heebo", sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.3em;
+    padding: 4px 12px;
+  }
+  .scenario h3 {
+    font-family: "Frank Ruhl Libre", serif;
+    font-weight: 500;
+    font-size: 26px;
+    color: var(--ink);
+    margin-bottom: 12px;
+    max-width: 60ch;
+  }
+  .scenario h3 em { color: var(--amber); font-style: italic; }
+  .scenario p {
+    font-family: "Frank Ruhl Libre", serif;
+    font-style: italic;
+    font-size: 17px;
+    color: var(--ink-2);
+    max-width: 70ch;
+    line-height: 1.6;
+  }
+  .scenario p strong { color: var(--amber); font-style: normal; font-weight: 500; }
+
+  /* ─── SES BARS ─── */
+  .ses-row {
+    display: grid;
+    grid-template-columns: 70px 130px 1fr 100px 90px;
+    gap: 22px;
+    padding: 22px 0;
+    border-bottom: 1px solid var(--rule);
+    align-items: center;
+    font-feature-settings: "tnum" 1;
+  }
+  .ses-row:last-child { border-bottom: none; }
+  .ses-cluster {
+    display: inline-flex;
+    width: 56px; height: 56px;
+    border: 2px solid;
+    align-items: center; justify-content: center;
+    font-family: "Frank Ruhl Libre", serif;
+    font-weight: 500;
+    font-size: 30px;
+  }
+  .ses-cluster.lo { background: var(--crimson); color: var(--ink); border-color: var(--crimson); }
+  .ses-cluster.mid-lo { background: var(--amber-d); color: var(--ink); border-color: var(--amber-d); }
+  .ses-cluster.mid { background: var(--amber); color: var(--bg); border-color: var(--amber); }
+  .ses-cluster.mid-hi { background: var(--sage-d); color: var(--ink); border-color: var(--sage-d); }
+  .ses-cluster.hi { background: var(--sage); color: var(--bg); border-color: var(--sage); }
+  .ses-towns {
+    font-family: "Frank Ruhl Libre", serif;
+    font-size: 17px;
+    font-style: italic;
+    color: var(--ink-2);
+    line-height: 1.4;
+  }
+  .ses-towns b {
+    font-style: normal;
+    font-weight: 500;
+    color: var(--ink);
+  }
+  .ses-bar {
+    position: relative;
+    height: 14px;
+    background: var(--bg-3);
+    border: 1px solid var(--rule);
+    overflow: hidden;
+  }
+  .ses-bar i {
+    position: absolute; top: 0; right: 0; height: 100%;
+    background: var(--amber);
+    display: block;
+  }
+  .ses-stat {
+    font-family: "Frank Ruhl Libre", serif;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 26px;
+    color: var(--amber);
+    text-align: left;
+  }
+  .ses-stat small {
+    display: block;
+    font-family: "Heebo", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 11px;
+    letter-spacing: 0.16em;
+    color: var(--muted);
+    text-transform: uppercase;
+    margin-top: 4px;
+  }
+  .ses-rec {
+    text-align: left;
+    font-family: "Heebo", sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+  }
+  .ses-rec small {
+    display: block;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.16em;
+    color: var(--muted);
+    text-transform: uppercase;
+    margin-top: 4px;
+  }
+
+  /* ─── NON-POVERTY NEEDS GRID ─── */
+  .needs-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0;
+    border: 1px solid var(--rule-2);
+    background: var(--bg-2);
+  }
+  .need-card {
+    padding: 36px 32px;
+    border-left: 1px solid var(--rule-2);
+    border-bottom: 1px solid var(--rule-2);
+  }
+  .need-card:nth-child(3n) { border-left: none; }
+  .need-card:nth-last-child(-n+3) { border-bottom: none; }
+  .need-card .icon {
+    font-family: "Frank Ruhl Libre", serif;
+    font-style: italic;
+    font-size: 28px;
+    color: var(--amber);
+    margin-bottom: 18px;
+  }
+  .need-card .big {
+    font-family: "Frank Ruhl Libre", serif;
+    font-weight: 500;
+    font-size: 60px;
+    line-height: 0.95;
+    color: var(--ink);
+    margin-bottom: 12px;
+    font-feature-settings: "tnum" 1;
+  }
+  .need-card .big small {
+    font-family: "Heebo", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--muted);
+    margin-right: 6px;
+  }
+  .need-card h3 {
+    font-family: "Frank Ruhl Libre", serif;
+    font-weight: 500;
+    font-size: 21px;
+    color: var(--ink);
+    margin-bottom: 10px;
+  }
+  .need-card p {
+    font-family: "Frank Ruhl Libre", serif;
+    font-style: italic;
+    font-size: 15px;
+    line-height: 1.55;
+    color: var(--ink-2);
+  }
+  .need-card p strong { font-style: normal; color: var(--amber); font-weight: 500; }
+
+  /* ─── PREVENTION GOALS ─── */
+  .panel {
+    background: var(--bg-2);
+    border: 1px solid var(--rule-2);
+    padding: 32px 36px;
+  }
+  .panel.warm {
+    background: var(--cream);
+    color: var(--bg);
+    border-color: var(--cream-d);
+  }
+  .panel .ph {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 16px;
+    margin-bottom: 18px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--rule-2);
+  }
+  .panel.warm .ph { border-bottom-color: rgba(15,26,24,0.15); }
+  .panel .ph h3 {
+    font-family: "Frank Ruhl Libre", serif;
+    font-weight: 500;
+    font-size: 28px;
+  }
+  .panel .ph .tag {
+    font-family: "Heebo", sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+  .panel .sub {
+    font-family: "Frank Ruhl Libre", serif;
+    font-style: italic;
+    font-size: 17px;
+    color: var(--ink-2);
+    line-height: 1.55;
+    margin-bottom: 24px;
+  }
+  .panel.warm .sub { color: var(--bg-3); }
+
+  .goal-row {
+    display: grid;
+    grid-template-columns: 56px 1fr 80px;
+    gap: 18px;
+    padding: 16px 0;
+    border-bottom: 1px solid var(--rule);
+    align-items: center;
+    font-feature-settings: "tnum" 1;
+  }
+  .panel.warm .goal-row { border-bottom-color: rgba(15,26,24,0.12); }
+  .goal-row:last-child { border-bottom: none; }
+  .goal-row .gn {
+    font-family: "Frank Ruhl Libre", serif;
+    font-style: italic;
+    font-size: 32px;
+    font-weight: 500;
+    color: var(--amber);
+    text-align: center;
+  }
+  .panel.warm .goal-row .gn { color: var(--amber-d); }
+  .goal-row .gl {
+    font-family: "Frank Ruhl Libre", serif;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 1.4;
+  }
+  .goal-row .gl small {
+    display: block;
+    font-family: "Heebo", sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    letter-spacing: 0.18em;
+    color: var(--muted);
+    text-transform: uppercase;
+    margin-top: 4px;
+  }
+  .goal-row .gbar {
+    position: relative;
+    height: 4px;
+    background: var(--bg-3);
+    overflow: hidden;
+  }
+  .panel.warm .goal-row .gbar { background: rgba(15,26,24,0.1); }
+  .goal-row .gbar i {
+    position: absolute;
+    top: 0; right: 0; height: 100%;
+    background: var(--amber);
+  }
+
+  /* ─── REACH OPERATIONAL ─── */
+  .reach-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0;
+    border-top: 1px solid var(--ink);
+    border-bottom: 1px solid var(--ink);
+  }
+  .reach-stat {
+    padding: 36px 32px 32px;
+    border-left: 1px solid var(--rule-2);
+  }
+  .reach-stat:first-child { border-left: none; }
+  .reach-stat .label {
+    font-family: "Heebo", sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--amber);
+    margin-bottom: 22px;
+  }
+  .reach-stat .value {
+    font-family: "Frank Ruhl Libre", serif;
+    font-weight: 500;
+    font-size: 78px;
+    line-height: 0.95;
+    letter-spacing: -0.02em;
+    color: var(--ink);
+    font-feature-settings: "tnum" 1;
+  }
+  .reach-stat .value .unit {
+    font-family: "Heebo", sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    color: var(--muted);
+    margin-right: 8px;
+  }
+  .reach-stat .body {
+    margin-top: 18px;
+    font-family: "Frank Ruhl Libre", serif;
+    font-style: italic;
+    font-size: 16px;
+    line-height: 1.55;
+    color: var(--ink-2);
+  }
+  .reach-stat .body b {
+    font-style: normal;
+    font-weight: 500;
+    color: var(--amber);
+  }
+
+  /* ─── ASSISTANCE BARS ─── */
+  .assist-row {
+    display: grid;
+    grid-template-columns: 1fr 100px 1.4fr 130px;
+    gap: 20px;
+    padding: 16px 0;
+    border-bottom: 1px solid var(--rule);
+    align-items: center;
+    font-feature-settings: "tnum" 1;
+  }
+  .assist-row:last-child { border-bottom: none; }
+  .assist-name {
+    font-family: "Frank Ruhl Libre", serif;
+    font-size: 17px;
+    font-weight: 500;
+  }
+  .assist-count {
+    font-family: "Heebo", sans-serif;
+    font-size: 14px;
+    color: var(--muted);
+    text-align: left;
+  }
+  .assist-bar {
+    position: relative;
+    height: 16px;
+    background: var(--bg-3);
+    border: 1px solid var(--rule);
+  }
+  .assist-bar i {
+    position: absolute;
+    top: 0; right: 0; height: 100%;
+    background: var(--sage);
+  }
+  .assist-amt {
+    font-family: "Frank Ruhl Libre", serif;
+    font-weight: 500;
+    font-style: italic;
+    font-size: 20px;
+    text-align: left;
+    color: var(--sage);
+  }
+
+  /* ─── CTA / FOOTER ─── */
+  .closing {
+    background: linear-gradient(180deg, var(--bg-2) 0%, var(--bg-3) 100%);
+    padding: 80px 64px;
+    margin-top: 64px;
+    border: 1px solid var(--amber-d);
+    text-align: center;
+  }
+  .closing .eyebrow {
+    font-family: "Heebo", sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.35em;
+    text-transform: uppercase;
+    color: var(--amber);
+    margin-bottom: 30px;
+  }
+  .closing h2 {
+    font-family: "Frank Ruhl Libre", serif;
+    font-weight: 500;
+    font-size: 68px;
+    line-height: 1.05;
+    letter-spacing: -0.02em;
+    color: var(--ink);
+    max-width: 22ch;
+    margin: 0 auto 36px;
+  }
+  .closing h2 em {
+    font-style: italic;
+    color: var(--amber);
+    font-weight: 400;
+  }
+  .closing p {
+    font-family: "Frank Ruhl Libre", serif;
+    font-style: italic;
+    font-size: 22px;
+    line-height: 1.6;
+    color: var(--ink-2);
+    max-width: 60ch;
+    margin: 0 auto;
+  }
+
+  footer {
+    padding: 32px 0 0;
+    margin-top: 48px;
+    border-top: 1px solid var(--rule-2);
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    gap: 32px;
+    align-items: center;
+    font-family: "Heebo", sans-serif;
+    font-size: 12px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+  footer .center {
+    text-align: center;
+    font-family: "Frank Ruhl Libre", serif;
+    font-style: italic;
+    font-size: 15px;
+    letter-spacing: 0;
+    text-transform: none;
+    color: var(--ink-2);
+  }
+
+  /* utility */
+  .num { font-family: "Heebo", sans-serif; font-feature-settings: "tnum" 1; }
+
+  /* responsive */
+  @media (max-width: 1100px) {
+    .frame { padding: 36px 28px 64px; }
+    .hero h1 { font-size: 72px; }
+    .hero .lede-block { grid-template-columns: 1fr; }
+    .hero .questions { border-right: none; padding-right: 0; padding-top: 24px; border-top: 1px solid var(--rule-2); }
+    .ratio-stage { grid-template-columns: 1fr; padding: 36px 24px; gap: 24px; }
+    .ratio-vs .x { font-size: 96px; }
+    .needs-grid { grid-template-columns: 1fr; }
+    .need-card { border-left: none !important; border-bottom: 1px solid var(--rule-2) !important; }
+    .reach-grid { grid-template-columns: 1fr 1fr; }
+    .reach-stat:nth-child(3) { border-left: none; }
+    .sect-head { grid-template-columns: 1fr; }
+    .closing { padding: 48px 24px; }
+    .closing h2 { font-size: 40px; }
+  }
+</style>
+</head>
+
+<body>
+
+<div class="frame">
+
+  <!-- ─── MASTHEAD ─── -->
+  <header class="masthead">
+    <div class="left">תזכיר אסטרטגי</div>
+    <div class="center">השקעה <b>חברתית</b> ׀ עשייה והשפעה ׀ גוש עציון</div>
+    <div class="right">בעבור: לירון</div>
+  </header>
+
+  <!-- ─── HERO MANIFESTO ─── -->
+  <div class="hero">
+    <div class="eyebrow">הנחת היסוד</div>
+    <h1>השקעה ברווחה <em>איננה</em> הוצאה — היא תשואה <span class="sage">דחויה.</span></h1>
+
+    <div class="lede-block">
+      <p class="lede">
+        אגף הרווחה בגוש עציון מטפל בעת זו ב־<strong>4,415 תושבים</strong> מ־1,363 משפחות, בארבע־עשרה ישובים, ב־9 תחומי פעולה. שלוש טענות מנחות את התזכיר שלפניך: <strong>ראשית</strong>, טיפול קהילתי זול פי־<em>11</em> מהשמה חוץ־ביתית. <strong>שנית</strong>, הצריכה אינה תלויית־הכנסה — אזרחים ותיקים, אנשים עם מוגבלויות ונפגעי טראומה זקוקים לשירות בכל קבוצה סוציו־אקונומית. <strong>שלישית</strong>, ההשקעה הנוכחית מתמקדת בשילוב בתעסוקה, בחינוך ובמניעת התדרדרות — תשתית כלכלית קדמית.
+      </p>
+
+      <div class="questions">
+        <h3>שלוש שאלות מארגנות</h3>
+        <ol>
+          <li>איזו תוספת שקל היום חוסכת איזה תקציב מחר?</li>
+          <li>מי באמת צורך את שירותי הרווחה ולמה?</li>
+          <li>אלו תחומי טיפול מבטיחים תשואה כלכלית עתידית?</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+
+  <!-- ─── SECTION I — THE 11x ARGUMENT ─── -->
+  <section>
+    <div class="sect-head">
+      <div class="sect-num">I.</div>
+      <div class="sect-title"><small>טענה ראשונה · עלות מול עלות</small>פי <em>אחד־עשר.</em></div>
+      <div class="sect-meta">מקור: דו״ח T26<br><b>807 השמות פעילות</b><br>נתוני חיוב חודש אפריל</div>
+    </div>
+
+    <div class="ratio-stage">
+      <div class="ratio-side cheap">
+        <div class="label">בקהילה</div>
+        <div class="kind">מענה קהילתי</div>
+        <div class="num">1,238<span class="unit">₪ / נפש</span></div>
+        <div class="sub">710 השמות · ₪879,129 בחודש</div>
+      </div>
+      <div class="ratio-vs">
+        <div class="x">×11.3</div>
+        <div class="x-label">יחס עלות</div>
+      </div>
+      <div class="ratio-side expensive">
+        <div class="label">חוץ ביתי</div>
+        <div class="kind">השמה חוץ־ביתית</div>
+        <div class="num">13,990<span class="unit">₪ / נפש</span></div>
+        <div class="sub">97 השמות · ₪1,357,007 בחודש</div>
+      </div>
+    </div>
+
+    <div class="ratio-detail">
+      <h3>פירוט עלות חודשית ממוצעת <em>· לפי יחידה אחראית</em></h3>
+      <div id="cost-rows"></div>
+    </div>
+
+    <div class="scenario">
+      <h3>מה אם הצלחנו <em>למנוע</em> חמש השמות חוץ־ביתיות בלבד השנה?</h3>
+      <p>
+        כל השמה חוץ־ביתית שנמנעת במנהל משה (₪7,545 לחודש בממוצע) פוטרת את התקציב מ־<strong>₪90,540 בשנה</strong>. חמש השמות שנחסכות = <strong>₪452,700</strong> בשנה — כמעט כפליים מתקציב הקצבת המנהל לסעיף "סדנאות מעבר" (₪262,666). תקציב שמתפנה מסעיף יקר אחד מסוגל לממן 1–2 תוכניות מניעה מלאות שעובדות עם עשרות משפחות.
+      </p>
+    </div>
+  </section>
+
+  <!-- ─── SECTION II — WHO REALLY USES IT ─── -->
+  <section>
+    <div class="sect-head">
+      <div class="sect-num">II.</div>
+      <div class="sect-title"><small>טענה שנייה · נושאת ההכנסה</small>אין קורלציה <em>פשוטה</em> בין הכנסה לצורך.</div>
+      <div class="sect-meta">מקור: AHTML(14)<br>אשכולות סוציו־אקונומיים<br><b>הלמ״ס · 2024</b></div>
+    </div>
+
+    <div id="ses-list" style="margin-bottom: 36px;"></div>
+
+    <div class="panel" style="background: var(--bg-2);">
+      <div class="ph">
+        <h3>הקריאה<em style="color: var(--amber); font-style:italic;"> שכדאי לעצור בה</em></h3>
+        <span class="tag">המספרים הבולטים</span>
+      </div>
+      <div style="display:grid; grid-template-columns: 1fr 1fr 1fr; gap: 36px;">
+        <div>
+          <div style="font-family:'Frank Ruhl Libre',serif; font-weight:500; font-size: 72px; line-height: 0.95; color: var(--amber); font-feature-settings:'tnum' 1;">46.4%</div>
+          <div style="font-family:'Heebo',sans-serif; font-size:12px; font-weight:600; letter-spacing:0.22em; text-transform:uppercase; color: var(--muted); margin-top:14px;">מהאוכלוסייה באשכול 7</div>
+          <p style="font-family:'Frank Ruhl Libre',serif; font-style:italic; font-size:16px; color: var(--ink-2); margin-top:14px; line-height:1.5;">
+            12,299 תושבים בששת הישובים החזקים סוציו־אקונומית — קצת פחות ממחצית התושבים גרים באשכול הגבוה ביותר.
+          </p>
+        </div>
+        <div>
+          <div style="font-family:'Frank Ruhl Libre',serif; font-weight:500; font-size: 72px; line-height: 0.95; color: var(--amber); font-feature-settings:'tnum' 1;">33.2%</div>
+          <div style="font-family:'Heebo',sans-serif; font-size:12px; font-weight:600; letter-spacing:0.22em; text-transform:uppercase; color: var(--muted); margin-top:14px;">ממקבלי השירות באשכול 7</div>
+          <p style="font-family:'Frank Ruhl Libre',serif; font-style:italic; font-size:16px; color: var(--ink-2); margin-top:14px; line-height:1.5;">
+            1,465 מקבלי שירות בישובי האשכול הגבוה. <strong style="color:var(--amber);">שליש</strong> מכל הלקוחות שלנו חיים בתא משפחתי <em>מבוסס</em>.
+          </p>
+        </div>
+        <div>
+          <div style="font-family:'Frank Ruhl Libre',serif; font-weight:500; font-size: 72px; line-height: 0.95; color: var(--amber); font-feature-settings:'tnum' 1;">11.9%</div>
+          <div style="font-family:'Heebo',sans-serif; font-size:12px; font-weight:600; letter-spacing:0.22em; text-transform:uppercase; color: var(--muted); margin-top:14px;">שיעור באשכול 7</div>
+          <p style="font-family:'Frank Ruhl Libre',serif; font-style:italic; font-size:16px; color: var(--ink-2); margin-top:14px; line-height:1.5;">
+            גם במובלעות החזקות ביותר — <strong style="color:var(--amber);">אחד מכל תשעה</strong> תושבים זקוק לשירות. עוני אינו תנאי הכרחי לצורך.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── SECTION III — NEEDS NOT TIED TO INCOME ─── -->
+  <section>
+    <div class="sect-head">
+      <div class="sect-num">III.</div>
+      <div class="sect-title"><small>מקרים מן השדה</small>צרכים שאינם תלויי <em>מעמד.</em></div>
+      <div class="sect-meta">מקור: AHTML(4)–(7) + AHTML<br><b>1,821 פרטים עם נזקקות</b><br>חתך מאפיינים</div>
+    </div>
+
+    <div class="needs-grid">
+      <div class="need-card">
+        <div class="icon">i.</div>
+        <div class="big">387<small>איש</small></div>
+        <h3>אזרחים ותיקים בטיפול</h3>
+        <p>26.95% מבני 65+ ברשות — <strong>+9.17 נ״א</strong> מעל הממוצע ברשויות־ייחוס. דמנציה, ניידות, בדידות, אובדן בן/בת זוג — אינם בוחרים בית.</p>
+      </div>
+
+      <div class="need-card">
+        <div class="icon">ii.</div>
+        <div class="big">172<small>איש</small></div>
+        <h3>אבחנות ASD מאובחנות</h3>
+        <p>הפרעות ברצף האוטיסטי — המאפיין השכיח ביותר במנהל המוגבלויות. מקבלים שירות במסגרות יומיות ומערכי דיור <strong>בעלות חודשית גבוהה</strong>.</p>
+      </div>
+
+      <div class="need-card">
+        <div class="icon">iii.</div>
+        <div class="big">68<small>איש</small></div>
+        <h3>מוגבלות שכלית התפתחותית</h3>
+        <p>אבחנה מולדת או מוקדמת בחיים. נדרשת ליווי לכל החיים — קרי מסגרות שיקום, תעסוקה מוגנת ודיור מוגן. <strong>חסם הכנסה איננו רלוונטי.</strong></p>
+      </div>
+
+      <div class="need-card">
+        <div class="icon">iv.</div>
+        <div class="big">66<small>איש</small></div>
+        <h3>נפגעי שכול ואובדן</h3>
+        <p>מאפיין מתעד טיפול בעקבות אובדן בן משפחה. גוש עציון נושא את <strong>"מקור השכול"</strong> בעוד 15 מקרים נוספים — ירושה היסטורית של הקהילה.</p>
+      </div>
+
+      <div class="need-card">
+        <div class="icon">v.</div>
+        <div class="big">41<small>פרט</small></div>
+        <h3>נפגעי תקיפה מינית</h3>
+        <p>פרטים בטיפול לגבי חשד או נתון לפגיעה מינית. <strong>34 פרטים נוספים</strong> נושאים את המאפיין "נפגעי תקיפה מינית". גורם פגיעה אינו מאופיין סוציו־כלכלית.</p>
+      </div>
+
+      <div class="need-card">
+        <div class="icon">vi.</div>
+        <div class="big">258<small>איש</small></div>
+        <h3>משפחות מורכבות</h3>
+        <p>המאפיין השכיח ביותר בקרב המקבלים — חלקים מהן באשכולות סוציו־אקונומיים גבוהים. גירושים, אומנה, חולי בן זוג — <strong>גם אנשים מבוססים</strong> נכנסים למשבר.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── SECTION IV — PREVENTION / FUTURE EARNERS ─── -->
+  <section>
+    <div class="sect-head">
+      <div class="sect-num">IV.</div>
+      <div class="sect-title"><small>טענה שלישית · השקעה לטווח</small>השקעות בעבודה <em>של מחר.</em></div>
+      <div class="sect-meta">מקור: AHTML(11) יעדים<br>AHTML(16) פרויקטים<br><b>2,162 מקרי שירות מקושרים ליעד</b></div>
+    </div>
+
+    <div style="display:grid; grid-template-columns: 1.1fr 0.9fr; gap: 28px;">
+      <div class="panel">
+        <div class="ph">
+          <h3>יעדים שמשנים את <em style="color:var(--amber); font-style:italic;">מסלול ההכנסה</em></h3>
+          <span class="tag">מן הסל הקיים</span>
+        </div>
+        <p class="sub">סך הכל <strong>505 מקרי שירות פעילים</strong> שמטופלים תחת יעדים שכיוונם — שילוב בעבודה, חינוך, צבא או הפחתת התדרדרות. תשואה ישירה ועקיפה על תוצרת לאומית עתידית.</p>
+        <div id="goals-list"></div>
+      </div>
+
+      <div class="panel warm">
+        <div class="ph">
+          <h3>מאיפה הפרויקטים?</h3>
+          <span class="tag" style="color: var(--bg-3);">תשלומי פעולות · 2025–26</span>
+        </div>
+        <p class="sub" style="color: var(--bg-3);">דוגמאות בולטות מתוך 92 העברות לפרויקטים — סדנאות, הרצאות, טיפול קבוצתי. הכלים שמפעילים את היעדים בשטח.</p>
+        <div id="proj-list"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── SECTION V — REACH / OPERATIONAL ─── -->
+  <section>
+    <div class="sect-head">
+      <div class="sect-num">V.</div>
+      <div class="sect-title"><small>נפח עשייה</small>מה האגף <em>עושה</em>, בקצרה.</div>
+      <div class="sect-meta">צילום־מצב<br>נתונים מבודקים<br>נכון ל־04.2026</div>
+    </div>
+
+    <div class="reach-grid">
+      <div class="reach-stat">
+        <div class="label">מקבלי שירות</div>
+        <div class="value">4,415</div>
+        <p class="body">פרטים פעילים מתוך 26,503 תושבי המועצה — <b>16.66%</b>. גבוה מהממוצע הארצי (15.14%) וברשויות־דומות (13.79%).</p>
+      </div>
+      <div class="reach-stat">
+        <div class="label">משפחות פעילות</div>
+        <div class="value">1,363</div>
+        <p class="body">תיק טיפול משפחתי פתוח. בארבעת החודשים האחרונים נפתחו <b>48 תיקים חדשים</b> — חצי מהקצב לפני שנה.</p>
+      </div>
+      <div class="reach-stat">
+        <div class="label">מסגרות פעילות</div>
+        <div class="value">62</div>
+        <p class="body">מסגרות הנפרסות ברשות הנבחרת + <b>164 שורות־השמה</b> במסגרות חוצות־רשויות. תוכנית הולחל"ה מקיפה.</p>
+      </div>
+      <div class="reach-stat">
+        <div class="label">תקציב 2026</div>
+        <div class="value">35.77<span class="unit">M ₪</span></div>
+        <p class="body">הקצאה ברוטו · <b>9 תחומי פעולה.</b> ניצול ינו׳–אפר׳: ₪4.35M מתוך ₪11.66M מנוטרים (37.3%).</p>
+      </div>
+    </div>
+
+    <div style="margin-top: 48px;">
+      <div class="panel">
+        <div class="ph">
+          <h3>תשלומי עזרה פרטניים <em style="color:var(--amber); font-style:italic;">— יד מושטת</em></h3>
+          <span class="tag">חודש אפריל 26 (T39)</span>
+        </div>
+        <p class="sub">תקציר עליון של תשלומי עזרה ישירים לפרטים — נסיעות, ליווי, אבחונים, יתד, פעולות העשרה. אלו המלאכה היומיומית שמייצרת הבדל ברמת הפרט.</p>
+        <div id="assist-list"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── CLOSING ─── -->
+  <div class="closing">
+    <div class="eyebrow">סיכום</div>
+    <h2>השקעה שמונעת השמה <em>היא</em> השקעה בכלכלה.</h2>
+    <p>
+      פיתוח רשת קהילתית — מועדוניות, מעטפות, נתיבים להורות, מרכזי טיפול, יחידות התמכרויות — מקרה־לקילו זול עשרת מונים מההיפותזה החוץ־ביתית. כל משפחה שנשארת בקהילה היא <em>חיסכון מצטבר</em> בתקציב, ובד־בבד שמירה על תאים יצרניים בכלכלה המקומית.
+    </p>
+  </div>
+
+  <footer>
+    <div>גוש עציון · אגף הרווחה</div>
+    <div class="center">תזכיר אסטרטגי לעבודת ההנהלה. הוכן על־בסיס נתוני המכלול נכון לאפריל 2026 ׃ כל הנתונים מאומתים ומקושרים למקור.</div>
+    <div>13.05.2026</div>
+  </footer>
+
+</div>
+
+<script>
+const PAL = {
+  bg: '#0F1A18', bg2: '#18241F', bg3: '#21302A',
+  ink: '#ECE5D2', ink2: '#C8BEA4', muted: '#7D7560',
+  amber: '#E8923D', amberD: '#B86E20',
+  sage: '#8FA181', sageD: '#5D7053',
+  crimson: '#C75547', crimsonD: '#9C3A2D',
+  cream: '#F5EBD3'
+};
+
+/* ─── COST ROWS by admin unit, sorted by avg/case ─── */
+const costData = [
+  // [unit, kind, avg_per_case, n, total]
+  ['חסות הנוער',        'חוץ ביתי',  20961,   4,   83843],
+  ['אוטיסטים',          'חוץ ביתי',  11719,  21,  246105],
+  ['אגף משה',           'חוץ ביתי',   7545, 117,  882724],
+  ['השרות לעיוור',      'חוץ ביתי',   4756,   7,   33289],
+  ['שיקום ונכים',       'חוץ ביתי',   4154,  76,  315707],
+  ['שיקום הנוער',       'בקהילה',     3245,   2,    6490],
+  ['נשים ונערות',       'חוץ ביתי',   2024,  14,   28339],
+  ['נוער וצעירים',      'בקהילה',     1432,  23,   32944],
+  ['ילד ונוער',         'חוץ ביתי',   1407, 317,  446008],
+  ['רווחת הפרט ומש`',   'בקהילה',     1049,  60,   62946],
+  ['נפגעי התמכרויות',   'בקהילה',      848,  41,   34769],
+  ['אזרחים ותיקים',     'חוץ ביתי',    504, 125,   62972]
+];
+const maxCost = Math.max(...costData.map(r => r[2]));
+const host = document.getElementById('cost-rows');
+costData.forEach(([unit, kind, avg, n, tot]) => {
+  const w = (avg / maxCost * 100).toFixed(1);
+  const expensive = kind === 'חוץ ביתי';
+  const cls = expensive ? 'expensive' : 'cheap';
+  const div = document.createElement('div');
+  div.className = 'cost-row';
+  div.innerHTML = `
+    <div class="name">${unit}<small class="${cls}">${kind}</small></div>
+    <div class="n">n = ${n}</div>
+    <div class="cost-bar ${cls}"><i class="fill" style="width: ${w}%"></i></div>
+    <div class="cost-amt ${cls}">₪${avg.toLocaleString('he-IL')}</div>
+  `;
+  host.appendChild(div);
+});
+
+/* ─── SES ROWS ─── */
+const sesData = [
+  { ses: 2, towns: ['מעלה עמוס'], pop: 906,   rec: 353,  cls: 'lo' },
+  { ses: 3, towns: ['בת עין', 'אספר', 'מגדל עוז'], pop: 3530, rec: 1057, cls: 'mid-lo' },
+  { ses: 4, towns: ['כפר עציון'], pop: 1370, rec: 79,   cls: 'mid-lo' },
+  { ses: 5, towns: ['נוקדים', 'כרמי צור'], pop: 4072, rec: 723, cls: 'mid' },
+  { ses: 6, towns: ['תקוע'], pop: 4326, rec: 767, cls: 'mid-hi' },
+  { ses: 7, towns: ['אלון שבות', 'אלעזר', 'נווה דניאל', 'קדר', 'הר גילה', 'ראש צורים'], pop: 12299, rec: 1465, cls: 'hi' }
+];
+const sesHost = document.getElementById('ses-list');
+sesData.forEach(s => {
+  const pct = s.rec/s.pop*100;
+  const div = document.createElement('div');
+  div.className = 'ses-row';
+  div.innerHTML = `
+    <div><span class="ses-cluster ${s.cls}">${s.ses}</span></div>
+    <div class="ses-towns"><b>${s.towns.length} ישובים</b><br>${s.towns.join(' · ')}</div>
+    <div>
+      <div class="ses-bar"><i style="width: ${pct.toFixed(2)}%"></i></div>
+      <div style="font-family:'Heebo',sans-serif; font-size:11px; font-weight:500; letter-spacing:0.16em; color: var(--muted); margin-top:8px; text-transform:uppercase;">${s.pop.toLocaleString('he-IL')} תושבים · ${s.rec.toLocaleString('he-IL')} מקבלים</div>
+    </div>
+    <div class="ses-rec">${s.rec.toLocaleString('he-IL')}<small>מקבלים</small></div>
+    <div class="ses-stat">${pct.toFixed(1)}%<small>שיעור</small></div>
+  `;
+  sesHost.appendChild(div);
+});
+
+/* ─── PREVENTION GOALS ─── */
+const goals = [
+  [229, 'הגברת הנגישות לשירותים ומשאבים'],
+  [150, 'הגברת הידע על שירותים ומשאבים'],
+  [130, 'שילוב במסגרת תעסוקה'],
+  [69,  'שילוב במסגרת חינוכית'],
+  [67,  'הגברת מצאי משאבים וקשרים חברתיים'],
+  [54,  'הפחתת התנהגויות סיכוניות'],
+  [40,  'הפחתת קונפליקטים עם מערכות חברתיות'],
+  [39,  'התמודדות עם התמכרויות'],
+  [38,  'תוכניות לבוגרים צעירים — צבא, ש״ל, מכינות']
+];
+const maxG = Math.max(...goals.map(g => g[0]));
+const gHost = document.getElementById('goals-list');
+goals.forEach(([n, label]) => {
+  const w = n / maxG * 100;
+  const div = document.createElement('div');
+  div.className = 'goal-row';
+  div.innerHTML = `
+    <div class="gn">${n}</div>
+    <div class="gl">${label}<div class="gbar" style="margin-top:10px;"><i style="width:${w}%"></i></div></div>
+    <div style="text-align:left; font-family:'Heebo',sans-serif; font-size:11px; font-weight:600; letter-spacing:0.16em; color: var(--muted); text-transform:uppercase;">מקבלים</div>
+  `;
+  gHost.appendChild(div);
+});
+
+/* ─── PROJECTS — sample of top spend categories (AHTML 16) ─── */
+const projs = [
+  ['הסעות לפעילות קבוצתית', 82881, 'הסעות במועצות איזורית'],
+  ['סדנאות לכידות חברתית',  85634, 'תקציב לכידות'],
+  ['הסעות למסגרות',         16693, 'הסעות במועצות'],
+  ['הרצאות לכידות',         45822, 'תקציב לכידות'],
+  ['טיפול קבוצתי ילד ונוער', 49025, 'טיפול בילד בקהילה'],
+  ['הרצאות ילד ונוער',      23174, 'טיפול בילד בקהילה'],
+  ['הסעות מ.יום שיקומי',    53681, 'הסעות שיקום']
+];
+const pHost = document.getElementById('proj-list');
+projs.forEach(([name, amt, src]) => {
+  const div = document.createElement('div');
+  div.className = 'goal-row';
+  div.style.gridTemplateColumns = '1fr 110px';
+  div.style.borderBottomColor = 'rgba(15,26,24,0.12)';
+  div.innerHTML = `
+    <div class="gl" style="color: var(--bg-3);">${name}<small style="color: rgba(15,26,24,0.55);">${src}</small></div>
+    <div style="font-family:'Frank Ruhl Libre',serif; font-style:italic; font-weight:500; font-size:22px; color: var(--amber-d); text-align:left;">₪${amt.toLocaleString('he-IL')}</div>
+  `;
+  pHost.appendChild(div);
+});
+
+/* ─── ASSISTANCE (T39) — top categories by spend ─── */
+const assist = [
+  ['הוצאות נסיעה והסעה', 291, 1902115],
+  ['הוצאות נסיעה והסעה לעולים', 34, 243760],
+  ['הוצאות נסיעה למסגרות', 33, 226040],
+  ['יתד · שיפור תפקוד ובריאות', 107, 198659],
+  ['ליווי במסגרות', 67, 191124],
+  ['אבחונים לילדים', 66, 117728],
+  ['סיוע לימודי לילדים ובני נוער', 40, 82330],
+  ['פעילות פנאי והעשרה לילדים', 45, 37349],
+  ['טיפולים לילדים', 31, 36654],
+  ['יתד · דמי כיס וצרכי קיום', 39, 26946]
+];
+const maxA = Math.max(...assist.map(a => a[2]));
+const aHost = document.getElementById('assist-list');
+assist.forEach(([label, n, amt]) => {
+  const w = amt / maxA * 100;
+  const div = document.createElement('div');
+  div.className = 'assist-row';
+  div.innerHTML = `
+    <div class="assist-name">${label}</div>
+    <div class="assist-count">${n} מקבלים</div>
+    <div class="assist-bar"><i style="width: ${w.toFixed(1)}%"></i></div>
+    <div class="assist-amt">₪${amt.toLocaleString('he-IL')}</div>
+  `;
+  aHost.appendChild(div);
+});
+</script>
+
+</body>
+</html>

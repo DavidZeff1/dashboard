@@ -1,0 +1,554 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - generic [ref=e4]: המועצה האזורית · גוש עציון
+      - generic [ref=e5]: המכלול · אגף שירותים חברתיים · ספריית דו״חות
+      - generic [ref=e6]: מאי 2026
+    - tablist "דו״חות" [ref=e7]:
+      - tab "סקירה רשותית דו״ח רווחה דמוגרפיה, ישובים, נזקקות, תקציב · אפריל 2026" [ref=e8] [cursor=pointer]:
+        - generic [ref=e9]: סקירה רשותית
+        - generic [ref=e10]:
+          - text: דו״ח
+          - emphasis [ref=e11]: רווחה
+        - generic [ref=e12]: דמוגרפיה, ישובים, נזקקות, תקציב · אפריל 2026
+      - tab "תזכיר אסטרטגי השקעה חברתית תשתיות טיפול, יעדים, פרויקטים · ‎T26 / AHTML" [selected] [ref=e13] [cursor=pointer]:
+        - generic [ref=e14]: תזכיר אסטרטגי
+        - generic [ref=e15]:
+          - text: השקעה
+          - emphasis [ref=e16]: חברתית
+        - generic [ref=e17]: תשתיות טיפול, יעדים, פרויקטים · ‎T26 / AHTML
+      - tab "פניות שירות דו״ח פניות 1,456 פניות, 17 חודשים · 2025–2026" [ref=e18] [cursor=pointer]:
+        - generic [ref=e19]: פניות שירות
+        - generic [ref=e20]:
+          - text: דו״ח
+          - emphasis [ref=e21]: פניות
+        - generic [ref=e22]: 1,456 פניות, 17 חודשים · 2025–2026
+    - generic [ref=e23]:
+      - generic [ref=e24]:
+        - strong [ref=e25]: תזכיר אסטרטגי להשקעה חברתית
+        - text: — דו״ח עומק על תשתיות הטיפול, פילוח אשכולות סוציו־אקונומיים, מאפייני נזקקות לפרט, קישור מקרי שירות ליעדי תכנון, ופרויקטים פעילים. דגש על הצלבת
+        - emphasis [ref=e26]: נתוני תקציב
+        - text: עם
+        - emphasis [ref=e27]: תוצאות שטח
+        - text: .
+      - generic [ref=e28]:
+        - generic [ref=e29]: מקור · מערכת רווחה + הלמ״ס 2024
+        - generic [ref=e30]: דוחות־על · T26 · T39 · AHTML (4)–(7), (11), (14), (16)
+        - generic [ref=e31]:
+          - text: קובץ ·
+          - link "מכלול_אקסל_לרשות_אפריל_עם_שמות.xlsx" [ref=e32] [cursor=pointer]:
+            - /url: מכלול_אקסל_לרשות_אפריל_עם_שמות.xlsx
+        - generic [ref=e33]: תקופה · אפריל 2026 · 807 השמות פעילות · 1,821 פרטים עם נזקקות
+  - iframe [ref=e36]:
+    - generic [ref=f1e2]:
+      - banner [ref=f1e3]:
+        - generic [ref=f1e4]: תזכיר אסטרטגי
+        - generic [ref=f1e5]: השקעה חברתית ׀ עשייה והשפעה ׀ גוש עציון
+        - generic [ref=f1e6]: "בעבור: לירון"
+      - generic [ref=f1e7]:
+        - generic [ref=f1e8]: הנחת היסוד
+        - heading "השקעה ברווחה איננה הוצאה — היא תשואה דחויה." [level=1] [ref=f1e9]:
+          - text: השקעה ברווחה
+          - emphasis [ref=f1e10]: איננה
+          - text: הוצאה — היא תשואה דחויה.
+        - generic [ref=f1e11]:
+          - paragraph [ref=f1e12]:
+            - text: אגף הרווחה בגוש עציון מטפל בעת זו ב־
+            - strong [ref=f1e13]: 4,415 תושבים
+            - text: "מ־1,363 משפחות, בארבע־עשרה ישובים, ב־9 תחומי פעולה. שלוש טענות מנחות את התזכיר שלפניך:"
+            - strong [ref=f1e14]: ראשית
+            - text: ", טיפול קהילתי זול פי־"
+            - emphasis [ref=f1e15]: "11"
+            - text: מהשמה חוץ־ביתית.
+            - strong [ref=f1e16]: שנית
+            - text: ", הצריכה אינה תלויית־הכנסה — אזרחים ותיקים, אנשים עם מוגבלויות ונפגעי טראומה זקוקים לשירות בכל קבוצה סוציו־אקונומית."
+            - strong [ref=f1e17]: שלישית
+            - text: ", ההשקעה הנוכחית מתמקדת בשילוב בתעסוקה, בחינוך ובמניעת התדרדרות — תשתית כלכלית קדמית."
+          - generic [ref=f1e18]:
+            - heading "שלוש שאלות מארגנות" [level=3] [ref=f1e19]
+            - list [ref=f1e20]:
+              - listitem [ref=f1e21]: איזו תוספת שקל היום חוסכת איזה תקציב מחר?
+              - listitem [ref=f1e22]: מי באמת צורך את שירותי הרווחה ולמה?
+              - listitem [ref=f1e23]: אלו תחומי טיפול מבטיחים תשואה כלכלית עתידית?
+      - generic [ref=f1e24]:
+        - generic [ref=f1e25]:
+          - generic [ref=f1e26]: I.
+          - generic [ref=f1e27]:
+            - generic [ref=f1e28]: טענה ראשונה · עלות מול עלות
+            - text: פי
+            - emphasis [ref=f1e29]: אחד־עשר.
+          - generic [ref=f1e30]:
+            - text: "מקור: דו״ח T26"
+            - text: 807 השמות פעילות
+            - text: נתוני חיוב חודש אפריל
+        - generic [ref=f1e31]:
+          - generic [ref=f1e32]:
+            - generic [ref=f1e33]: בקהילה
+            - generic [ref=f1e34]: מענה קהילתי
+            - generic [ref=f1e35]: 1,238₪ / נפש
+            - generic [ref=f1e36]: 710 השמות · ₪879,129 בחודש
+          - generic [ref=f1e37]:
+            - generic [ref=f1e38]: ×11.3
+            - generic [ref=f1e39]: יחס עלות
+          - generic [ref=f1e40]:
+            - generic [ref=f1e41]: חוץ ביתי
+            - generic [ref=f1e42]: השמה חוץ־ביתית
+            - generic [ref=f1e43]: 13,990₪ / נפש
+            - generic [ref=f1e44]: 97 השמות · ₪1,357,007 בחודש
+        - generic [ref=f1e45]:
+          - heading "פירוט עלות חודשית ממוצעת · לפי יחידה אחראית" [level=3] [ref=f1e46]:
+            - text: פירוט עלות חודשית ממוצעת
+            - emphasis [ref=f1e47]: · לפי יחידה אחראית
+          - generic [ref=f1e48]:
+            - generic [ref=f1e49]:
+              - generic [ref=f1e50]:
+                - text: חסות הנוער
+                - generic [ref=f1e51]: חוץ ביתי
+              - generic [ref=f1e52]: n = 4
+              - generic [ref=f1e55]: ₪20,961
+            - generic [ref=f1e56]:
+              - generic [ref=f1e57]:
+                - text: אוטיסטים
+                - generic [ref=f1e58]: חוץ ביתי
+              - generic [ref=f1e59]: n = 21
+              - generic [ref=f1e62]: ₪11,719
+            - generic [ref=f1e63]:
+              - generic [ref=f1e64]:
+                - text: אגף משה
+                - generic [ref=f1e65]: חוץ ביתי
+              - generic [ref=f1e66]: n = 117
+              - generic [ref=f1e69]: ₪7,545
+            - generic [ref=f1e70]:
+              - generic [ref=f1e71]:
+                - text: השרות לעיוור
+                - generic [ref=f1e72]: חוץ ביתי
+              - generic [ref=f1e73]: n = 7
+              - generic [ref=f1e76]: ₪4,756
+            - generic [ref=f1e77]:
+              - generic [ref=f1e78]:
+                - text: שיקום ונכים
+                - generic [ref=f1e79]: חוץ ביתי
+              - generic [ref=f1e80]: n = 76
+              - generic [ref=f1e83]: ₪4,154
+            - generic [ref=f1e84]:
+              - generic [ref=f1e85]:
+                - text: שיקום הנוער
+                - generic [ref=f1e86]: בקהילה
+              - generic [ref=f1e87]: n = 2
+              - generic [ref=f1e90]: ₪3,245
+            - generic [ref=f1e91]:
+              - generic [ref=f1e92]:
+                - text: נשים ונערות
+                - generic [ref=f1e93]: חוץ ביתי
+              - generic [ref=f1e94]: n = 14
+              - generic [ref=f1e97]: ₪2,024
+            - generic [ref=f1e98]:
+              - generic [ref=f1e99]:
+                - text: נוער וצעירים
+                - generic [ref=f1e100]: בקהילה
+              - generic [ref=f1e101]: n = 23
+              - generic [ref=f1e104]: ₪1,432
+            - generic [ref=f1e105]:
+              - generic [ref=f1e106]:
+                - text: ילד ונוער
+                - generic [ref=f1e107]: חוץ ביתי
+              - generic [ref=f1e108]: n = 317
+              - generic [ref=f1e111]: ₪1,407
+            - generic [ref=f1e112]:
+              - generic [ref=f1e113]:
+                - text: "רווחת הפרט ומש`"
+                - generic [ref=f1e114]: בקהילה
+              - generic [ref=f1e115]: n = 60
+              - generic [ref=f1e118]: ₪1,049
+            - generic [ref=f1e119]:
+              - generic [ref=f1e120]:
+                - text: נפגעי התמכרויות
+                - generic [ref=f1e121]: בקהילה
+              - generic [ref=f1e122]: n = 41
+              - generic [ref=f1e125]: ₪848
+            - generic [ref=f1e126]:
+              - generic [ref=f1e127]:
+                - text: אזרחים ותיקים
+                - generic [ref=f1e128]: חוץ ביתי
+              - generic [ref=f1e129]: n = 125
+              - generic [ref=f1e132]: ₪504
+        - generic [ref=f1e133]:
+          - text: תרחיש
+          - heading "מה אם הצלחנו למנוע חמש השמות חוץ־ביתיות בלבד השנה?" [level=3] [ref=f1e134]:
+            - text: מה אם הצלחנו
+            - emphasis [ref=f1e135]: למנוע
+            - text: חמש השמות חוץ־ביתיות בלבד השנה?
+          - paragraph [ref=f1e136]:
+            - text: כל השמה חוץ־ביתית שנמנעת במנהל משה (₪7,545 לחודש בממוצע) פוטרת את התקציב מ־
+            - strong [ref=f1e137]: ₪90,540 בשנה
+            - text: . חמש השמות שנחסכות =
+            - strong [ref=f1e138]: ₪452,700
+            - text: בשנה — כמעט כפליים מתקציב הקצבת המנהל לסעיף "סדנאות מעבר" (₪262,666). תקציב שמתפנה מסעיף יקר אחד מסוגל לממן 1–2 תוכניות מניעה מלאות שעובדות עם עשרות משפחות.
+      - generic [ref=f1e139]:
+        - generic [ref=f1e140]:
+          - generic [ref=f1e141]: II.
+          - generic [ref=f1e142]:
+            - generic [ref=f1e143]: טענה שנייה · נושאת ההכנסה
+            - text: אין קורלציה
+            - emphasis [ref=f1e144]: פשוטה
+            - text: בין הכנסה לצורך.
+          - generic [ref=f1e145]:
+            - text: "מקור: AHTML(14)"
+            - text: אשכולות סוציו־אקונומיים
+            - text: הלמ״ס · 2024
+        - generic [ref=f1e146]:
+          - generic [ref=f1e147]:
+            - generic [ref=f1e149]: "2"
+            - generic [ref=f1e150]:
+              - text: 1 ישובים
+              - text: מעלה עמוס
+            - generic [ref=f1e154]: 906 תושבים · 353 מקבלים
+            - generic [ref=f1e155]:
+              - text: "353"
+              - generic [ref=f1e156]: מקבלים
+            - generic [ref=f1e157]:
+              - text: 39.0%
+              - generic [ref=f1e158]: שיעור
+          - generic [ref=f1e159]:
+            - generic [ref=f1e161]: "3"
+            - generic [ref=f1e162]:
+              - text: 3 ישובים
+              - text: בת עין · אספר · מגדל עוז
+            - generic [ref=f1e166]: 3,530 תושבים · 1,057 מקבלים
+            - generic [ref=f1e167]:
+              - text: 1,057
+              - generic [ref=f1e168]: מקבלים
+            - generic [ref=f1e169]:
+              - text: 29.9%
+              - generic [ref=f1e170]: שיעור
+          - generic [ref=f1e171]:
+            - generic [ref=f1e173]: "4"
+            - generic [ref=f1e174]:
+              - text: 1 ישובים
+              - text: כפר עציון
+            - generic [ref=f1e178]: 1,370 תושבים · 79 מקבלים
+            - generic [ref=f1e179]:
+              - text: "79"
+              - generic [ref=f1e180]: מקבלים
+            - generic [ref=f1e181]:
+              - text: 5.8%
+              - generic [ref=f1e182]: שיעור
+          - generic [ref=f1e183]:
+            - generic [ref=f1e185]: "5"
+            - generic [ref=f1e186]:
+              - text: 2 ישובים
+              - text: נוקדים · כרמי צור
+            - generic [ref=f1e190]: 4,072 תושבים · 723 מקבלים
+            - generic [ref=f1e191]:
+              - text: "723"
+              - generic [ref=f1e192]: מקבלים
+            - generic [ref=f1e193]:
+              - text: 17.8%
+              - generic [ref=f1e194]: שיעור
+          - generic [ref=f1e195]:
+            - generic [ref=f1e197]: "6"
+            - generic [ref=f1e198]:
+              - text: 1 ישובים
+              - text: תקוע
+            - generic [ref=f1e202]: 4,326 תושבים · 767 מקבלים
+            - generic [ref=f1e203]:
+              - text: "767"
+              - generic [ref=f1e204]: מקבלים
+            - generic [ref=f1e205]:
+              - text: 17.7%
+              - generic [ref=f1e206]: שיעור
+          - generic [ref=f1e207]:
+            - generic [ref=f1e209]: "7"
+            - generic [ref=f1e210]:
+              - text: 6 ישובים
+              - text: אלון שבות · אלעזר · נווה דניאל · קדר · הר גילה · ראש צורים
+            - generic [ref=f1e214]: 12,299 תושבים · 1,465 מקבלים
+            - generic [ref=f1e215]:
+              - text: 1,465
+              - generic [ref=f1e216]: מקבלים
+            - generic [ref=f1e217]:
+              - text: 11.9%
+              - generic [ref=f1e218]: שיעור
+        - generic [ref=f1e219]:
+          - generic [ref=f1e220]:
+            - heading "הקריאה שכדאי לעצור בה" [level=3] [ref=f1e221]:
+              - text: הקריאה
+              - emphasis [ref=f1e222]: שכדאי לעצור בה
+            - generic [ref=f1e223]: המספרים הבולטים
+          - generic [ref=f1e224]:
+            - generic [ref=f1e225]:
+              - generic [ref=f1e226]: 46.4%
+              - generic [ref=f1e227]: מהאוכלוסייה באשכול 7
+              - paragraph [ref=f1e228]: 12,299 תושבים בששת הישובים החזקים סוציו־אקונומית — קצת פחות ממחצית התושבים גרים באשכול הגבוה ביותר.
+            - generic [ref=f1e229]:
+              - generic [ref=f1e230]: 33.2%
+              - generic [ref=f1e231]: ממקבלי השירות באשכול 7
+              - paragraph [ref=f1e232]:
+                - text: 1,465 מקבלי שירות בישובי האשכול הגבוה.
+                - strong [ref=f1e233]: שליש
+                - text: מכל הלקוחות שלנו חיים בתא משפחתי
+                - emphasis [ref=f1e234]: מבוסס
+                - text: .
+            - generic [ref=f1e235]:
+              - generic [ref=f1e236]: 11.9%
+              - generic [ref=f1e237]: שיעור באשכול 7
+              - paragraph [ref=f1e238]:
+                - text: גם במובלעות החזקות ביותר —
+                - strong [ref=f1e239]: אחד מכל תשעה
+                - text: תושבים זקוק לשירות. עוני אינו תנאי הכרחי לצורך.
+      - generic [ref=f1e240]:
+        - generic [ref=f1e241]:
+          - generic [ref=f1e242]: III.
+          - generic [ref=f1e243]:
+            - generic [ref=f1e244]: מקרים מן השדה
+            - text: צרכים שאינם תלויי
+            - emphasis [ref=f1e245]: מעמד.
+          - generic [ref=f1e246]:
+            - text: "מקור: AHTML(4)–(7) + AHTML"
+            - text: 1,821 פרטים עם נזקקות
+            - text: חתך מאפיינים
+        - generic [ref=f1e247]:
+          - generic [ref=f1e248]:
+            - generic [ref=f1e249]: i.
+            - generic [ref=f1e250]: 387איש
+            - heading "אזרחים ותיקים בטיפול" [level=3] [ref=f1e251]
+            - paragraph [ref=f1e252]:
+              - text: 26.95% מבני 65+ ברשות —
+              - strong [ref=f1e253]: +9.17 נ״א
+              - text: מעל הממוצע ברשויות־ייחוס. דמנציה, ניידות, בדידות, אובדן בן/בת זוג — אינם בוחרים בית.
+          - generic [ref=f1e254]:
+            - generic [ref=f1e255]: ii.
+            - generic [ref=f1e256]: 172איש
+            - heading "אבחנות ASD מאובחנות" [level=3] [ref=f1e257]
+            - paragraph [ref=f1e258]:
+              - text: הפרעות ברצף האוטיסטי — המאפיין השכיח ביותר במנהל המוגבלויות. מקבלים שירות במסגרות יומיות ומערכי דיור
+              - strong [ref=f1e259]: בעלות חודשית גבוהה
+              - text: .
+          - generic [ref=f1e260]:
+            - generic [ref=f1e261]: iii.
+            - generic [ref=f1e262]: 68איש
+            - heading "מוגבלות שכלית התפתחותית" [level=3] [ref=f1e263]
+            - paragraph [ref=f1e264]:
+              - text: אבחנה מולדת או מוקדמת בחיים. נדרשת ליווי לכל החיים — קרי מסגרות שיקום, תעסוקה מוגנת ודיור מוגן.
+              - strong [ref=f1e265]: חסם הכנסה איננו רלוונטי.
+          - generic [ref=f1e266]:
+            - generic [ref=f1e267]: iv.
+            - generic [ref=f1e268]: 66איש
+            - heading "נפגעי שכול ואובדן" [level=3] [ref=f1e269]
+            - paragraph [ref=f1e270]:
+              - text: מאפיין מתעד טיפול בעקבות אובדן בן משפחה. גוש עציון נושא את
+              - strong [ref=f1e271]: "\"מקור השכול\""
+              - text: בעוד 15 מקרים נוספים — ירושה היסטורית של הקהילה.
+          - generic [ref=f1e272]:
+            - generic [ref=f1e273]: v.
+            - generic [ref=f1e274]: 41פרט
+            - heading "נפגעי תקיפה מינית" [level=3] [ref=f1e275]
+            - paragraph [ref=f1e276]:
+              - text: פרטים בטיפול לגבי חשד או נתון לפגיעה מינית.
+              - strong [ref=f1e277]: 34 פרטים נוספים
+              - text: נושאים את המאפיין "נפגעי תקיפה מינית". גורם פגיעה אינו מאופיין סוציו־כלכלית.
+          - generic [ref=f1e278]:
+            - generic [ref=f1e279]: vi.
+            - generic [ref=f1e280]: 258איש
+            - heading "משפחות מורכבות" [level=3] [ref=f1e281]
+            - paragraph [ref=f1e282]:
+              - text: המאפיין השכיח ביותר בקרב המקבלים — חלקים מהן באשכולות סוציו־אקונומיים גבוהים. גירושים, אומנה, חולי בן זוג —
+              - strong [ref=f1e283]: גם אנשים מבוססים
+              - text: נכנסים למשבר.
+      - generic [ref=f1e284]:
+        - generic [ref=f1e285]:
+          - generic [ref=f1e286]: IV.
+          - generic [ref=f1e287]:
+            - generic [ref=f1e288]: טענה שלישית · השקעה לטווח
+            - text: השקעות בעבודה
+            - emphasis [ref=f1e289]: של מחר.
+          - generic [ref=f1e290]:
+            - text: "מקור: AHTML(11) יעדים"
+            - text: AHTML(16) פרויקטים
+            - text: 2,162 מקרי שירות מקושרים ליעד
+        - generic [ref=f1e291]:
+          - generic [ref=f1e292]:
+            - generic [ref=f1e293]:
+              - heading "יעדים שמשנים את מסלול ההכנסה" [level=3] [ref=f1e294]:
+                - text: יעדים שמשנים את
+                - emphasis [ref=f1e295]: מסלול ההכנסה
+              - generic [ref=f1e296]: מן הסל הקיים
+            - paragraph [ref=f1e297]:
+              - text: סך הכל
+              - strong [ref=f1e298]: 505 מקרי שירות פעילים
+              - text: שמטופלים תחת יעדים שכיוונם — שילוב בעבודה, חינוך, צבא או הפחתת התדרדרות. תשואה ישירה ועקיפה על תוצרת לאומית עתידית.
+            - generic [ref=f1e299]:
+              - generic [ref=f1e300]:
+                - generic [ref=f1e301]: "229"
+                - generic [ref=f1e302]: הגברת הנגישות לשירותים ומשאבים
+                - generic [ref=f1e305]: מקבלים
+              - generic [ref=f1e306]:
+                - generic [ref=f1e307]: "150"
+                - generic [ref=f1e308]: הגברת הידע על שירותים ומשאבים
+                - generic [ref=f1e311]: מקבלים
+              - generic [ref=f1e312]:
+                - generic [ref=f1e313]: "130"
+                - generic [ref=f1e314]: שילוב במסגרת תעסוקה
+                - generic [ref=f1e317]: מקבלים
+              - generic [ref=f1e318]:
+                - generic [ref=f1e319]: "69"
+                - generic [ref=f1e320]: שילוב במסגרת חינוכית
+                - generic [ref=f1e323]: מקבלים
+              - generic [ref=f1e324]:
+                - generic [ref=f1e325]: "67"
+                - generic [ref=f1e326]: הגברת מצאי משאבים וקשרים חברתיים
+                - generic [ref=f1e329]: מקבלים
+              - generic [ref=f1e330]:
+                - generic [ref=f1e331]: "54"
+                - generic [ref=f1e332]: הפחתת התנהגויות סיכוניות
+                - generic [ref=f1e335]: מקבלים
+              - generic [ref=f1e336]:
+                - generic [ref=f1e337]: "40"
+                - generic [ref=f1e338]: הפחתת קונפליקטים עם מערכות חברתיות
+                - generic [ref=f1e341]: מקבלים
+              - generic [ref=f1e342]:
+                - generic [ref=f1e343]: "39"
+                - generic [ref=f1e344]: התמודדות עם התמכרויות
+                - generic [ref=f1e347]: מקבלים
+              - generic [ref=f1e348]:
+                - generic [ref=f1e349]: "38"
+                - generic [ref=f1e350]: תוכניות לבוגרים צעירים — צבא, ש״ל, מכינות
+                - generic [ref=f1e353]: מקבלים
+          - generic [ref=f1e354]:
+            - generic [ref=f1e355]:
+              - heading "מאיפה הפרויקטים?" [level=3] [ref=f1e356]
+              - generic [ref=f1e357]: תשלומי פעולות · 2025–26
+            - paragraph [ref=f1e358]: דוגמאות בולטות מתוך 92 העברות לפרויקטים — סדנאות, הרצאות, טיפול קבוצתי. הכלים שמפעילים את היעדים בשטח.
+            - generic [ref=f1e359]:
+              - generic [ref=f1e360]:
+                - generic [ref=f1e361]:
+                  - text: הסעות לפעילות קבוצתית
+                  - generic [ref=f1e362]: הסעות במועצות איזורית
+                - generic [ref=f1e363]: ₪82,881
+              - generic [ref=f1e364]:
+                - generic [ref=f1e365]:
+                  - text: סדנאות לכידות חברתית
+                  - generic [ref=f1e366]: תקציב לכידות
+                - generic [ref=f1e367]: ₪85,634
+              - generic [ref=f1e368]:
+                - generic [ref=f1e369]:
+                  - text: הסעות למסגרות
+                  - generic [ref=f1e370]: הסעות במועצות
+                - generic [ref=f1e371]: ₪16,693
+              - generic [ref=f1e372]:
+                - generic [ref=f1e373]:
+                  - text: הרצאות לכידות
+                  - generic [ref=f1e374]: תקציב לכידות
+                - generic [ref=f1e375]: ₪45,822
+              - generic [ref=f1e376]:
+                - generic [ref=f1e377]:
+                  - text: טיפול קבוצתי ילד ונוער
+                  - generic [ref=f1e378]: טיפול בילד בקהילה
+                - generic [ref=f1e379]: ₪49,025
+              - generic [ref=f1e380]:
+                - generic [ref=f1e381]:
+                  - text: הרצאות ילד ונוער
+                  - generic [ref=f1e382]: טיפול בילד בקהילה
+                - generic [ref=f1e383]: ₪23,174
+              - generic [ref=f1e384]:
+                - generic [ref=f1e385]:
+                  - text: הסעות מ.יום שיקומי
+                  - generic [ref=f1e386]: הסעות שיקום
+                - generic [ref=f1e387]: ₪53,681
+      - generic [ref=f1e388]:
+        - generic [ref=f1e389]:
+          - generic [ref=f1e390]: V.
+          - generic [ref=f1e391]:
+            - generic [ref=f1e392]: נפח עשייה
+            - text: מה האגף
+            - emphasis [ref=f1e393]: עושה
+            - text: ", בקצרה."
+          - generic [ref=f1e394]:
+            - text: צילום־מצב
+            - text: נתונים מבודקים
+            - text: נכון ל־04.2026
+        - generic [ref=f1e395]:
+          - generic [ref=f1e396]:
+            - generic [ref=f1e397]: מקבלי שירות
+            - generic [ref=f1e398]: 4,415
+            - paragraph [ref=f1e399]: פרטים פעילים מתוך 26,503 תושבי המועצה — 16.66%. גבוה מהממוצע הארצי (15.14%) וברשויות־דומות (13.79%).
+          - generic [ref=f1e400]:
+            - generic [ref=f1e401]: משפחות פעילות
+            - generic [ref=f1e402]: 1,363
+            - paragraph [ref=f1e403]: תיק טיפול משפחתי פתוח. בארבעת החודשים האחרונים נפתחו 48 תיקים חדשים — חצי מהקצב לפני שנה.
+          - generic [ref=f1e404]:
+            - generic [ref=f1e405]: מסגרות פעילות
+            - generic [ref=f1e406]: "62"
+            - paragraph [ref=f1e407]: מסגרות הנפרסות ברשות הנבחרת + 164 שורות־השמה במסגרות חוצות־רשויות. תוכנית הולחל"ה מקיפה.
+          - generic [ref=f1e408]:
+            - generic [ref=f1e409]: תקציב 2026
+            - generic [ref=f1e410]: 35.77M ₪
+            - paragraph [ref=f1e411]: "הקצאה ברוטו · 9 תחומי פעולה. ניצול ינו׳–אפר׳: ₪4.35M מתוך ₪11.66M מנוטרים (37.3%)."
+        - generic [ref=f1e413]:
+          - generic [ref=f1e414]:
+            - heading "תשלומי עזרה פרטניים — יד מושטת" [level=3] [ref=f1e415]:
+              - text: תשלומי עזרה פרטניים
+              - emphasis [ref=f1e416]: — יד מושטת
+            - generic [ref=f1e417]: חודש אפריל 26 (T39)
+          - paragraph [ref=f1e418]: תקציר עליון של תשלומי עזרה ישירים לפרטים — נסיעות, ליווי, אבחונים, יתד, פעולות העשרה. אלו המלאכה היומיומית שמייצרת הבדל ברמת הפרט.
+          - generic [ref=f1e419]:
+            - generic [ref=f1e420]:
+              - generic [ref=f1e421]: הוצאות נסיעה והסעה
+              - generic [ref=f1e422]: 291 מקבלים
+              - generic [ref=f1e425]: ₪1,902,115
+            - generic [ref=f1e426]:
+              - generic [ref=f1e427]: הוצאות נסיעה והסעה לעולים
+              - generic [ref=f1e428]: 34 מקבלים
+              - generic [ref=f1e431]: ₪243,760
+            - generic [ref=f1e432]:
+              - generic [ref=f1e433]: הוצאות נסיעה למסגרות
+              - generic [ref=f1e434]: 33 מקבלים
+              - generic [ref=f1e437]: ₪226,040
+            - generic [ref=f1e438]:
+              - generic [ref=f1e439]: יתד · שיפור תפקוד ובריאות
+              - generic [ref=f1e440]: 107 מקבלים
+              - generic [ref=f1e443]: ₪198,659
+            - generic [ref=f1e444]:
+              - generic [ref=f1e445]: ליווי במסגרות
+              - generic [ref=f1e446]: 67 מקבלים
+              - generic [ref=f1e449]: ₪191,124
+            - generic [ref=f1e450]:
+              - generic [ref=f1e451]: אבחונים לילדים
+              - generic [ref=f1e452]: 66 מקבלים
+              - generic [ref=f1e455]: ₪117,728
+            - generic [ref=f1e456]:
+              - generic [ref=f1e457]: סיוע לימודי לילדים ובני נוער
+              - generic [ref=f1e458]: 40 מקבלים
+              - generic [ref=f1e461]: ₪82,330
+            - generic [ref=f1e462]:
+              - generic [ref=f1e463]: פעילות פנאי והעשרה לילדים
+              - generic [ref=f1e464]: 45 מקבלים
+              - generic [ref=f1e467]: ₪37,349
+            - generic [ref=f1e468]:
+              - generic [ref=f1e469]: טיפולים לילדים
+              - generic [ref=f1e470]: 31 מקבלים
+              - generic [ref=f1e473]: ₪36,654
+            - generic [ref=f1e474]:
+              - generic [ref=f1e475]: יתד · דמי כיס וצרכי קיום
+              - generic [ref=f1e476]: 39 מקבלים
+              - generic [ref=f1e479]: ₪26,946
+      - generic [ref=f1e480]:
+        - generic [ref=f1e481]: סיכום
+        - heading "השקעה שמונעת השמה היא השקעה בכלכלה." [level=2] [ref=f1e482]:
+          - text: השקעה שמונעת השמה
+          - emphasis [ref=f1e483]: היא
+          - text: השקעה בכלכלה.
+        - paragraph [ref=f1e484]:
+          - text: פיתוח רשת קהילתית — מועדוניות, מעטפות, נתיבים להורות, מרכזי טיפול, יחידות התמכרויות — מקרה־לקילו זול עשרת מונים מההיפותזה החוץ־ביתית. כל משפחה שנשארת בקהילה היא
+          - emphasis [ref=f1e485]: חיסכון מצטבר
+          - text: בתקציב, ובד־בבד שמירה על תאים יצרניים בכלכלה המקומית.
+      - contentinfo [ref=f1e486]:
+        - generic [ref=f1e487]: גוש עציון · אגף הרווחה
+        - generic [ref=f1e488]: תזכיר אסטרטגי לעבודת ההנהלה. הוכן על־בסיס נתוני המכלול נכון לאפריל 2026 ׃ כל הנתונים מאומתים ומקושרים למקור.
+        - generic [ref=f1e489]: 13.05.2026
+  - contentinfo [ref=e38]:
+    - generic [ref=e39]: המכלול · גוש עציון
+    - generic [ref=e40]:
+      - text: שלושה דו״חות, מקורות נפרדים, אותו צוות מקצועי.
+      - text: לחצו על שמות התבניות כדי לעבור ביניהן. כל דו״ח נשמר כקובץ עצמאי.
+    - generic [ref=e41]: נוסח 01

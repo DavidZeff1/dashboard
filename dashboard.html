@@ -1,0 +1,1620 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>מכלול · דו״ח רווחה · גוש עציון · אפריל ’26</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300;400;500;700;900&family=Heebo:wght@200;300;400;500;700;900&family=Noto+Serif+Hebrew:wght@300;400;700&display=swap" rel="stylesheet">
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+
+<style>
+  :root {
+    --paper:        #ECE5D4;
+    --paper-2:      #E4DCC6;
+    --paper-deep:   #DDD3B9;
+    --ink:          #1A1812;
+    --ink-2:        #3B342A;
+    --muted:        #7A6F5E;
+    --rule:         #BDB29A;
+    --terra:        #B05A30;
+    --terra-deep:   #8B3F1F;
+    --olive:        #5A6A3E;
+    --ochre:        #C99A3D;
+    --slate:        #3D4A52;
+    --crimson:      #8B2A2A;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html, body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: "Heebo", "Helvetica Neue", sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    font-feature-settings: "tnum" 1, "kern" 1;
+  }
+
+  /* paper grain */
+  body::before {
+    content: "";
+    position: fixed; inset: 0;
+    pointer-events: none;
+    opacity: 0.35;
+    mix-blend-mode: multiply;
+    background-image:
+      radial-gradient(circle at 20% 30%, transparent 0, transparent 1px, rgba(58,52,42,0.04) 1.5px, transparent 2px),
+      radial-gradient(circle at 75% 80%, transparent 0, transparent 1px, rgba(58,52,42,0.03) 1.5px, transparent 2px);
+    background-size: 6px 6px, 9px 9px;
+    z-index: 0;
+  }
+
+  /* selection */
+  ::selection { background: var(--terra); color: var(--paper); }
+
+  /* main grid */
+  .frame {
+    position: relative;
+    z-index: 1;
+    max-width: 1480px;
+    margin: 0 auto;
+    padding: 56px 64px 96px;
+  }
+
+  /* ─── MASTHEAD ─── */
+  .masthead {
+    border-top: 2px solid var(--ink);
+    border-bottom: 1px solid var(--ink);
+    padding: 16px 0 20px;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: end;
+    gap: 32px;
+    font-family: "Heebo", sans-serif;
+    font-size: 13px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--ink);
+  }
+  .masthead .left,
+  .masthead .right { font-weight: 500; }
+  .masthead .center {
+    text-align: center;
+    letter-spacing: 0.35em;
+    font-weight: 700;
+  }
+  .masthead .center b {
+    font-family: "Frank Ruhl Libre", serif;
+    font-style: italic;
+    font-weight: 400;
+    text-transform: none;
+    letter-spacing: 0;
+    color: var(--terra);
+    margin: 0 4px;
+  }
+
+  /* ─── HERO ─── */
+  .hero {
+    padding: 52px 0 36px;
+    border-bottom: 1px solid var(--rule);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 64px;
+    align-items: end;
+  }
+  .hero h1 {
+    font-family: "Frank Ruhl Libre", serif;
+    font-weight: 500;
+    font-size: 108px;
+    line-height: 0.92;
+    letter-spacing: -0.02em;
+    color: var(--ink);
+  }
+  .hero h1 em {
+    font-style: italic;
+    font-weight: 300;
+    color: var(--terra-deep);
+  }
+  .hero h1 sup {
+    font-family: "Heebo", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: 0.2em;
+    vertical-align: super;
+    color: var(--muted);
+    margin-right: 8px;
+  }
+  .hero .lede {
+    font-family: "Frank Ruhl Libre", serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.6;
+    color: var(--ink-2);
+    max-width: 56ch;
+  }
+  .hero .lede::first-line {
+    font-weight: 500;
+  }
+  .hero .lede strong {
+    font-weight: 500;
+    color: var(--terra-deep);
+    font-style: normal;
+  }
+
+  /* small caps stamp */
+  .stamp {
+    display: inline-block;
+    font-family: "Heebo", sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.32em;
+    text-transform: uppercase;
+    padding: 7px 14px;
+    border: 1px solid var(--ink);
+    color: var(--ink);
+    margin-top: 22px;
+  }
+
+  /* ─── SECTIONS ─── */
+  section {
+    padding: 56px 0 12px;
+    border-bottom: 1px solid var(--rule);
+  }
+  section:last-of-type { border-bottom: none; }
+
+  .sect-head {
+    display: grid;
+    grid-template-columns: 80px 1fr auto;
+    gap: 28px;
+    align-items: baseline;
+    margin-bottom: 32px;
+  }
+  .sect-num {
+    font-family: "Frank Ruhl Libre", serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 52px;
+    color: var(--terra);
+    line-height: 1;
+    text-align: left;
+  }
+  .sect-title {
+    font-family: "Frank Ruhl Libre", serif;
+    font-weight: 500;
+    font-size: 44px;
+    line-height: 1.08;
+    letter-spacing: -0.01em;
+  }
+  .sect-title small {
+    display: block;
+    font-family: "Heebo", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 10px;
+  }
+  .sect-meta {
+    font-family: "Heebo", sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--muted);
+    text-align: left;
+    line-height: 1.75;
+  }
+
+  /* ─── HEADLINE NUMBERS ─── */
+  .headline-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0;
+    border-top: 1px solid var(--ink);
+    border-bottom: 1px solid var(--ink);
+  }
+  .stat {
+    padding: 32px 30px 30px;
+    border-left: 1px solid var(--rule);
+    position: relative;
+  }
+  .stat:first-child { border-left: none; }
+  .stat .label {
+    font-family: "Heebo", sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 20px;
+  }
+  .stat .value {
+    font-family: "Frank Ruhl Libre", serif;
+    font-weight: 500;
+    font-size: 76px;
+    line-height: 0.95;
+    letter-spacing: -0.02em;
+    color: var(--ink);
+    font-feature-settings: "tnum" 1;
+  }
+  .stat .value .unit {
+    font-family: "Heebo", sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    color: var(--muted);
+    margin-right: 8px;
+  }
+  .stat .delta {
+    margin-top: 16px;
+    font-size: 15px;
+    color: var(--ink-2);
+    line-height: 1.55;
+  }
+  .stat .delta b {
+    font-weight: 500;
+    color: var(--terra-deep);
+  }
+  .stat .delta.up b { color: var(--olive); }
+  .stat .delta.down b { color: var(--crimson); }
+
+  /* ─── PANELS / CHARTS ─── */
+  .panel {
+    background: var(--paper-2);
+    border: 1px solid var(--rule);
+    padding: 24px 26px 22px;
+    position: relative;
+  }
+  .panel.dark {
+    background: var(--ink);
+    color: var(--paper);
+    border-color: var(--ink);
+  }
+  .panel .ph {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 16px;
+    margin-bottom: 12px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid var(--rule);
+  }
+  .panel.dark .ph { border-bottom-color: rgba(236,229,212,0.18); }
+  .panel .ph h3 {
+    font-family: "Frank Ruhl Libre", serif;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 1.1;
+  }
+  .panel .ph .tag {
+    font-family: "Heebo", sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+  .panel.dark .ph .tag { color: rgba(236,229,212,0.65); }
+  .panel .sub {
+    font-size: 15px;
+    color: var(--ink-2);
+    margin-bottom: 18px;
+    line-height: 1.6;
+  }
+  .panel.dark .sub { color: rgba(236,229,212,0.7); }
+
+  .chart-wrap { position: relative; }
+
+  /* layout helpers */
+  .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+  .grid-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px; }
+  .grid-2-1 { display: grid; grid-template-columns: 2fr 1fr; gap: 20px; }
+  .grid-1-2 { display: grid; grid-template-columns: 1fr 2fr; gap: 20px; }
+
+  /* ─── COMPARISON TABLE ─── */
+  .compare {
+    width: 100%;
+    border-collapse: collapse;
+    font-feature-settings: "tnum" 1;
+  }
+  .compare th, .compare td {
+    text-align: right;
+    padding: 16px 12px;
+    border-bottom: 1px solid var(--rule);
+    font-size: 16px;
+  }
+  .compare th {
+    font-family: "Heebo", sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--muted);
+    border-bottom: 1px solid var(--ink);
+    padding-bottom: 14px;
+  }
+  .compare th:not(:first-child),
+  .compare td:not(:first-child) { text-align: left; }
+  .compare .group {
+    font-family: "Frank Ruhl Libre", serif;
+    font-size: 20px;
+    font-weight: 500;
+  }
+  .compare .num { font-size: 16px; font-weight: 500; }
+  .compare tbody tr:hover { background: rgba(176,90,48,0.06); }
+
+  .bar-cell {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    justify-content: flex-end;
+  }
+  .bar-cell .pctnum {
+    font-family: "Frank Ruhl Libre", serif;
+    font-style: italic;
+    font-size: 19px;
+    font-weight: 500;
+    min-width: 64px;
+    text-align: left;
+  }
+  /* bar container represents 0–30% (slightly above the max). */
+  .bar-vis {
+    flex: 1;
+    max-width: 280px;
+    min-width: 200px;
+    height: 10px;
+    background: var(--paper-deep);
+    border-radius: 1px;
+    overflow: hidden;
+    position: relative;
+  }
+  .bar-vis::before,
+  .bar-vis::after {
+    /* tick marks at 25% / 50% of population */
+    content: "";
+    position: absolute;
+    top: -2px; bottom: -2px;
+    width: 1px;
+    background: rgba(26,24,18,0.22);
+  }
+  .bar-vis::before { right: 25%; }
+  .bar-vis::after  { right: 50%; }
+  .bar-vis i {
+    position: absolute;
+    top: 0; right: 0;
+    height: 100%;
+    background: var(--terra);
+    display: block;
+  }
+  .delta-pos { color: var(--olive); font-weight: 600; font-size: 16px; }
+  .delta-neg { color: var(--crimson); font-weight: 600; font-size: 16px; }
+
+  /* ─── TOWN ROWS (lollipop-style) ─── */
+  .towns {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  .town-row {
+    display: grid;
+    grid-template-columns: 150px 56px 1fr 130px;
+    gap: 22px;
+    padding: 16px 0;
+    border-bottom: 1px solid var(--rule);
+    align-items: center;
+    font-feature-settings: "tnum" 1;
+  }
+  .town-row:last-child { border-bottom: none; }
+  .town-name {
+    font-family: "Frank Ruhl Libre", serif;
+    font-size: 22px;
+    font-weight: 500;
+  }
+  .town-ses {
+    display: inline-flex;
+    width: 36px; height: 36px;
+    border: 1px solid var(--ink);
+    align-items: center; justify-content: center;
+    font-family: "Heebo", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+  }
+  .town-ses[data-ses="1"], .town-ses[data-ses="2"] { background: var(--crimson); color: var(--paper); border-color: var(--crimson); }
+  .town-ses[data-ses="3"], .town-ses[data-ses="4"] { background: var(--terra); color: var(--paper); border-color: var(--terra); }
+  .town-ses[data-ses="5"], .town-ses[data-ses="6"] { background: var(--ochre); color: var(--ink); border-color: var(--ochre); }
+  .town-ses[data-ses="7"], .town-ses[data-ses="8"] { background: var(--olive); color: var(--paper); border-color: var(--olive); }
+  .town-bar-wrap {
+    position: relative;
+    height: 26px;
+  }
+  .town-bar-bg {
+    position: absolute;
+    top: 50%; transform: translateY(-50%);
+    right: 0;
+    height: 1px;
+    background: var(--rule);
+    width: 100%;
+  }
+  /* tick marks at 10/20/30/40% */
+  .town-bar-wrap::before,
+  .town-bar-wrap::after {
+    content: "";
+    position: absolute;
+    top: 50%; transform: translateY(-50%);
+    width: 1px;
+    height: 16px;
+    background: rgba(26,24,18,0.18);
+  }
+  .town-bar-wrap::before { right: 25%; }
+  .town-bar-wrap::after  { right: 50%; }
+  .town-bar-pop {
+    position: absolute;
+    top: 50%; transform: translateY(-50%);
+    right: 0;
+    height: 2px;
+    background: var(--ink-2);
+    opacity: 0.3;
+  }
+  .town-bar-recip {
+    position: absolute;
+    top: 50%; transform: translateY(-50%);
+    right: 0;
+    height: 12px;
+    background: var(--terra);
+  }
+  .town-bar-recip::after {
+    content: "";
+    position: absolute;
+    left: -5px; top: 50%;
+    transform: translateY(-50%);
+    width: 12px; height: 12px;
+    border-radius: 50%;
+    background: var(--terra-deep);
+  }
+  .town-pct {
+    font-family: "Frank Ruhl Libre", serif;
+    font-size: 22px;
+    font-weight: 500;
+    text-align: left;
+    font-style: italic;
+    color: var(--terra-deep);
+  }
+  .town-pct small {
+    display: block;
+    font-family: "Heebo", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--muted);
+    letter-spacing: 0.04em;
+    margin-top: 2px;
+  }
+
+  .legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 28px;
+    margin-top: 22px;
+    font-size: 14px;
+    color: var(--ink-2);
+  }
+  .legend span {
+    display: flex; align-items: center; gap: 10px;
+  }
+  .legend i {
+    display: inline-block;
+    width: 18px; height: 10px;
+  }
+
+  /* ─── NEEDS LIST ─── */
+  .needs {
+    display: grid;
+    gap: 0;
+  }
+  .need-row {
+    display: grid;
+    grid-template-columns: 46px 1fr 70px 90px;
+    gap: 18px;
+    padding: 16px 0;
+    border-bottom: 1px solid var(--rule);
+    align-items: center;
+  }
+  .need-row:last-child { border-bottom: none; }
+  .need-num {
+    font-family: "Frank Ruhl Libre", serif;
+    font-style: italic;
+    font-size: 22px;
+    color: var(--muted);
+  }
+  .need-label {
+    font-family: "Frank Ruhl Libre", serif;
+    font-size: 19px;
+    font-weight: 500;
+    line-height: 1.25;
+  }
+  .need-count {
+    font-family: "Heebo", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    text-align: left;
+    font-feature-settings: "tnum" 1;
+  }
+  .need-bar {
+    position: relative;
+    height: 6px;
+    margin-top: 8px;
+    background: var(--paper-deep);
+    overflow: hidden;
+  }
+  .need-bar i {
+    position: absolute;
+    top: 0; right: 0; height: 100%;
+    background: var(--olive);
+  }
+  .needs.individuals .need-bar i { background: var(--terra); }
+
+  /* ─── BUDGET ─── */
+  .budget-row {
+    display: grid;
+    grid-template-columns: 1.5fr 100px 1.2fr 100px;
+    gap: 22px;
+    padding: 18px 0;
+    border-bottom: 1px solid var(--rule);
+    align-items: center;
+  }
+  .budget-row:last-child { border-bottom: none; }
+  .budget-name {
+    font-family: "Frank Ruhl Libre", serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+  }
+  .budget-name small {
+    display: block;
+    font-family: "Heebo", sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-top: 4px;
+  }
+  .budget-amount {
+    font-family: "Heebo", sans-serif;
+    font-weight: 600;
+    font-size: 19px;
+    text-align: left;
+    font-feature-settings: "tnum" 1;
+  }
+  .budget-amount small {
+    display: block;
+    font-weight: 500;
+    font-size: 12px;
+    letter-spacing: 0.16em;
+    color: var(--muted);
+    text-transform: uppercase;
+    margin-top: 4px;
+  }
+  .budget-track {
+    height: 28px;
+    background: var(--paper-deep);
+    position: relative;
+    overflow: hidden;
+  }
+  .budget-track .used {
+    position: absolute;
+    top: 0; right: 0; height: 100%;
+    background: linear-gradient(90deg, var(--terra-deep), var(--terra));
+  }
+  .budget-track .marker {
+    position: absolute;
+    top: 0;
+    width: 1px;
+    height: 100%;
+    background: var(--ink);
+    opacity: 0.5;
+  }
+  .budget-track .marker::after {
+    content: attr(data-label);
+    position: absolute;
+    top: -18px;
+    right: 6px;
+    font-family: "Heebo", sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--ink-2);
+    white-space: nowrap;
+  }
+  .budget-pct {
+    font-family: "Frank Ruhl Libre", serif;
+    font-style: italic;
+    font-size: 28px;
+    font-weight: 500;
+    text-align: left;
+    font-feature-settings: "tnum" 1;
+  }
+  .budget-pct.crit { color: var(--crimson); }
+  .budget-pct.warn { color: var(--terra-deep); }
+  .budget-pct.ok   { color: var(--olive); }
+
+  /* ─── FOOTER ─── */
+  footer {
+    margin-top: 64px;
+    padding: 32px 0;
+    border-top: 2px solid var(--ink);
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    gap: 32px;
+    align-items: center;
+    font-family: "Heebo", sans-serif;
+    font-size: 13px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+  footer .colophon {
+    font-family: "Frank Ruhl Libre", serif;
+    font-style: italic;
+    font-size: 17px;
+    letter-spacing: 0;
+    text-transform: none;
+    color: var(--ink-2);
+    line-height: 1.5;
+  }
+
+  /* small notation */
+  .marginal {
+    font-family: "Frank Ruhl Libre", serif;
+    font-style: italic;
+    font-size: 17px;
+    color: var(--ink-2);
+    line-height: 1.65;
+  }
+
+  /* utility */
+  .num { font-family: "Heebo", sans-serif; font-feature-settings: "tnum" 1; }
+  .serif { font-family: "Frank Ruhl Libre", serif; }
+  .em-rule { display:inline-block; width: 24px; height: 1px; background: currentColor; vertical-align: middle; margin: 0 8px; opacity: 0.4; }
+
+  /* responsive */
+  @media (max-width: 1100px) {
+    .frame { padding: 32px 24px 64px; }
+    .hero { grid-template-columns: 1fr; gap: 32px; }
+    .hero h1 { font-size: 64px; }
+    .grid-2, .grid-3, .grid-2-1, .grid-1-2 { grid-template-columns: 1fr; }
+    .headline-grid { grid-template-columns: 1fr 1fr; }
+    .headline-grid .stat:nth-child(3) { border-left: none; }
+    .sect-head { grid-template-columns: 1fr; }
+    .sect-num { font-size: 32px; }
+  }
+</style>
+</head>
+
+<body>
+
+<div class="frame">
+
+  <!-- ─── MASTHEAD ─── -->
+  <header class="masthead">
+    <div class="left">המכלול · יחידת מידע</div>
+    <div class="center">דו״ח רווחה ׀ <b>גוש עציון</b> ׀ אפריל 2026</div>
+    <div class="right">גליון 04 · כרך XII</div>
+  </header>
+
+  <!-- ─── HERO ─── -->
+  <div class="hero">
+    <h1><sup>I</sup>תמונת<br>מצב <em>חברתית.</em></h1>
+    <div>
+      <p class="lede">
+        עשרים ושישה אלף וחמש מאות איש חיים בארבע־עשרה ישובי המועצה האזורית; <strong>אחד מכל שישה</strong> מקבל בעת הזו שירות ממחלקת הרווחה — <strong>16.66%</strong>, מעל הממוצע הארצי (15.14%) וברשויות־ייחוס דומות (13.79%). הדו״ח שלפניכם פורש את הדמוגרפיה, הצרכים, המסגרות והתקציבים, חותך לפי ישוב, מנהל ותחום.
+      </p>
+      <span class="stamp">נחתם · 13 במאי 2026</span>
+    </div>
+  </div>
+
+  <!-- ─── HEADLINE NUMBERS ─── -->
+  <section style="border-bottom:none; padding-top:36px;">
+    <div class="headline-grid">
+      <div class="stat">
+        <div class="label">אוכלוסייה</div>
+        <div class="value">26,503</div>
+        <div class="delta">סך תושבים ב־<b>14 ישובים</b><br>אשכולות סוציו־אקונומיים 2–7</div>
+      </div>
+      <div class="stat">
+        <div class="label">מקבלי שירות</div>
+        <div class="value">4,415</div>
+        <div class="delta up">‎ <b>16.66%</b> מהאוכלוסייה — <br>גבוה מהממוצע הארצי (15.14%)</div>
+      </div>
+      <div class="stat">
+        <div class="label">משפחות פעילות</div>
+        <div class="value">1,363</div>
+        <div class="delta">1,821 פרטים עם נזקקות מזוהה <br>2,605 ללא נזקקות מקודדת (59%) <span style="color:var(--muted)">·</span> פער איכות־דיווח</div>
+      </div>
+      <div class="stat">
+        <div class="label">הקצאה שנתית <span class="num" style="font-weight:400">·</span> ברוטו</div>
+        <div class="value">35.77<span class="unit">מיליון ₪</span></div>
+        <div class="delta">סך הקצאה ל־9 תחומי פעולה <br><b>מנהל משה: 40.9%</b> מסך התקציב</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── SECTION 01 · POPULATIONS ─── -->
+  <section>
+    <div class="sect-head">
+      <div class="sect-num">I.</div>
+      <div class="sect-title"><small>קבוצות אוכלוסייה · השוואה</small>שיעור מקבלי שירות לפי קבוצה</div>
+      <div class="sect-meta">מקור: למ״ס + מערכת רווחה<br>נכון לאפריל 2026</div>
+    </div>
+
+    <table class="compare">
+      <thead>
+        <tr>
+          <th>קבוצה</th>
+          <th>אוכלוסייה</th>
+          <th>מקבלי שירות</th>
+          <th>שיעור ברשות</th>
+          <th>ממוצע ארצי</th>
+          <th>רשויות דומות</th>
+          <th>פער מארצי</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="group">מקבלי שירות (כלל)</td>
+          <td class="num">26,503</td>
+          <td class="num">4,415</td>
+          <td>
+            <div class="bar-cell">
+              <span class="pctnum">16.66%</span>
+              <div class="bar-vis"><i style="width:16.66%"></i></div>
+            </div>
+          </td>
+          <td class="num">15.14%</td>
+          <td class="num">13.79%</td>
+          <td class="delta-pos">+1.52%</td>
+        </tr>
+        <tr>
+          <td class="group">אזרחים ותיקים</td>
+          <td class="num">1,436</td>
+          <td class="num">387</td>
+          <td>
+            <div class="bar-cell">
+              <span class="pctnum">26.95%</span>
+              <div class="bar-vis"><i style="width:26.95%; background:var(--crimson)"></i></div>
+            </div>
+          </td>
+          <td class="num">25.23%</td>
+          <td class="num">17.78%</td>
+          <td class="delta-pos">+1.72%</td>
+        </tr>
+        <tr>
+          <td class="group">ילדים 0–18</td>
+          <td class="num">12,153</td>
+          <td class="num">1,967</td>
+          <td>
+            <div class="bar-cell">
+              <span class="pctnum">16.19%</span>
+              <div class="bar-vis"><i style="width:16.19%"></i></div>
+            </div>
+          </td>
+          <td class="num">16.74%</td>
+          <td class="num">16.17%</td>
+          <td class="delta-neg">−0.55%</td>
+        </tr>
+        <tr>
+          <td class="group">עולים חדשים</td>
+          <td class="num">907</td>
+          <td class="num">97</td>
+          <td>
+            <div class="bar-cell">
+              <span class="pctnum">10.69%</span>
+              <div class="bar-vis"><i style="width:10.69%; background:var(--olive)"></i></div>
+            </div>
+          </td>
+          <td class="num">11.48%</td>
+          <td class="num">11.03%</td>
+          <td class="delta-neg">−0.79%</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p class="marginal" style="margin-top:18px; max-width: 70ch;">
+      ⟵ <em>אזרחים ותיקים</em> בולטים — שיעורם הוא הגבוה ביותר מבין ארבע הקבוצות (26.95%), ועומד <strong>‎9.17 נקודות אחוז</strong> מעל הממוצע ברשויות־הייחוס (17.78%). מול הממוצע הארצי הפער קטן בהרבה (+1.72 נ״א).
+    </p>
+  </section>
+
+  <!-- ─── SECTION 02 · DEMOGRAPHICS ─── -->
+  <section>
+    <div class="sect-head">
+      <div class="sect-num">II.</div>
+      <div class="sect-title"><small>פילוח מקבלי שירות</small>דמוגרפיה — גיל, מגדר, מצב משפחתי</div>
+      <div class="sect-meta">4,415 מקבלי שירות<br>חתכי־צלב פנימיים</div>
+    </div>
+
+    <div class="grid-3">
+      <div class="panel">
+        <div class="ph">
+          <h3>קבוצת גיל</h3>
+          <span class="tag">פירמידה</span>
+        </div>
+        <p class="sub">ילדים, נוער ובוגרים עד גיל 49 מהווים <strong>82.3%</strong> ממקבלי השירות. אזרחים ותיקים (65+) — <strong>8.8%</strong>.</p>
+        <div class="chart-wrap" style="height: 220px;"><canvas id="ch-age"></canvas></div>
+      </div>
+
+      <div class="panel">
+        <div class="ph">
+          <h3>מגדר</h3>
+          <span class="tag">חלוקה</span>
+        </div>
+        <p class="sub">חלוקה כמעט שוויונית: <strong>2,214 נשים</strong> ו<strong>־2,201 גברים</strong> (ועוד פרט אחד "אחר"). הפער: 13 פרטים — פחות מחצי אחוז.</p>
+        <div class="chart-wrap" style="height: 220px;"><canvas id="ch-gender"></canvas></div>
+      </div>
+
+      <div class="panel">
+        <div class="ph">
+          <h3>מצב משפחתי</h3>
+          <span class="tag">2,583 בעלי נתון</span>
+        </div>
+        <p class="sub">מבין הבוגרים שמצבם המשפחתי מקודד (2,583): <strong>נשואים 52.1%</strong>, רווקים 36.0%, גרושים/אלמנים/פרודים 11.4%, ידועים בציבור 0.4%.</p>
+        <div class="chart-wrap" style="height: 220px;"><canvas id="ch-family"></canvas></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── SECTION 03 · TOWNS ─── -->
+  <section>
+    <div class="sect-head">
+      <div class="sect-num">III.</div>
+      <div class="sect-title"><small>חתך טריטוריאלי</small>ארבעה־עשר ישובים</div>
+      <div class="sect-meta">דירוג לפי שיעור מקבלי שירות<br>מתוך כלל תושבי הישוב</div>
+    </div>
+
+    <div class="grid-2-1">
+      <div>
+        <div class="towns" id="towns-list"></div>
+        <div class="legend">
+          <span><i style="background: var(--terra);"></i> שיעור מקבלי שירות מתוך תושבי הישוב</span>
+          <span><i style="background: rgba(26,24,18,0.18); width:1px; height:14px;"></i> סימוני סולם: 25% · 50%</span>
+          <span><i style="background: var(--crimson); border-radius:50%; width:12px; height:12px;"></i>–<i style="background: var(--olive); border-radius:50%; width:12px; height:12px;"></i> אשכול סוציו־אקונומי (1=חלש, 8=חזק)</span>
+        </div>
+      </div>
+
+      <div class="panel dark">
+        <div class="ph">
+          <h3 style="color: var(--paper)">צמתי תשומת לב</h3>
+          <span class="tag">3 ישובים</span>
+        </div>
+        <p class="sub">
+          שלושת הישובים עם שיעור הגבוה ביותר של מקבלי שירות — כולם באשכולות סוציו־אקונומיים 2–3. <strong>מעלה עמוס</strong> ו<strong>בת עין</strong> מתקרבים ל־40% — קרוב לכפול מהממוצע הרשותי.
+        </p>
+
+        <div style="margin-top: 24px;">
+          <div style="display:flex; justify-content:space-between; align-items:center; padding: 20px 0; border-bottom: 1px solid rgba(236,229,212,0.18); gap: 16px;">
+            <div>
+              <div style="font-family:'Frank Ruhl Libre',serif; font-size: 28px; font-weight: 500;">מעלה עמוס</div>
+              <div style="font-size: 13px; font-weight:600; letter-spacing: 0.2em; text-transform: uppercase; color: rgba(236,229,212,0.6); margin-top: 6px;">אשכול 2 · נמוך</div>
+            </div>
+            <div style="text-align:left;">
+              <div style="font-family:'Frank Ruhl Libre',serif; font-style:italic; font-size: 42px; font-weight: 500; color: var(--ochre); line-height:1;">38.96%</div>
+              <div style="font-size: 12px; font-weight:500; letter-spacing: 0.15em; color: rgba(236,229,212,0.65); margin-top: 6px;">353 מתוך 906</div>
+            </div>
+          </div>
+
+          <div style="display:flex; justify-content:space-between; align-items:center; padding: 20px 0; border-bottom: 1px solid rgba(236,229,212,0.18); gap: 16px;">
+            <div>
+              <div style="font-family:'Frank Ruhl Libre',serif; font-size: 28px; font-weight: 500;">בת עין</div>
+              <div style="font-size: 13px; font-weight:600; letter-spacing: 0.2em; text-transform: uppercase; color: rgba(236,229,212,0.6); margin-top: 6px;">אשכול 3</div>
+            </div>
+            <div style="text-align:left;">
+              <div style="font-family:'Frank Ruhl Libre',serif; font-style:italic; font-size: 42px; font-weight: 500; color: var(--ochre); line-height:1;">38.27%</div>
+              <div style="font-size: 12px; font-weight:500; letter-spacing: 0.15em; color: rgba(236,229,212,0.65); margin-top: 6px;">662 מתוך 1,730</div>
+            </div>
+          </div>
+
+          <div style="display:flex; justify-content:space-between; align-items:center; padding: 20px 0; gap: 16px;">
+            <div>
+              <div style="font-family:'Frank Ruhl Libre',serif; font-size: 28px; font-weight: 500;">אספר</div>
+              <div style="font-size: 13px; font-weight:600; letter-spacing: 0.2em; text-transform: uppercase; color: rgba(236,229,212,0.6); margin-top: 6px;">אשכול 3</div>
+            </div>
+            <div style="text-align:left;">
+              <div style="font-family:'Frank Ruhl Libre',serif; font-style:italic; font-size: 42px; font-weight: 500; color: var(--ochre); line-height:1;">27.85%</div>
+              <div style="font-size: 12px; font-weight:500; letter-spacing: 0.15em; color: rgba(236,229,212,0.65); margin-top: 6px;">342 מתוך 1,228</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── SECTION 04 · NEEDS ─── -->
+  <section>
+    <div class="sect-head">
+      <div class="sect-num">IV.</div>
+      <div class="sect-title"><small>נזקקות ומאפיינים</small>מהי המצוקה הנפוצה ביותר?</div>
+      <div class="sect-meta">צמרת עשר הנזקקויות<br>פירוט פרט מול משפחה</div>
+    </div>
+
+    <div class="grid-2">
+      <div>
+        <div class="ph" style="padding-bottom:14px; border-bottom:1px solid var(--ink); margin-bottom: 8px;">
+          <h3 style="font-family:'Frank Ruhl Libre',serif; font-weight:500; font-size:28px;">בעיני <em style="color: var(--terra); font-style:italic;">המשפחה</em></h3>
+          <span style="font-family:'Heebo',sans-serif; font-size:13px; font-weight:600; letter-spacing:0.2em; text-transform:uppercase; color: var(--muted);">מתוך 1,363 משפחות פעילות</span>
+        </div>
+        <div class="needs families" id="fam-needs"></div>
+      </div>
+
+      <div>
+        <div class="ph" style="padding-bottom:14px; border-bottom:1px solid var(--ink); margin-bottom: 8px;">
+          <h3 style="font-family:'Frank Ruhl Libre',serif; font-weight:500; font-size:28px;">בעיני <em style="color: var(--terra); font-style:italic;">הפרט</em></h3>
+          <span style="font-family:'Heebo',sans-serif; font-size:13px; font-weight:600; letter-spacing:0.2em; text-transform:uppercase; color: var(--muted);">מתוך 1,821 פרטים עם נזקקות</span>
+        </div>
+        <div class="needs individuals" id="ind-needs"></div>
+      </div>
+    </div>
+
+    <p class="marginal" style="margin-top: 28px; max-width: 78ch;">
+      <span class="em-rule"></span>
+      ראוי לציין: <strong>59% מהפרטים הפעילים</strong> אינם משויכים לאף נזקקות, ובפן הנפרד של ה־<em>מאפיינים</em> — 66.8%. הפער הזה מצביע על איכות־דיווח בלתי־אחידה ועל הזדמנות אופרטיבית לטיוב הנתונים השוטף.
+    </p>
+  </section>
+
+  <!-- ─── SECTION 05 · CASE OPENINGS ─── -->
+  <section>
+    <div class="sect-head">
+      <div class="sect-num">V.</div>
+      <div class="sect-title"><small>תנועה בתיקים</small>שנים־עשר חודשים. שתי שנים.</div>
+      <div class="sect-meta">פתיחת תיקים חודשית<br>חיתוך עקב־מול־ביצועים</div>
+    </div>
+
+    <div class="panel" style="padding: 28px 30px 22px;">
+      <div class="ph" style="padding-bottom: 18px;">
+        <div>
+          <h3>פתיחת תיקים חדשים — לפי חודש</h3>
+          <p class="sub" style="margin: 4px 0 0;">משווה בין שנת הדיווח הנוכחית (מאי 2025 — אפריל 2026) לשנת היחס שקדמה לה.</p>
+        </div>
+        <span class="tag">חודשי</span>
+      </div>
+      <div class="chart-wrap" style="height: 320px;"><canvas id="ch-trend"></canvas></div>
+      <p class="marginal" style="margin-top: 18px; max-width: 80ch;">
+        ⟵ נובמבר 2025 מסמן את שיא־השנה: <strong>35 פתיחות</strong>. בחודשי האביב 2026 נרשמת ירידה רצופה — 12, 11, 5 בפבר׳, מרץ ואפר׳ בהתאמה. ‎<strong>5 פתיחות באפריל 2026</strong> הוא השפל הנמוך ביותר בשני 12־החודשים האחרונים (השפל הקודם: 8 פתיחות באפר׳ 2025).
+      </p>
+    </div>
+  </section>
+
+  <!-- ─── SECTION 06 · BUDGET ─── -->
+  <section>
+    <div class="sect-head">
+      <div class="sect-num">VI.</div>
+      <div class="sect-title"><small>תקציב וניצול</small>אן הולך הכסף?</div>
+      <div class="sect-meta">הקצאה שנתית 2026 · ביצוע ינואר–אפריל<br>4 מתוך 12 חודשי שנת התקציב</div>
+    </div>
+
+    <div class="grid-1-2">
+      <div class="panel">
+        <div class="ph">
+          <h3>הקצאה לפי תחום</h3>
+          <span class="tag">סה״כ 35.77M ₪</span>
+        </div>
+        <p class="sub">סך ההקצאה השנתית הברוטו לפי תחום פעולה <em>(מקור: דו״ח T33, ברמת המינהל)</em>. למעלה ממחצית התקציב מופנה לשני תחומים: <strong>מנהל משה</strong> (מוגבלויות, 40.9%) ו<strong>שירותים לילד ולנוער</strong> (17.9%).</p>
+        <div class="chart-wrap" style="height: 380px;"><canvas id="ch-budget"></canvas></div>
+      </div>
+
+      <div>
+        <div style="padding-bottom: 16px; border-bottom: 1px solid var(--ink); margin-bottom: 8px;">
+          <div style="display:flex; align-items:baseline; justify-content:space-between; gap: 16px; flex-wrap: wrap;">
+            <h3 style="font-family:'Frank Ruhl Libre',serif; font-weight:500; font-size:28px;">ניצול תקציב <em style="color: var(--terra); font-style:italic;">· 4/12 חודשים</em></h3>
+            <span style="font-family:'Heebo',sans-serif; font-size:13px; font-weight:600; letter-spacing:0.2em; text-transform:uppercase; color: var(--muted);">ינואר–אפריל 2026</span>
+          </div>
+          <p style="font-family:'Frank Ruhl Libre',serif; font-style:italic; font-size:15px; color: var(--muted); margin-top: 10px; line-height:1.55;">
+            הסעיפים המנוטרים חודשית (מקור: T36) — תת־קבוצה של ההקצאה הכוללת. סה״כ 11.66M ₪ שנתי, מתוכם 4.35M ₪ הוצאו עד סוף אפריל.
+          </p>
+        </div>
+        <div id="budget-rows"></div>
+        <p class="marginal" style="margin-top: 22px; max-width: 70ch;">
+          <span class="em-rule"></span>
+          קצב פרורטה צפוי לתום אפריל: <strong>33.3%</strong> (4 מתוך 12 חודשים). <strong>שירותי תקון</strong> ו־<strong>מנהל הרווחה</strong> מקדימים את הקצב (53.9% ו־53.5% בהתאמה). <strong>שירותי שיקום</strong> מתחת לקצב (22.3%) ו<em>שירותים לעולים</em> בלא ניצול כלל (0%).
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── SECTION 07 · FRAMEWORKS ─── -->
+  <section>
+    <div class="sect-head">
+      <div class="sect-num">VII.</div>
+      <div class="sect-title"><small>תשתית טיפול</small>מסגרות, שלוחות, השמות</div>
+      <div class="sect-meta">62 מסגרות פעילות ברשות<br>164 שורות־השמה במסגרות חוצות־רשויות</div>
+    </div>
+
+    <div class="grid-3">
+      <div class="panel">
+        <div class="ph">
+          <h3>סוגי מסגרות מובילים</h3>
+          <span class="tag">השמות</span>
+        </div>
+        <p class="sub">פירוט לפי סוג מסגרת — שילוב של מסגרות ברשות הנוכחית ובמסגרות חוץ.</p>
+        <div class="chart-wrap" style="height: 340px;"><canvas id="ch-frames"></canvas></div>
+      </div>
+
+      <div class="panel">
+        <div class="ph">
+          <h3>אן מתבצעת ההשמה?</h3>
+          <span class="tag">פנים / חוץ</span>
+        </div>
+        <p class="sub">חלוקת ההשמות בין מסגרות ברשות הנבחרת ובין מסגרות חוץ — הבדל ברור בין השקעה מקומית לנכסים אזוריים.</p>
+        <div class="chart-wrap" style="height: 340px;"><canvas id="ch-inout"></canvas></div>
+      </div>
+
+      <div class="panel dark">
+        <div class="ph">
+          <h3 style="color: var(--paper)">בקצרה</h3>
+          <span class="tag">סטטיסטיקה</span>
+        </div>
+        <div style="margin-top: 10px;">
+          <div style="padding: 22px 0; border-bottom: 1px solid rgba(236,229,212,0.18);">
+            <div style="font-family:'Frank Ruhl Libre',serif; font-style:italic; font-size:60px; line-height:1; color: var(--ochre); font-weight:500;">730</div>
+            <div style="margin-top:12px; font-size:15px; line-height:1.55;">מקבלי שירות עם יעד <em>הגברת רווחה אישית ושיפור מצב רגשי</em> — היעד השכיח ביותר.</div>
+          </div>
+          <div style="padding: 22px 0; border-bottom: 1px solid rgba(236,229,212,0.18);">
+            <div style="font-family:'Frank Ruhl Libre',serif; font-style:italic; font-size:60px; line-height:1; color: var(--ochre); font-weight:500;">28</div>
+            <div style="margin-top:12px; font-size:15px; line-height:1.55;">יעדי טיפול שונים פעילים במערכת — מקיף את כל מעגלי הסיוע.</div>
+          </div>
+          <div style="padding: 22px 0;">
+            <div style="font-family:'Frank Ruhl Libre',serif; font-style:italic; font-size:60px; line-height:1; color: var(--ochre); font-weight:500;">19</div>
+            <div style="margin-top:12px; font-size:15px; line-height:1.55;">משפחות אומנה ברשות — הסוג הנפוץ ביותר של מסגרת חוץ־ביתית.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── FOOTER ─── -->
+  <footer>
+    <div>† מקור הנתונים</div>
+    <div class="colophon">
+      המכלול ׀ המועצה האזורית גוש עציון · נוסח 04 · מאי 2026
+      <br>
+      <span style="opacity:0.6; font-size:11px;">הוצא לאור עבור הצוות המקצועי. אין להפיץ ללא רשות.</span>
+    </div>
+    <div>13.05.2026 · 08:06</div>
+  </footer>
+
+</div>
+
+<script>
+/* ─── chart.js global defaults ─── */
+Chart.defaults.font.family = '"Heebo", sans-serif';
+Chart.defaults.font.size = 13;
+Chart.defaults.font.weight = '500';
+Chart.defaults.color = '#1A1812';
+Chart.defaults.borderColor = '#BDB29A';
+
+const PAL = {
+  paper:   '#ECE5D4',
+  paper2:  '#E4DCC6',
+  paperD:  '#DDD3B9',
+  ink:     '#1A1812',
+  ink2:    '#3B342A',
+  muted:   '#7A6F5E',
+  rule:    '#BDB29A',
+  terra:   '#B05A30',
+  terraD:  '#8B3F1F',
+  olive:   '#5A6A3E',
+  ochre:   '#C99A3D',
+  slate:   '#3D4A52',
+  crimson: '#8B2A2A'
+};
+
+const COMMON_SCALE = (vert=false) => ({
+  x: {
+    grid: { display: false, drawBorder: false },
+    border: { color: PAL.ink },
+    ticks: { color: PAL.ink2, font: { size: 12, family: 'Heebo', weight: 500 } },
+    reverse: true
+  },
+  y: {
+    grid: { color: 'rgba(122,111,94,0.15)', drawBorder: false },
+    border: { display: false },
+    ticks: { color: PAL.ink2, font: { size: 12, family: 'Heebo', weight: 500 } }
+  }
+});
+
+/* ─── 1. AGE ─── */
+new Chart(document.getElementById('ch-age'), {
+  type: 'bar',
+  data: {
+    labels: ['0—17', '18—49', '50—64', '65+'],
+    datasets: [{
+      data: [1832, 1804, 390, 389],
+      backgroundColor: [PAL.terra, PAL.terraD, PAL.ochre, PAL.olive],
+      borderRadius: 0,
+      borderSkipped: false,
+      barPercentage: 0.78
+    }]
+  },
+  options: {
+    indexAxis: 'y',
+    responsive: true,
+    maintainAspectRatio: false,
+    plugins: {
+      legend: { display: false },
+      tooltip: tooltipStyle(),
+      datalabels: false
+    },
+    scales: {
+      x: { grid: { display: false, drawBorder: false }, ticks: { display: false }, border: { display: false } },
+      y: { grid: { display: false, drawBorder: false }, ticks: { color: PAL.ink, font: { size: 14, family: 'Heebo', weight: 600 } }, border: { display: false } }
+    },
+    animation: { duration: 700, easing: 'easeOutQuart' }
+  },
+  plugins: [valueAtBarEnd()]
+});
+
+/* ─── 2. GENDER ─── */
+new Chart(document.getElementById('ch-gender'), {
+  type: 'doughnut',
+  data: {
+    labels: ['נשים', 'גברים', 'אחר'],
+    datasets: [{
+      data: [2214, 2201, 1],
+      backgroundColor: [PAL.terra, PAL.ink2, PAL.ochre],
+      borderColor: PAL.paper2,
+      borderWidth: 3
+    }]
+  },
+  options: {
+    responsive: true,
+    maintainAspectRatio: false,
+    cutout: '68%',
+    plugins: {
+      legend: {
+        position: 'bottom',
+        labels: {
+          font: { size: 14, family: 'Heebo', weight: 500 },
+          color: PAL.ink,
+          boxWidth: 14,
+          boxHeight: 14,
+          padding: 18
+        }
+      },
+      tooltip: tooltipStyle()
+    },
+    animation: { duration: 800 }
+  },
+  plugins: [centerLabel('4,415', 'סה״כ')]
+});
+
+/* ─── 3. FAMILY ─── */
+new Chart(document.getElementById('ch-family'), {
+  type: 'bar',
+  data: {
+    labels: ['נשוי/ה', 'רווק/ה', 'גרוש/ה', 'אלמן/ה', 'חי/ה בנפרד', 'ידוע/ה בציבור'],
+    datasets: [{
+      data: [1347, 931, 196, 72, 26, 11],
+      backgroundColor: [PAL.terraD, PAL.terra, PAL.ochre, PAL.olive, PAL.slate, PAL.muted],
+      borderRadius: 0,
+      borderSkipped: false,
+      barPercentage: 0.78
+    }]
+  },
+  options: {
+    indexAxis: 'y',
+    responsive: true,
+    maintainAspectRatio: false,
+    plugins: {
+      legend: { display: false },
+      tooltip: tooltipStyle()
+    },
+    scales: {
+      x: { grid: { display: false, drawBorder: false }, ticks: { display: false }, border: { display: false } },
+      y: { grid: { display: false, drawBorder: false }, ticks: { color: PAL.ink, font: { size: 14, family: 'Heebo', weight: 500 } }, border: { display: false } }
+    },
+    animation: { duration: 700 }
+  },
+  plugins: [valueAtBarEnd()]
+});
+
+/* ─── 4. TREND (case openings) ─── */
+new Chart(document.getElementById('ch-trend'), {
+  type: 'line',
+  data: {
+    labels: ['מאי', 'יוני', 'יולי', 'אוג׳', 'ספט׳', 'אוק׳', 'נוב׳', 'דצמ׳', 'ינו׳', 'פבר׳', 'מרץ', 'אפר׳'],
+    datasets: [
+      {
+        label: 'שנה נוכחית · ’25–’26',
+        data: [21, 15, 12, 23, 25, 20, 35, 21, 20, 12, 11, 5],
+        borderColor: PAL.terraD,
+        backgroundColor: 'rgba(176,90,48,0.08)',
+        borderWidth: 2.2,
+        tension: 0.32,
+        fill: true,
+        pointBackgroundColor: PAL.terraD,
+        pointBorderColor: PAL.paper2,
+        pointBorderWidth: 2,
+        pointRadius: 4,
+        pointHoverRadius: 7
+      },
+      {
+        label: 'שנה קודמת · ’24–’25',
+        data: [9, 11, 22, 18, 31, 24, 22, 24, 26, 28, 10, 8],
+        borderColor: PAL.ink2,
+        backgroundColor: 'transparent',
+        borderWidth: 1.4,
+        borderDash: [4, 4],
+        tension: 0.32,
+        fill: false,
+        pointBackgroundColor: PAL.paper2,
+        pointBorderColor: PAL.ink2,
+        pointBorderWidth: 1.4,
+        pointRadius: 3,
+        pointHoverRadius: 6
+      }
+    ]
+  },
+  options: {
+    responsive: true,
+    maintainAspectRatio: false,
+    plugins: {
+      legend: {
+        position: 'top',
+        align: 'end',
+        labels: {
+          font: { size: 14, family: 'Heebo', weight: 500 },
+          color: PAL.ink,
+          boxWidth: 24,
+          boxHeight: 3,
+          padding: 22,
+          usePointStyle: false
+        }
+      },
+      tooltip: tooltipStyle()
+    },
+    scales: COMMON_SCALE(true),
+    interaction: { mode: 'index', intersect: false },
+    animation: { duration: 900 }
+  }
+});
+
+/* ─── 5. BUDGET — Annual allocation by domain (T33 source, gross) ─── */
+const budgetAlloc = [
+  ['מנהל משה (מוגבלויות)',   14633832],
+  ['שירותים לילד ולנוער',     6400851],
+  ['מינהל הרווחה',            5323802],
+  ['שרותי שיקום',             4771589],
+  ['שרותי תקון',              2185046],
+  ['רווחת הפרט והמשפחה',     1041642],
+  ['אזרחים ותיקים',            965602],
+  ['פעילויות בקהילה',          410083],
+  ['שירותים לעולים',            36133]
+];
+const allocTotal = budgetAlloc.reduce((s,r)=>s+r[1],0);
+
+new Chart(document.getElementById('ch-budget'), {
+  type: 'bar',
+  data: {
+    labels: budgetAlloc.map(r => r[0]),
+    datasets: [{
+      label: 'הקצאה שנתית (M ₪)',
+      data: budgetAlloc.map(r => +(r[1] / 1e6).toFixed(2)),
+      backgroundColor: budgetAlloc.map((_, i) =>
+        i === 0 ? PAL.terraD : i === 1 ? PAL.terra : i === 2 ? PAL.ochre :
+        i === 3 ? PAL.olive : i === 4 ? PAL.slate : PAL.ink2
+      ),
+      borderRadius: 0,
+      borderSkipped: false,
+      barPercentage: 0.78
+    }]
+  },
+  options: {
+    indexAxis: 'y',
+    responsive: true,
+    maintainAspectRatio: false,
+    plugins: {
+      legend: { display: false },
+      tooltip: {
+        ...tooltipStyle(),
+        callbacks: {
+          label: (ctx) => {
+            const m = ctx.parsed.x;
+            const pct = (m * 1e6 / allocTotal * 100).toFixed(1);
+            return `${m.toFixed(2)}M ₪ · ${pct}% מסך התקציב`;
+          }
+        }
+      }
+    },
+    scales: {
+      x: {
+        grid: { color: 'rgba(122,111,94,0.15)', drawBorder: false },
+        border: { display: false },
+        ticks: { color: PAL.ink2, font: { size: 12, family: 'Heebo', weight: 500 }, callback: v => v + 'M ₪' },
+        reverse: true
+      },
+      y: {
+        grid: { display: false },
+        border: { display: false },
+        ticks: { color: PAL.ink, font: { size: 13, family: 'Heebo', weight: 600 } }
+      }
+    },
+    animation: { duration: 800 }
+  },
+  plugins: [valueAtBarEnd()]
+});
+
+/* ─── 6. FRAMEWORK TYPES — top 9 by total placements (C122 source) ─── */
+new Chart(document.getElementById('ch-frames'), {
+  type: 'bar',
+  data: {
+    labels: ['מרכז טיפולי', 'מועדון/מרכז קהילתי', 'מעון יום', 'מערך דיור', 'טיפול יום', 'מעטפת', 'תעסוקה מוגנת', 'סביבה תומכת', 'פנימיה'],
+    datasets: [{
+      data: [182, 177, 89, 44, 43, 40, 37, 31, 29],
+      backgroundColor: [PAL.terraD, PAL.terra, PAL.ochre, PAL.olive, PAL.slate, PAL.ink2, PAL.terra, PAL.ochre, PAL.olive],
+      borderRadius: 0,
+      borderSkipped: false,
+      barPercentage: 0.78
+    }]
+  },
+  options: {
+    indexAxis: 'y',
+    responsive: true,
+    maintainAspectRatio: false,
+    plugins: {
+      legend: { display: false },
+      tooltip: tooltipStyle()
+    },
+    scales: {
+      x: { grid: { display: false, drawBorder: false }, ticks: { display: false }, border: { display: false } },
+      y: { grid: { display: false, drawBorder: false }, ticks: { color: PAL.ink, font: { size: 13, family: 'Heebo', weight: 600 } }, border: { display: false } }
+    },
+    animation: { duration: 800 }
+  },
+  plugins: [valueAtBarEnd()]
+});
+
+/* ─── 7. INSIDE / OUTSIDE — placements by admin unit (C122 source) ─── */
+new Chart(document.getElementById('ch-inout'), {
+  type: 'bar',
+  data: {
+    labels: ['ילד ונוער', 'אזרחים ותיקים', 'רווחת הפרט', 'שיקום ונכים', 'אגף משה', 'נפגעי התמכרויות', 'נוער וצעירים', 'אוטיסטים', 'נשים ונערות'],
+    datasets: [
+      {
+        label: 'ברשות הנוכחית',
+        data: [294, 116, 57, 49, 44, 41, 22, 0, 9],
+        backgroundColor: PAL.terra,
+        borderRadius: 0,
+        borderSkipped: false,
+        stack: 'a'
+      },
+      {
+        label: 'ברשות אחרת',
+        data: [23, 9, 3, 27, 73, 0, 1, 21, 5],
+        backgroundColor: PAL.ink2,
+        borderRadius: 0,
+        borderSkipped: false,
+        stack: 'a'
+      }
+    ]
+  },
+  options: {
+    indexAxis: 'y',
+    responsive: true,
+    maintainAspectRatio: false,
+    plugins: {
+      legend: {
+        position: 'top',
+        align: 'end',
+        labels: { font: { size: 14, family: 'Heebo', weight: 500 }, color: PAL.ink, boxWidth: 14, boxHeight: 14, padding: 18 }
+      },
+      tooltip: tooltipStyle()
+    },
+    scales: {
+      x: { stacked: true, grid: { color: 'rgba(122,111,94,0.15)', drawBorder: false }, border: { display: false }, ticks: { color: PAL.ink2, font: { size: 12, weight: 500 } }, reverse: true },
+      y: { stacked: true, grid: { display: false }, border: { display: false }, ticks: { color: PAL.ink, font: { size: 14, family: 'Heebo', weight: 500 } } }
+    },
+    animation: { duration: 800 }
+  }
+});
+
+/* ─── helpers ─── */
+function tooltipStyle(prefix = '', suffix = '') {
+  return {
+    backgroundColor: PAL.ink,
+    titleColor: PAL.paper,
+    titleFont: { family: 'Heebo', size: 13, weight: 600 },
+    bodyColor: PAL.paper,
+    bodyFont: { family: 'Heebo', size: 15, weight: 500 },
+    borderColor: PAL.terra,
+    borderWidth: 1,
+    cornerRadius: 0,
+    padding: 14,
+    boxPadding: 8,
+    displayColors: true,
+    rtl: true,
+    callbacks: {
+      label: (ctx) => {
+        const v = ctx.parsed.x ?? ctx.parsed.y ?? ctx.parsed;
+        return `${ctx.dataset.label || ctx.label}: ${prefix}${Number(v).toLocaleString('he-IL', {maximumFractionDigits: 2})}${suffix}`;
+      }
+    }
+  };
+}
+
+function valueAtBarEnd() {
+  return {
+    id: 'valEnd',
+    afterDatasetsDraw(chart) {
+      const { ctx } = chart;
+      chart.data.datasets.forEach((ds, di) => {
+        const meta = chart.getDatasetMeta(di);
+        meta.data.forEach((bar, i) => {
+          const v = ds.data[i];
+          if (v == null) return;
+          ctx.save();
+          ctx.font = '600 13px Heebo';
+          ctx.fillStyle = PAL.ink;
+          ctx.textBaseline = 'middle';
+          ctx.textAlign = 'right';
+          // For horizontal bars (indexAxis: 'y'), bar.x is the bar end (toward right in RTL = small values; reversed)
+          const x = bar.x - 10;
+          ctx.fillText(Number(v).toLocaleString('he-IL'), x, bar.y);
+          ctx.restore();
+        });
+      });
+    }
+  };
+}
+
+function centerLabel(big, small) {
+  return {
+    id: 'centerLabel',
+    beforeDraw(chart) {
+      const { ctx, chartArea: { left, right, top, bottom } } = chart;
+      const cx = (left + right) / 2;
+      const cy = (top + bottom) / 2 - 4;
+      ctx.save();
+      ctx.textAlign = 'center';
+      ctx.fillStyle = PAL.ink;
+      ctx.font = '500 36px "Frank Ruhl Libre"';
+      ctx.fillText(big, cx, cy);
+      ctx.fillStyle = PAL.muted;
+      ctx.font = '600 12px Heebo';
+      ctx.fillText(small, cx, cy + 24);
+      ctx.restore();
+    }
+  };
+}
+
+/* ─── TOWNS ─── */
+const towns = [
+  { name: 'מעלה עמוס',  pop:  906, rec: 353, fam:  75, ses: 2 },
+  { name: 'בת עין',     pop: 1730, rec: 662, fam: 203, ses: 3 },
+  { name: 'אספר',       pop: 1228, rec: 342, fam:  64, ses: 3 },
+  { name: 'תקוע',       pop: 4326, rec: 767, fam: 266, ses: 6 },
+  { name: 'נוקדים',     pop: 3093, rec: 561, fam: 173, ses: 5 },
+  { name: 'כרמי צור',   pop:  979, rec: 162, fam:  48, ses: 5 },
+  { name: 'אלון שבות',  pop: 3046, rec: 470, fam: 191, ses: 7 },
+  { name: 'נווה דניאל', pop: 2355, rec: 325, fam:  99, ses: 7 },
+  { name: 'אלעזר',      pop: 2615, rec: 324, fam:  94, ses: 7 },
+  { name: 'מגדל עוז',   pop:  572, rec:  53, fam:  14, ses: 3 },
+  { name: 'ראש צורים',  pop:  978, rec: 104, fam:  31, ses: 7 },
+  { name: 'קדר',        pop: 1649, rec: 131, fam:  44, ses: 7 },
+  { name: 'הר גילה',    pop: 1656, rec: 111, fam:  43, ses: 7 },
+  { name: 'כפר עציון',  pop: 1370, rec:  79, fam:  19, ses: 4 }
+].sort((a,b) => (b.rec/b.pop) - (a.rec/a.pop));
+
+const townsHost = document.getElementById('towns-list');
+towns.forEach(t => {
+  const pct = (t.rec / t.pop * 100);
+  // bar width = actual percent (literal). 0–100% scale; tick marks at 25% & 50%.
+  const div = document.createElement('div');
+  div.className = 'town-row';
+  div.innerHTML = `
+    <div class="town-name">${t.name}</div>
+    <div><span class="town-ses" data-ses="${t.ses}">${t.ses}</span></div>
+    <div class="town-bar-wrap">
+      <div class="town-bar-bg"></div>
+      <div class="town-bar-recip" style="width: ${pct.toFixed(2)}%"></div>
+    </div>
+    <div class="town-pct">${pct.toFixed(1)}%<small>${t.rec.toLocaleString('he-IL')} מ־${t.pop.toLocaleString('he-IL')}</small></div>
+  `;
+  townsHost.appendChild(div);
+});
+
+/* ─── NEEDS LISTS ─── */
+const famNeeds = [
+  ['מוגבלות',                        343, 25.2],
+  ['זקנה · אזרח ותיק',                262, 19.2],
+  ['קשיים בין הורים לילדיהם',         180, 13.2],
+  ['אירוע ביטחון / חירום',            91,  6.7],
+  ['קשיים ביחסים בין בני המשפחה',    70,  5.1],
+  ['קשיים ביחסים בין בני הזוג',      67,  4.9],
+  ['מצוקה כלכלית זמנית',             66,  4.8],
+  ['אי־ביטחון תזונתי',               62,  4.5],
+  ['ליקוי בתפקוד הורי',              62,  4.5],
+  ['קונפליקט גירושין בעוצמה',         61,  4.5]
+];
+
+const indNeeds = [
+  ['מצוקה רגשית',                          609, 33.44],
+  ['קושי בטיפול אישי ומיומנויות יומיומיות', 314, 17.24],
+  ['קשיים בצריכת שירותים ומיצוי זכויות',   210, 11.53],
+  ['קשיים בהתפתחות הילד',                  177,  9.72],
+  ['בדידות / היעדר מערכות תמיכה',          143,  7.85],
+  ['קשיים במסגרת תעסוקה (18+)',             95,  5.22],
+  ['קשיים באינטראקציה בין־אישית/זוגית',     64,  3.51],
+  ['קשיים במסגרת חינוכית (עד 21)',          52,  2.86],
+  ['התנהגות סיכונית אחרת',                  44,  2.42],
+  ['חשד או נתון/ה לפגיעה מינית',            41,  2.25]
+];
+
+function paintNeeds(host, data) {
+  // bar width = actual % (literal). Bars top out at ~33% — accurate, not "filled to look like 100%".
+  data.forEach(([label, count, pct], i) => {
+    const row = document.createElement('div');
+    row.className = 'need-row';
+    row.innerHTML = `
+      <div class="need-num">${String(i+1).padStart(2,'0')}</div>
+      <div>
+        <div class="need-label">${label}</div>
+        <div class="need-bar"><i style="width: ${pct.toFixed(2)}%"></i></div>
+      </div>
+      <div class="need-count">${count}</div>
+      <div style="text-align:left; font-family:'Frank Ruhl Libre',serif; font-style:italic; font-size:22px; font-weight:500; color: var(--terra-deep);">${pct.toFixed(1)}%</div>
+    `;
+    host.appendChild(row);
+  });
+}
+
+paintNeeds(document.getElementById('fam-needs'), famNeeds);
+paintNeeds(document.getElementById('ind-needs'), indNeeds);
+
+/* ─── BUDGET UTILIZATION ROWS — Jan–Apr 2026 (T36 cumulative, fiscal-year 2026) ───
+   Source: T36 sheet, last cumulative row (Apr 2026) per domain.
+   Pro-rata baseline through April = 4/12 = 33.3%. */
+const budgetRows = [
+  { name: 'שירותים לילד ולנוער', sub: 'תיקי טיפול',          alloc: 3307658, used: 1429641 },
+  { name: 'מנהל משה',           sub: 'מוגבלויות',           alloc: 2671282, used: 1113651 },
+  { name: 'שרותי שיקום',         sub: 'מסגרות שיקום',        alloc: 2157121, used:  480444 },
+  { name: 'רווחת הפרט והמשפחה',  sub: 'תחנות, מרכזים',      alloc: 1041640, used:  364857 },
+  { name: 'שרותי תקון',          sub: 'תיקון, סדנאות',      alloc: 1027104, used:  553909 },
+  { name: 'אזרחים ותיקים',       sub: 'גיל שלישי',          alloc:  890386, used:  243740 },
+  { name: 'פעילויות בקהילה',     sub: 'פעולות שגרתיות',      alloc:  410082, used:   97686 },
+  { name: 'מינהל הרווחה',         sub: 'תקורה',              alloc:  114835, used:   61448 },
+  { name: 'שירותים לעולים',       sub: 'תוכניות עליה',       alloc:   36133, used:       0 }
+];
+
+const PRORATA = 4/12 * 100; // 33.33% — through April
+const budgetHost = document.getElementById('budget-rows');
+budgetRows.forEach(r => {
+  const pct = r.alloc > 0 ? (r.used / r.alloc * 100) : 0;
+  // classify against pro-rata pace
+  let cls = 'ok';
+  if (pct >= PRORATA * 1.4) cls = 'crit';      // >+40% over pace
+  else if (pct >= PRORATA * 1.15) cls = 'warn'; // >+15% over pace
+  else if (pct < PRORATA * 0.6 && r.alloc > 100000) cls = 'warn'; // significantly behind
+  const row = document.createElement('div');
+  row.className = 'budget-row';
+  row.innerHTML = `
+    <div class="budget-name">${r.name}<small>${r.sub}</small></div>
+    <div class="budget-amount">${(r.alloc/1e6).toFixed(2)}M<small>₪ שנתי 2026</small></div>
+    <div class="budget-track">
+      <div class="used" style="width: ${pct.toFixed(1)}%"></div>
+      <div class="marker" style="right: ${PRORATA.toFixed(1)}%" data-label="33.3% פרורטה"></div>
+    </div>
+    <div class="budget-pct ${cls}">${pct.toFixed(1)}%</div>
+  `;
+  budgetHost.appendChild(row);
+});
+</script>
+
+</body>
+</html>

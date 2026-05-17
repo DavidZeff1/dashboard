@@ -1,0 +1,647 @@
+- generic [ref=e2]:
+  - banner [ref=e3]:
+    - generic [ref=e4]: המועצה האזורית · גוש עציון
+    - generic [ref=e5]: דו״ח פניות · אגף שירותים חברתיים · 2025–2026
+    - generic [ref=e6]: נוסח 02 · מאי 2026
+  - generic [ref=e7]:
+    - heading "אלף ארבע מאות חמישים ושש פניות בשבעה־עשר חודשים." [level=1] [ref=e8]:
+      - text: אלף ארבע מאות חמישים ושש
+      - emphasis [ref=e9]: פניות
+      - text: בשבעה־עשר חודשים.
+    - generic [ref=e10]:
+      - paragraph [ref=e11]:
+        - strong [ref=e12]: 1,456 פניות
+        - text: בין ינואר 2025 לאמצע מאי 2026 —
+        - strong [ref=e13]: 4.3 ביום פעיל
+        - text: ","
+        - emphasis [ref=e14]: 89%
+        - text: דרך המוקד, שיא ב־09:00–13:00 ואפס בסוף השבוע. הדו״ח פורש את הכמות, החלוקה למחלקות, זמני הטיפול, עמידה ביעד והתנועות בין השנים.
+      - generic [ref=e15]:
+        - text: מקור · קובץ פניות 14/05/2026
+        - text: 1,456 שורות · 497 ימים · 0 חסרים בתאריך פתיחה
+  - generic [ref=e16]:
+    - generic [ref=e17]:
+      - generic [ref=e18]: סך הפניות
+      - generic [ref=e19]:
+        - text: 1,
+        - emphasis [ref=e20]: "456"
+      - generic [ref=e21]: 1,116 ב־2025 · 340 ב־2026 (עד 14.5)
+    - generic [ref=e22]:
+      - generic [ref=e23]: סטטוס טיפול
+      - generic [ref=e24]:
+        - text: "98."
+        - emphasis [ref=e25]: 1%
+      - generic [ref=e26]: 1,428 פניות סגורות · 20 פתוחות · 4 כפולות
+    - generic [ref=e27]:
+      - generic [ref=e28]: חציון זמן טיפול
+      - generic [ref=e29]:
+        - emphasis [ref=e30]: "3.4"
+        - text: י׳
+      - generic [ref=e31]: 81.4 שעות · 24% נסגרות תוך 24ש׳ · 70% תוך שבוע
+    - generic [ref=e32]:
+      - generic [ref=e33]: עמידה ביעד
+      - generic [ref=e34]:
+        - text: "67."
+        - emphasis [ref=e35]: 2%
+      - generic [ref=e36]: 964 נסגרו לפני יעד · 471 אחרי
+  - generic [ref=e37]:
+    - generic [ref=e38]:
+      - generic [ref=e39]: I.
+      - generic [ref=e40]:
+        - generic [ref=e41]: כמות וקצב
+        - text: שבעה־עשר חודשים על ציר זמן
+      - generic [ref=e42]:
+        - text: פתיחת פניות לפי חודש
+        - text: השוואת מקבילה 2025 ↔ 2026
+    - generic [ref=e43]:
+      - generic [ref=e44]:
+        - generic [ref=e45]:
+          - heading "פתיחות חודשיות — קצב הפניות" [level=3] [ref=e46]
+          - generic [ref=e47]: 17 חודשים
+        - generic [ref=e50]:
+          - generic [ref=e51]: 2025 · 1,116 פניות (93/חודש)
+          - generic [ref=e53]: 2026 · 340 פניות (77/חודש · 4.42 חודשים בפועל, עד 13.5)
+      - generic [ref=e55]:
+        - generic [ref=e56]:
+          - heading "צמתי שיא" [level=3] [ref=e57]
+          - generic [ref=e58]: 10 ימים
+        - paragraph [ref=e59]:
+          - text: ביום השיא — 30/11/2025 — 14 פניות. רק
+          - strong [ref=e60]: 7 פניות בכל השבתות
+          - text: ו־
+          - strong [ref=e61]: 16 בכל ימי שישי
+          - text: לאורך 17 חודשים.
+        - generic [ref=e62]:
+          - generic [ref=e63]:
+            - generic [ref=e64]:
+              - text: "30"
+              - generic [ref=e65]: נוב׳
+            - generic [ref=e66]:
+              - text: ראשון, 30.11.2025
+              - generic [ref=e67]: היום העמוס בשנה
+            - generic [ref=e68]: "14"
+          - generic [ref=e69]:
+            - generic [ref=e70]:
+              - text: "27"
+              - generic [ref=e71]: נוב׳
+            - generic [ref=e72]:
+              - text: חמישי, 27.11.2025
+              - generic [ref=e73]: סוף שבוע ארוך
+            - generic [ref=e74]: "12"
+          - generic [ref=e75]:
+            - generic [ref=e76]:
+              - text: "23"
+              - generic [ref=e77]: פבר׳
+            - generic [ref=e78]:
+              - text: ראשון, 23.02.2025
+              - generic [ref=e79]: ראש שבוע
+            - generic [ref=e80]: "11"
+          - generic [ref=e81]:
+            - generic [ref=e82]:
+              - text: "12"
+              - generic [ref=e83]: נוב׳
+            - generic [ref=e84]: רביעי, 12.11.2025
+            - generic [ref=e85]: "11"
+    - generic [ref=e86]:
+      - generic [ref=e87]:
+        - generic [ref=e88]:
+          - heading "שעות היום · 09–12 הוא חלון הזהב" [level=3] [ref=e89]
+          - generic [ref=e90]: 1,456 פניות
+        - paragraph [ref=e93]:
+          - strong [ref=e94]: 854 פניות (58.7%)
+          - text: בין 09:00 ל־12:59. אחרי 16:00 — שקט.
+      - generic [ref=e95]:
+        - generic [ref=e96]:
+          - heading "ימי השבוע · ראשון הוא היום המעמיס" [level=3] [ref=e97]
+          - generic [ref=e98]: 1,456 פניות
+        - paragraph [ref=e101]:
+          - strong [ref=e102]: ראשון
+          - text: —
+          - emphasis [ref=e103]: 337 פניות
+          - text: ", השיא השבועי. שישי 16, שבת 7."
+  - generic [ref=e104]:
+    - generic [ref=e105]:
+      - generic [ref=e106]: II.
+      - generic [ref=e107]:
+        - generic [ref=e108]: חלוקת עומס
+        - text: איפה נמצא המשקל
+      - generic [ref=e109]:
+        - text: פילוח לפי מחלקה ולפי בעיה
+        - text: נכון לכל 1,456 הפניות
+    - generic [ref=e110]:
+      - generic [ref=e111]:
+        - generic [ref=e112]:
+          - heading "המחלקות — מי מקבל את הפניות" [level=3] [ref=e113]:
+            - text: המחלקות —
+            - emphasis [ref=e114]: מי מקבל את הפניות
+          - generic [ref=e115]: 7 מחלקות פעילות
+        - generic [ref=e116]:
+          - generic [ref=e117]:
+            - generic [ref=e118]:
+              - text: שירותים חברתיים מערב הגוש
+              - generic [ref=e119]: מערב הגוש
+            - generic [ref=e120]:
+              - text: "700"
+              - generic [ref=e121]: 48.1%
+            - generic [ref=e124]:
+              - text: "2.5"
+              - generic [ref=e125]: חציון ימים
+          - generic [ref=e126]:
+            - generic [ref=e127]:
+              - text: שירותים חברתיים — מזכירות אגף
+              - generic [ref=e128]: מזכירות אגף
+            - generic [ref=e129]:
+              - text: "418"
+              - generic [ref=e130]: 28.7%
+            - generic [ref=e133]:
+              - text: "3.5"
+              - generic [ref=e134]: חציון ימים
+          - generic [ref=e135]:
+            - generic [ref=e136]:
+              - text: שירותים חברתיים מזרח הגוש
+              - generic [ref=e137]: מזרח הגוש
+            - generic [ref=e138]:
+              - text: "229"
+              - generic [ref=e139]: 15.7%
+            - generic [ref=e142]:
+              - text: "4.5"
+              - generic [ref=e143]: חציון ימים
+          - generic [ref=e144]:
+            - generic [ref=e145]:
+              - text: מיצוי זכויות — שירותים חברתיים
+              - generic [ref=e146]: מיצוי זכויות
+            - generic [ref=e147]:
+              - text: "52"
+              - generic [ref=e148]: 3.6%
+            - generic [ref=e151]:
+              - text: "4.5"
+              - generic [ref=e152]: חציון ימים
+          - generic [ref=e153]:
+            - generic [ref=e154]:
+              - text: עו״ס משפחות — מערב
+              - generic [ref=e155]: עו״ס מערב
+            - generic [ref=e156]:
+              - text: "39"
+              - generic [ref=e157]: 2.7%
+            - generic [ref=e160]:
+              - text: "5.6"
+              - generic [ref=e161]: חציון ימים
+          - generic [ref=e162]:
+            - generic [ref=e163]:
+              - text: עו״ס משפחות — מזרח
+              - generic [ref=e164]: עו״ס מזרח
+            - generic [ref=e165]:
+              - text: "13"
+              - generic [ref=e166]: 0.9%
+            - generic [ref=e169]:
+              - text: "21.4"
+              - generic [ref=e170]: חציון ימים
+          - generic [ref=e171]:
+            - generic [ref=e172]:
+              - text: שירותים חברתיים — התמכרויות ונוער
+              - generic [ref=e173]: התמכרויות ונוער
+            - generic [ref=e174]:
+              - text: "5"
+              - generic [ref=e175]: 0.3%
+            - generic [ref=e178]:
+              - text: "3.4"
+              - generic [ref=e179]: חציון ימים
+        - paragraph [ref=e180]:
+          - text: שלוש המחלקות הראשונות מחזיקות
+          - emphasis [ref=e181]: 92.5%
+          - text: מהנפח. ארבע הנותרות יחד —
+          - strong [ref=e182]: 109 פניות
+          - text: בלבד ב־17 חודשים.
+      - generic [ref=e183]:
+        - generic [ref=e184]:
+          - heading "הבעיות — בעבור מה פונים" [level=3] [ref=e185]:
+            - text: הבעיות —
+            - emphasis [ref=e186]: בעבור מה פונים
+          - generic [ref=e187]: 15 נושאים
+        - generic [ref=e188]:
+          - generic [ref=e189]:
+            - generic [ref=e190]: "01"
+            - generic [ref=e191]: צמיד · ילדים בסיכון
+            - generic [ref=e192]: "289"
+            - generic [ref=e195]: 19.8%
+          - generic [ref=e196]:
+            - generic [ref=e197]: "02"
+            - generic [ref=e198]: פנייה למזכירות
+            - generic [ref=e199]: "260"
+            - generic [ref=e202]: 17.9%
+          - generic [ref=e203]:
+            - generic [ref=e204]: "03"
+            - generic [ref=e205]: אזרחים ותיקים
+            - generic [ref=e206]: "196"
+            - generic [ref=e209]: 13.5%
+          - generic [ref=e210]:
+            - generic [ref=e211]: "04"
+            - generic [ref=e212]: משפחות · כללי
+            - generic [ref=e213]: "163"
+            - generic [ref=e216]: 11.2%
+          - generic [ref=e217]:
+            - generic [ref=e218]: "05"
+            - generic [ref=e219]: פנייה לעו״ס
+            - generic [ref=e220]: "145"
+            - generic [ref=e223]: 10.0%
+          - generic [ref=e224]:
+            - generic [ref=e225]: "06"
+            - generic [ref=e226]: משפחות · בת עין
+            - generic [ref=e227]: "72"
+            - generic [ref=e230]: 4.9%
+          - generic [ref=e231]:
+            - generic [ref=e232]: "07"
+            - generic [ref=e233]: משפחות · מזרח
+            - generic [ref=e234]: "72"
+            - generic [ref=e237]: 4.9%
+          - generic [ref=e238]:
+            - generic [ref=e239]: "08"
+            - generic [ref=e240]: אחר · לא מסווג
+            - generic [ref=e241]: "63"
+            - generic [ref=e244]: 4.3%
+          - generic [ref=e245]:
+            - generic [ref=e246]: "09"
+            - generic [ref=e247]: מיצוי זכויות
+            - generic [ref=e248]: "51"
+            - generic [ref=e251]: 3.5%
+          - generic [ref=e252]:
+            - generic [ref=e253]: "10"
+            - generic [ref=e254]: נוער / התמכרויות
+            - generic [ref=e255]: "50"
+            - generic [ref=e258]: 3.4%
+          - generic [ref=e259]:
+            - generic [ref=e260]: "11"
+            - generic [ref=e261]: צרכים מיוחדים
+            - generic [ref=e262]: "26"
+            - generic [ref=e265]: 1.8%
+          - generic [ref=e266]:
+            - generic [ref=e267]: "12"
+            - generic [ref=e268]: משפחות · הר גילה
+            - generic [ref=e269]: "24"
+            - generic [ref=e272]: 1.6%
+          - generic [ref=e273]:
+            - generic [ref=e274]: "13"
+            - generic [ref=e275]: סדרי דין
+            - generic [ref=e276]: "18"
+            - generic [ref=e279]: 1.2%
+          - generic [ref=e280]:
+            - generic [ref=e281]: "14"
+            - generic [ref=e282]: כללי · שירותים חברתיים
+            - generic [ref=e283]: "16"
+            - generic [ref=e286]: 1.1%
+          - generic [ref=e287]:
+            - generic [ref=e288]: "15"
+            - generic [ref=e289]: משפחות · מערב
+            - generic [ref=e290]: "11"
+            - generic [ref=e293]: 0.8%
+        - paragraph [ref=e294]:
+          - text: הקטגוריה הגדולה —
+          - strong [ref=e295]: צמיד / ילדים בסיכון
+          - text: (19.8%). אחריה
+          - strong [ref=e296]: פנייה למזכירות
+          - text: ללא שיוך לעו״ס (17.9%) ו
+          - strong [ref=e297]: אזרחים ותיקים
+          - text: (13.5%). חמש קטגוריות משפחתיות יחד (כללי, בת עין, מזרח, הר גילה, מערב) —
+          - emphasis [ref=e298]: 23.5%
+          - text: .
+    - generic [ref=e299]:
+      - generic [ref=e300]:
+        - generic [ref=e301]:
+          - heading "מקור הפנייה" [level=3] [ref=e302]
+          - generic [ref=e303]: 100%
+        - paragraph [ref=e306]:
+          - strong [ref=e307]: 89.4%
+          - text: דרך המוקד. טפסים — 10.5%. וואטסאפ — 2 פניות בלבד.
+      - generic [ref=e308]:
+        - generic [ref=e309]:
+          - heading "דחיפות" [level=3] [ref=e310]
+          - generic [ref=e311]: 1,456
+        - paragraph [ref=e314]:
+          - text: רק
+          - strong [ref=e315]: 7 פניות
+          - text: סווגו
+          - emphasis [ref=e316]: דחוף
+          - text: ב־17 חודשים. תיוג הדחיפות אינו בשימוש בפועל.
+      - generic [ref=e317]:
+        - generic [ref=e318]:
+          - heading "סטטוס" [level=3] [ref=e319]
+          - generic [ref=e320]: 1,456
+        - paragraph [ref=e323]:
+          - text: סגירה של
+          - strong [ref=e324]: 98.1%
+          - text: . 20 פתוחות במוקד — רובן חדשות מאפריל–מאי 2026.
+  - generic [ref=e325]:
+    - generic [ref=e326]:
+      - generic [ref=e327]: III.
+      - generic [ref=e328]:
+        - generic [ref=e329]: איכות הטיפול
+        - text: זמני סגירה ועמידה ביעדים
+      - generic [ref=e330]:
+        - text: 1,436 פניות עם מדידה
+        - text: פער יעד מול ביצוע · חציון לפי מחלקה
+    - generic [ref=e331]:
+      - generic [ref=e332]:
+        - generic [ref=e333]:
+          - heading "התפלגות זמן טיפול" [level=3] [ref=e334]
+          - generic [ref=e335]: חציון 3.4 ימים
+        - generic [ref=e338]:
+          - generic [ref=e339]: מהיר · ≤24ש׳
+          - generic [ref=e341]: תוך השבוע · 24ש׳–7 ימים
+          - generic [ref=e343]: ארוך · 7–30 ימים
+          - generic [ref=e345]: ממושך · 30+ ימים
+      - generic [ref=e347]:
+        - generic [ref=e348]:
+          - heading "עמידה ביעד הסגירה" [level=3] [ref=e349]
+          - generic [ref=e350]: 1,435 שורות
+        - generic [ref=e351]:
+          - generic [ref=e352]:
+            - text: "67.2"
+            - generic [ref=e353]: נסגרו בזמן
+          - generic [ref=e354]:
+            - generic [ref=e355]:
+              - generic [ref=e356]: בזמן
+              - generic [ref=e357]: "964"
+            - generic [ref=e358]:
+              - generic [ref=e359]: איחור ביעד
+              - generic [ref=e360]: "471"
+        - paragraph [ref=e361]:
+          - strong [ref=e362]: 471 פניות (32.8%)
+          - text: נסגרו אחרי מועד היעד. תהליך הסגירה במערכת זקוק לחיזוק.
+    - generic [ref=e363]:
+      - generic [ref=e364]:
+        - heading "חציון זמן טיפול — לפי מחלקה" [level=3] [ref=e365]:
+          - text: חציון זמן טיפול —
+          - emphasis [ref=e366]: לפי מחלקה
+        - generic [ref=e367]: 5+ פניות נדרשות לחישוב
+      - generic [ref=e368]:
+        - generic [ref=e369]:
+          - generic [ref=e370]:
+            - text: שירותים חברתיים מערב הגוש
+            - generic [ref=e371]: n=700 פניות
+          - generic [ref=e372]:
+            - text: "2.5"
+            - generic [ref=e373]: ימים
+          - generic [ref=e376]:
+            - text: "60"
+            - generic [ref=e377]: חציון שעות
+        - generic [ref=e378]:
+          - generic [ref=e379]:
+            - text: שירותים חברתיים — התמכרויות ונוער
+            - generic [ref=e380]: n=5 פניות
+          - generic [ref=e381]:
+            - text: "3.4"
+            - generic [ref=e382]: ימים
+          - generic [ref=e385]:
+            - text: "82"
+            - generic [ref=e386]: חציון שעות
+        - generic [ref=e387]:
+          - generic [ref=e388]:
+            - text: שירותים חברתיים — מזכירות אגף
+            - generic [ref=e389]: n=418 פניות
+          - generic [ref=e390]:
+            - text: "3.5"
+            - generic [ref=e391]: ימים
+          - generic [ref=e394]:
+            - text: "83"
+            - generic [ref=e395]: חציון שעות
+        - generic [ref=e396]:
+          - generic [ref=e397]:
+            - text: מיצוי זכויות — שירותים חברתיים
+            - generic [ref=e398]: n=52 פניות
+          - generic [ref=e399]:
+            - text: "4.5"
+            - generic [ref=e400]: ימים
+          - generic [ref=e403]:
+            - text: "107"
+            - generic [ref=e404]: חציון שעות
+        - generic [ref=e405]:
+          - generic [ref=e406]:
+            - text: שירותים חברתיים מזרח הגוש
+            - generic [ref=e407]: n=229 פניות
+          - generic [ref=e408]:
+            - text: "4.5"
+            - generic [ref=e409]: ימים
+          - generic [ref=e412]:
+            - text: "108"
+            - generic [ref=e413]: חציון שעות
+        - generic [ref=e414]:
+          - generic [ref=e415]:
+            - text: עו״ס משפחות — מערב
+            - generic [ref=e416]: n=39 פניות
+          - generic [ref=e417]:
+            - text: "5.6"
+            - generic [ref=e418]: ימים
+          - generic [ref=e421]:
+            - text: "135"
+            - generic [ref=e422]: חציון שעות
+        - generic [ref=e423]:
+          - generic [ref=e424]:
+            - text: עו״ס משפחות — מזרח
+            - generic [ref=e425]: n=13 פניות
+          - generic [ref=e426]:
+            - text: "21.4"
+            - generic [ref=e427]: ימים
+          - generic [ref=e430]:
+            - text: "513"
+            - generic [ref=e431]: חציון שעות
+      - paragraph [ref=e432]:
+        - strong [ref=e433]: מערב הגוש
+        - text: סוגר ב־
+        - emphasis [ref=e434]: 2.5 ימים
+        - text: ", מזרח ב־"
+        - emphasis [ref=e435]: "4.5"
+        - text: .
+        - strong [ref=e436]: עו״ס משפחות מזרח
+        - text: — n=13 בלבד, חציון
+        - emphasis [ref=e437]: 21.4 ימים
+        - text: ": טיפול עומק, לא קצב מוקד."
+  - generic [ref=e438]:
+    - generic [ref=e439]:
+      - generic [ref=e440]: IV.
+      - generic [ref=e441]:
+        - generic [ref=e442]: תנועות בין השנים
+        - text: מה גדל · מה התכווץ
+      - generic [ref=e443]:
+        - text: קצב חודשי מנורמל
+        - text: 2025 (12ח׳) ↔ 2026 (4.42ח׳)
+    - generic [ref=e444]:
+      - generic [ref=e445]:
+        - generic [ref=e446]: משפחות · כללי
+        - generic [ref=e447]:
+          - text: "7.8"
+          - generic [ref=e448]: 2025/חודש
+        - generic [ref=e449]:
+          - text: "15.6"
+          - generic [ref=e450]: 2026/חודש
+        - generic [ref=e454]: +99%
+      - generic [ref=e455]:
+        - generic [ref=e456]: משפחות · הר גילה
+        - generic [ref=e457]:
+          - text: "1.3"
+          - generic [ref=e458]: 2025/חודש
+        - generic [ref=e459]:
+          - text: "1.8"
+          - generic [ref=e460]: 2026/חודש
+        - generic [ref=e464]: +36%
+      - generic [ref=e465]:
+        - generic [ref=e466]: צמיד · ילדים בסיכון
+        - generic [ref=e467]:
+          - text: "16.8"
+          - generic [ref=e468]: 2025/חודש
+        - generic [ref=e469]:
+          - text: "19.7"
+          - generic [ref=e470]: 2026/חודש
+        - generic [ref=e474]: +17%
+      - generic [ref=e475]:
+        - generic [ref=e476]: כללי · שירותים חברתיים
+        - generic [ref=e477]:
+          - text: "1.0"
+          - generic [ref=e478]: 2025/חודש
+        - generic [ref=e479]:
+          - text: "0.9"
+          - generic [ref=e480]: 2026/חודש
+        - generic [ref=e484]: "-9%"
+      - generic [ref=e485]:
+        - generic [ref=e486]: פנייה לעו״ס
+        - generic [ref=e487]:
+          - text: "9.3"
+          - generic [ref=e488]: 2025/חודש
+        - generic [ref=e489]:
+          - text: "7.5"
+          - generic [ref=e490]: 2026/חודש
+        - generic [ref=e494]: "-20%"
+      - generic [ref=e495]:
+        - generic [ref=e496]: סדרי דין
+        - generic [ref=e497]:
+          - text: "1.2"
+          - generic [ref=e498]: 2025/חודש
+        - generic [ref=e499]:
+          - text: "0.9"
+          - generic [ref=e500]: 2026/חודש
+        - generic [ref=e504]: "-23%"
+      - generic [ref=e505]:
+        - generic [ref=e506]: נוער / התמכרויות
+        - generic [ref=e507]:
+          - text: "3.3"
+          - generic [ref=e508]: 2025/חודש
+        - generic [ref=e509]:
+          - text: "2.5"
+          - generic [ref=e510]: 2026/חודש
+        - generic [ref=e514]: "-23%"
+      - generic [ref=e515]:
+        - generic [ref=e516]: צרכים מיוחדים
+        - generic [ref=e517]:
+          - text: "1.8"
+          - generic [ref=e518]: 2025/חודש
+        - generic [ref=e519]:
+          - text: "1.1"
+          - generic [ref=e520]: 2026/חודש
+        - generic [ref=e524]: "-35%"
+      - generic [ref=e525]:
+        - generic [ref=e526]: פנייה למזכירות
+        - generic [ref=e527]:
+          - text: "17.6"
+          - generic [ref=e528]: 2025/חודש
+        - generic [ref=e529]:
+          - text: "11.1"
+          - generic [ref=e530]: 2026/חודש
+        - generic [ref=e534]: "-37%"
+      - generic [ref=e535]:
+        - generic [ref=e536]: משפחות · מזרח
+        - generic [ref=e537]:
+          - text: "5.0"
+          - generic [ref=e538]: 2025/חודש
+        - generic [ref=e539]:
+          - text: "2.7"
+          - generic [ref=e540]: 2026/חודש
+        - generic [ref=e544]: "-46%"
+      - generic [ref=e545]:
+        - generic [ref=e546]: אזרחים ותיקים
+        - generic [ref=e547]:
+          - text: "13.7"
+          - generic [ref=e548]: 2025/חודש
+        - generic [ref=e549]:
+          - text: "7.2"
+          - generic [ref=e550]: 2026/חודש
+        - generic [ref=e554]: "-47%"
+      - generic [ref=e555]:
+        - generic [ref=e556]: משפחות · בת עין
+        - generic [ref=e557]:
+          - text: "5.1"
+          - generic [ref=e558]: 2025/חודש
+        - generic [ref=e559]:
+          - text: "2.5"
+          - generic [ref=e560]: 2026/חודש
+        - generic [ref=e564]: "-51%"
+      - generic [ref=e565]:
+        - generic [ref=e566]: מיצוי זכויות
+        - generic [ref=e567]:
+          - text: "3.8"
+          - generic [ref=e568]: 2025/חודש
+        - generic [ref=e569]:
+          - text: "1.1"
+          - generic [ref=e570]: 2026/חודש
+        - generic [ref=e574]: "-70%"
+      - generic [ref=e575]:
+        - generic [ref=e576]: משפחות · מערב
+        - generic [ref=e577]:
+          - text: "0.9"
+          - generic [ref=e578]: 2025/חודש
+        - generic [ref=e579]:
+          - text: "0.0"
+          - generic [ref=e580]: 2026/חודש
+        - generic [ref=e584]: "-100%"
+    - generic [ref=e585]:
+      - text: צמיד / ילדים בסיכון — הקטגוריה היחידה שגדלה בקצב משמעותי (
+      - emphasis [ref=e586]: +17%
+      - text: ). שאר התחומים הגדולים — אזרחים ותיקים, מיצוי זכויות, פנייה למזכירות — מתכווצים.
+    - paragraph [ref=e587]:
+      - strong [ref=e588]: משפחות · כללי
+      - text: כמעט הוכפלה (
+      - emphasis [ref=e589]: +99%
+      - text: ) — ככל הנראה ארגון סיווג מחדש שמעביר פניות לקטגוריה הגנרית. במקביל, ירידה חדה ב
+      - strong [ref=e590]: מיצוי זכויות
+      - text: (−70%) וב
+      - strong [ref=e591]: אזרחים ותיקים
+      - text: "(−47%) — נדרשת בדיקה: שינוי באופן הטיפול, או שינוי בסיווג בלבד."
+  - generic [ref=e592]:
+    - generic [ref=e593]:
+      - generic [ref=e594]: V.
+      - generic [ref=e595]:
+        - generic [ref=e596]: מאזן צבירה
+        - text: נפתח מול נסגר
+      - generic [ref=e597]:
+        - text: השוואה חודשית
+        - text: אינדיקטור לבק־לוג
+    - generic [ref=e598]:
+      - generic [ref=e599]:
+        - generic [ref=e600]:
+          - heading "המאזן · אפריל 2026" [level=3] [ref=e601]
+          - generic [ref=e602]: תשומת לב
+        - generic [ref=e603]:
+          - generic [ref=e604]: נפתחו
+          - generic [ref=e605]: "56"
+        - generic [ref=e606]:
+          - generic [ref=e607]: נסגרו
+          - generic [ref=e608]: "22"
+        - generic [ref=e609]:
+          - generic [ref=e610]: פער החודש
+          - generic [ref=e611]: "+34"
+        - paragraph [ref=e612]:
+          - text: "אפריל 2026: 56 נפתחו, 22 נסגרו. במאי (חלקי): 30 נפתחו,"
+          - emphasis [ref=e613]: 71 נסגרו
+          - text: — סגירה מואצת. תחילת הקטנת הבק־לוג שהצטבר ברבעון הראשון.
+      - generic [ref=e614]:
+        - generic [ref=e615]:
+          - heading "נפתחו מול נסגרו — חודש בחודש" [level=3] [ref=e616]
+          - generic [ref=e617]: 17 חודשים
+        - generic [ref=e620]:
+          - generic [ref=e621]: פניות שנפתחו
+          - generic [ref=e623]: פניות שנסגרו
+          - generic [ref=e625]: מאזן חודשי (נפתח − נסגר)
+  - contentinfo [ref=e627]:
+    - generic [ref=e628]: המכלול · גוש עציון
+    - generic [ref=e629]:
+      - text: דו״ח פניות · אגף שירותים חברתיים · נוסח 02 · מאי 2026
+      - text: כל המספרים נגזרים ישירות מקובץ המקור. אין להפיץ ללא רשות.
+    - generic [ref=e630]: 497 ימים
