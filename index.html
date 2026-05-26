@@ -89,7 +89,7 @@
   /* TAB BAR */
   .tabs {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     border-bottom: 2px solid var(--ink);
     margin-top: 4px;
   }
@@ -288,6 +288,11 @@
       <div class="tab-title">דו״ח <em>פניות</em></div>
       <div class="tab-sub">1,456 פניות, 17 חודשים · 2025–2026</div>
     </button>
+    <button class="tab" role="tab" aria-selected="false" data-tab="briefing">
+      <div class="tab-eyebrow">תדריך פנימי</div>
+      <div class="tab-title">אלמ״ב <em>במועצה</em></div>
+      <div class="tab-sub">תמונת מצב מבוססת נתונים · מאי 2026</div>
+    </button>
   </nav>
 
   <!-- SOURCE STRIP (changes per tab) -->
@@ -344,6 +349,16 @@ const dashboards = {
       <span><b>תאריך הפקה</b> &nbsp;·&nbsp; 14/05/2026 15:13</span><br>
       <span><b>קובץ</b> &nbsp;·&nbsp; <a href="ללא שם 14052026 1513 רווחה 2025 -2026.xlsx" download>ללא שם 14052026 1513 רווחה 2025 -2026.xlsx</a></span><br>
       <span><b>תקופה</b> &nbsp;·&nbsp; 01/01/2025 → 13/05/2026 · 497 ימים · 1,456 שורות</span>
+    `
+  },
+  briefing: {
+    file: 'briefing-almab.html',
+    descr: `<strong>תדריך פנימי</strong> לקראת דיון על איוש תפקיד רכזת יחידת אלמ"ב. מסמך מבוסס-נתונים בחמישה רבדים: ראיות פנימיות מקובץ המוקד, הקשר דמוגרפי של המועצה, השוואה לרשויות באשכול חברתי-כלכלי דומה, הקשר ארצי וזיקה למלחמה, ומענה לאתגרים תקציביים צפויים. <em>לכל נתון מצורף מקור ראשוני, אופן שליפה ודרגת אמינות.</em>`,
+    meta: `
+      <span><b>מקור</b> &nbsp;·&nbsp; קובץ פניות פנימי + מקורות ממשלתיים</span><br>
+      <span><b>תוקף</b> &nbsp;·&nbsp; 26/05/2026 · לשימוש פנימי</span><br>
+      <span><b>קובץ</b> &nbsp;·&nbsp; <a href="briefing-almab.html" target="_blank">briefing-almab.html</a></span><br>
+      <span><b>הקשר</b> &nbsp;·&nbsp; דיון על איוש רכזת אלמ"ב</span>
     `
   }
 };

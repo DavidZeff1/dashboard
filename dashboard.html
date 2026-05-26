@@ -727,23 +727,23 @@
     <div class="headline-grid">
       <div class="stat">
         <div class="label">אוכלוסייה</div>
-        <div class="value">26,503</div>
+        <div class="value" id="hl-pop">26,503</div>
         <div class="delta">סך תושבים ב־<b>14 ישובים</b><br>אשכולות סוציו־אקונומיים 2–7</div>
       </div>
       <div class="stat">
         <div class="label">מקבלי שירות</div>
-        <div class="value">4,415</div>
-        <div class="delta up">‎ <b>16.66%</b> מהאוכלוסייה — <br>גבוה מהממוצע הארצי (15.14%)</div>
+        <div class="value" id="hl-rec">4,415</div>
+        <div class="delta up">‎ <b id="hl-rec-pct">16.66%</b> מהאוכלוסייה — <br>גבוה מהממוצע הארצי (<span id="hl-rec-nat">15.14%</span>)</div>
       </div>
       <div class="stat">
         <div class="label">משפחות פעילות</div>
-        <div class="value">1,363</div>
-        <div class="delta">1,821 פרטים עם נזקקות מזוהה <br>2,605 ללא נזקקות מקודדת (59%) <span style="color:var(--muted)">·</span> פער איכות־דיווח</div>
+        <div class="value" id="hl-fam">1,363</div>
+        <div class="delta"><span id="hl-coded">1,821</span> פרטים עם נזקקות מזוהה <br><span id="hl-uncoded">2,605</span> ללא נזקקות מקודדת (<span id="hl-uncoded-pct">59%</span>) <span style="color:var(--muted)">·</span> פער איכות־דיווח</div>
       </div>
       <div class="stat">
         <div class="label">הקצאה שנתית <span class="num" style="font-weight:400">·</span> ברוטו</div>
-        <div class="value">35.77<span class="unit">מיליון ₪</span></div>
-        <div class="delta">סך הקצאה ל־9 תחומי פעולה <br><b>מנהל משה: 40.9%</b> מסך התקציב</div>
+        <div class="value"><span id="hl-gross">35.77</span><span class="unit">מיליון ₪</span></div>
+        <div class="delta">סך הקצאה ל־9 תחומי פעולה <br><b>מנהל משה: <span id="hl-moshe-pct">40.9%</span></b> מסך התקציב</div>
       </div>
     </div>
   </section>
@@ -768,64 +768,7 @@
           <th>פער מארצי</th>
         </tr>
       </thead>
-      <tbody>
-        <tr>
-          <td class="group">מקבלי שירות (כלל)</td>
-          <td class="num">26,503</td>
-          <td class="num">4,415</td>
-          <td>
-            <div class="bar-cell">
-              <span class="pctnum">16.66%</span>
-              <div class="bar-vis"><i style="width:16.66%"></i></div>
-            </div>
-          </td>
-          <td class="num">15.14%</td>
-          <td class="num">13.79%</td>
-          <td class="delta-pos">+1.52%</td>
-        </tr>
-        <tr>
-          <td class="group">אזרחים ותיקים</td>
-          <td class="num">1,436</td>
-          <td class="num">387</td>
-          <td>
-            <div class="bar-cell">
-              <span class="pctnum">26.95%</span>
-              <div class="bar-vis"><i style="width:26.95%; background:var(--crimson)"></i></div>
-            </div>
-          </td>
-          <td class="num">25.23%</td>
-          <td class="num">17.78%</td>
-          <td class="delta-pos">+1.72%</td>
-        </tr>
-        <tr>
-          <td class="group">ילדים 0–18</td>
-          <td class="num">12,153</td>
-          <td class="num">1,967</td>
-          <td>
-            <div class="bar-cell">
-              <span class="pctnum">16.19%</span>
-              <div class="bar-vis"><i style="width:16.19%"></i></div>
-            </div>
-          </td>
-          <td class="num">16.74%</td>
-          <td class="num">16.17%</td>
-          <td class="delta-neg">−0.55%</td>
-        </tr>
-        <tr>
-          <td class="group">עולים חדשים</td>
-          <td class="num">907</td>
-          <td class="num">97</td>
-          <td>
-            <div class="bar-cell">
-              <span class="pctnum">10.69%</span>
-              <div class="bar-vis"><i style="width:10.69%; background:var(--olive)"></i></div>
-            </div>
-          </td>
-          <td class="num">11.48%</td>
-          <td class="num">11.03%</td>
-          <td class="delta-neg">−0.79%</td>
-        </tr>
-      </tbody>
+      <tbody id="cmp-body"></tbody>
     </table>
 
     <p class="marginal" style="margin-top:18px; max-width: 70ch;">
@@ -838,7 +781,7 @@
     <div class="sect-head">
       <div class="sect-num">II.</div>
       <div class="sect-title"><small>פילוח מקבלי שירות</small>דמוגרפיה — גיל, מגדר, מצב משפחתי</div>
-      <div class="sect-meta">4,415 מקבלי שירות<br>חתכי־צלב פנימיים</div>
+      <div class="sect-meta"><span id="dem-total">4,415</span> מקבלי שירות<br>חתכי־צלב פנימיים</div>
     </div>
 
     <div class="grid-3">
@@ -847,7 +790,7 @@
           <h3>קבוצת גיל</h3>
           <span class="tag">פירמידה</span>
         </div>
-        <p class="sub">ילדים, נוער ובוגרים עד גיל 49 מהווים <strong>82.3%</strong> ממקבלי השירות. אזרחים ותיקים (65+) — <strong>8.8%</strong>.</p>
+        <p class="sub">ילדים, נוער ובוגרים עד גיל 49 מהווים <strong id="dem-age-young">82.3%</strong> ממקבלי השירות. אזרחים ותיקים (65+) — <strong id="dem-age-old">8.8%</strong>.</p>
         <div class="chart-wrap" style="height: 220px;"><canvas id="ch-age"></canvas></div>
       </div>
 
@@ -856,16 +799,16 @@
           <h3>מגדר</h3>
           <span class="tag">חלוקה</span>
         </div>
-        <p class="sub">חלוקה כמעט שוויונית: <strong>2,214 נשים</strong> ו<strong>־2,201 גברים</strong> (ועוד פרט אחד "אחר"). הפער: 13 פרטים — פחות מחצי אחוז.</p>
+        <p class="sub">חלוקה כמעט שוויונית: <strong><span id="dem-gen-f">2,214</span> נשים</strong> ו<strong>־<span id="dem-gen-m">2,201</span> גברים</strong> (ועוד פרט אחד "אחר"). הפער: <span id="dem-gen-gap">13</span> פרטים — פחות מחצי אחוז.</p>
         <div class="chart-wrap" style="height: 220px;"><canvas id="ch-gender"></canvas></div>
       </div>
 
       <div class="panel">
         <div class="ph">
           <h3>מצב משפחתי</h3>
-          <span class="tag">2,583 בעלי נתון</span>
+          <span class="tag"><span id="dem-mar-tag">2,583</span> בעלי נתון</span>
         </div>
-        <p class="sub">מבין הבוגרים שמצבם המשפחתי מקודד (2,583): <strong>נשואים 52.1%</strong>, רווקים 36.0%, גרושים/אלמנים/פרודים 11.4%, ידועים בציבור 0.4%.</p>
+        <p class="sub">מבין הבוגרים שמצבם המשפחתי מקודד (<span id="dem-mar-total">2,583</span>): <strong>נשואים <span id="dem-mar-married">52.1%</span></strong>, רווקים <span id="dem-mar-single">36.0%</span>, גרושים/אלמנים/פרודים <span id="dem-mar-divwid">11.4%</span>, ידועים בציבור <span id="dem-mar-common">0.4%</span>.</p>
         <div class="chart-wrap" style="height: 220px;"><canvas id="ch-family"></canvas></div>
       </div>
     </div>
@@ -898,40 +841,7 @@
           שלושת הישובים עם שיעור הגבוה ביותר של מקבלי שירות — כולם באשכולות סוציו־אקונומיים 2–3. <strong>מעלה עמוס</strong> ו<strong>בת עין</strong> מתקרבים ל־40% — קרוב לכפול מהממוצע הרשותי.
         </p>
 
-        <div style="margin-top: 24px;">
-          <div style="display:flex; justify-content:space-between; align-items:center; padding: 20px 0; border-bottom: 1px solid rgba(236,229,212,0.18); gap: 16px;">
-            <div>
-              <div style="font-family:'Frank Ruhl Libre',serif; font-size: 28px; font-weight: 500;">מעלה עמוס</div>
-              <div style="font-size: 13px; font-weight:600; letter-spacing: 0.2em; text-transform: uppercase; color: rgba(236,229,212,0.6); margin-top: 6px;">אשכול 2 · נמוך</div>
-            </div>
-            <div style="text-align:left;">
-              <div style="font-family:'Frank Ruhl Libre',serif; font-style:italic; font-size: 42px; font-weight: 500; color: var(--ochre); line-height:1;">38.96%</div>
-              <div style="font-size: 12px; font-weight:500; letter-spacing: 0.15em; color: rgba(236,229,212,0.65); margin-top: 6px;">353 מתוך 906</div>
-            </div>
-          </div>
-
-          <div style="display:flex; justify-content:space-between; align-items:center; padding: 20px 0; border-bottom: 1px solid rgba(236,229,212,0.18); gap: 16px;">
-            <div>
-              <div style="font-family:'Frank Ruhl Libre',serif; font-size: 28px; font-weight: 500;">בת עין</div>
-              <div style="font-size: 13px; font-weight:600; letter-spacing: 0.2em; text-transform: uppercase; color: rgba(236,229,212,0.6); margin-top: 6px;">אשכול 3</div>
-            </div>
-            <div style="text-align:left;">
-              <div style="font-family:'Frank Ruhl Libre',serif; font-style:italic; font-size: 42px; font-weight: 500; color: var(--ochre); line-height:1;">38.27%</div>
-              <div style="font-size: 12px; font-weight:500; letter-spacing: 0.15em; color: rgba(236,229,212,0.65); margin-top: 6px;">662 מתוך 1,730</div>
-            </div>
-          </div>
-
-          <div style="display:flex; justify-content:space-between; align-items:center; padding: 20px 0; gap: 16px;">
-            <div>
-              <div style="font-family:'Frank Ruhl Libre',serif; font-size: 28px; font-weight: 500;">אספר</div>
-              <div style="font-size: 13px; font-weight:600; letter-spacing: 0.2em; text-transform: uppercase; color: rgba(236,229,212,0.6); margin-top: 6px;">אשכול 3</div>
-            </div>
-            <div style="text-align:left;">
-              <div style="font-family:'Frank Ruhl Libre',serif; font-style:italic; font-size: 42px; font-weight: 500; color: var(--ochre); line-height:1;">27.85%</div>
-              <div style="font-size: 12px; font-weight:500; letter-spacing: 0.15em; color: rgba(236,229,212,0.65); margin-top: 6px;">342 מתוך 1,228</div>
-            </div>
-          </div>
-        </div>
+        <div style="margin-top: 24px;" id="town-cards"></div>
       </div>
     </div>
   </section>
@@ -948,7 +858,7 @@
       <div>
         <div class="ph" style="padding-bottom:14px; border-bottom:1px solid var(--ink); margin-bottom: 8px;">
           <h3 style="font-family:'Frank Ruhl Libre',serif; font-weight:500; font-size:28px;">בעיני <em style="color: var(--terra); font-style:italic;">המשפחה</em></h3>
-          <span style="font-family:'Heebo',sans-serif; font-size:13px; font-weight:600; letter-spacing:0.2em; text-transform:uppercase; color: var(--muted);">מתוך 1,363 משפחות פעילות</span>
+          <span style="font-family:'Heebo',sans-serif; font-size:13px; font-weight:600; letter-spacing:0.2em; text-transform:uppercase; color: var(--muted);">מתוך <span id="needs-fam-total">1,363</span> משפחות פעילות</span>
         </div>
         <div class="needs families" id="fam-needs"></div>
       </div>
@@ -956,7 +866,7 @@
       <div>
         <div class="ph" style="padding-bottom:14px; border-bottom:1px solid var(--ink); margin-bottom: 8px;">
           <h3 style="font-family:'Frank Ruhl Libre',serif; font-weight:500; font-size:28px;">בעיני <em style="color: var(--terra); font-style:italic;">הפרט</em></h3>
-          <span style="font-family:'Heebo',sans-serif; font-size:13px; font-weight:600; letter-spacing:0.2em; text-transform:uppercase; color: var(--muted);">מתוך 1,821 פרטים עם נזקקות</span>
+          <span style="font-family:'Heebo',sans-serif; font-size:13px; font-weight:600; letter-spacing:0.2em; text-transform:uppercase; color: var(--muted);">מתוך <span id="needs-ind-total">1,821</span> פרטים עם נזקקות</span>
         </div>
         <div class="needs individuals" id="ind-needs"></div>
       </div>
@@ -964,7 +874,7 @@
 
     <p class="marginal" style="margin-top: 28px; max-width: 78ch;">
       <span class="em-rule"></span>
-      ראוי לציין: <strong>59% מהפרטים הפעילים</strong> אינם משויכים לאף נזקקות, ובפן הנפרד של ה־<em>מאפיינים</em> — 66.8%. הפער הזה מצביע על איכות־דיווח בלתי־אחידה ועל הזדמנות אופרטיבית לטיוב הנתונים השוטף.
+      ראוי לציין: <strong><span id="needs-uncoded-ind">59%</span> מהפרטים הפעילים</strong> אינם משויכים לאף נזקקות, ובפן הנפרד של ה־<em>מאפיינים</em> — <span id="needs-uncoded-char">66.8%</span>. הפער הזה מצביע על איכות־דיווח בלתי־אחידה ועל הזדמנות אופרטיבית לטיוב הנתונים השוטף.
     </p>
   </section>
 
@@ -986,7 +896,7 @@
       </div>
       <div class="chart-wrap" style="height: 320px;"><canvas id="ch-trend"></canvas></div>
       <p class="marginal" style="margin-top: 18px; max-width: 80ch;">
-        ⟵ נובמבר 2025 מסמן את שיא־השנה: <strong>35 פתיחות</strong>. בחודשי האביב 2026 נרשמת ירידה רצופה — 12, 11, 5 בפבר׳, מרץ ואפר׳ בהתאמה. ‎<strong>5 פתיחות באפריל 2026</strong> הוא השפל הנמוך ביותר בשני 12־החודשים האחרונים (השפל הקודם: 8 פתיחות באפר׳ 2025).
+        ⟵ נובמבר 2025 מסמן את שיא־השנה: <strong><span id="trend-peak">35</span> פתיחות</strong>. בחודשי האביב 2026 נרשמת ירידה רצופה — <span id="trend-last3">12, 11, 5</span> בפבר׳, מרץ ואפר׳ בהתאמה. ‎<strong><span id="trend-apr">5</span> פתיחות באפריל 2026</strong> הוא השפל הנמוך ביותר בשני 12־החודשים האחרונים (השפל הקודם: <span id="trend-prev-apr">8</span> פתיחות באפר׳ 2025).
       </p>
     </div>
   </section>
@@ -1003,9 +913,9 @@
       <div class="panel">
         <div class="ph">
           <h3>הקצאה לפי תחום</h3>
-          <span class="tag">סה״כ 35.77M ₪</span>
+          <span class="tag">סה״כ <span id="bud-total-tag">35.77M</span> ₪</span>
         </div>
-        <p class="sub">סך ההקצאה השנתית הברוטו לפי תחום פעולה <em>(מקור: דו״ח T33, ברמת המינהל)</em>. למעלה ממחצית התקציב מופנה לשני תחומים: <strong>מנהל משה</strong> (מוגבלויות, 40.9%) ו<strong>שירותים לילד ולנוער</strong> (17.9%).</p>
+        <p class="sub">סך ההקצאה השנתית הברוטו לפי תחום פעולה <em>(מקור: דו״ח T33, ברמת המינהל)</em>. למעלה ממחצית התקציב מופנה לשני תחומים: <strong>מנהל משה</strong> (מוגבלויות, <span id="bud-moshe-pct">40.9%</span>) ו<strong>שירותים לילד ולנוער</strong> (<span id="bud-child-pct">17.9%</span>).</p>
         <div class="chart-wrap" style="height: 380px;"><canvas id="ch-budget"></canvas></div>
       </div>
 
@@ -1016,13 +926,13 @@
             <span style="font-family:'Heebo',sans-serif; font-size:13px; font-weight:600; letter-spacing:0.2em; text-transform:uppercase; color: var(--muted);">ינואר–אפריל 2026</span>
           </div>
           <p style="font-family:'Frank Ruhl Libre',serif; font-style:italic; font-size:15px; color: var(--muted); margin-top: 10px; line-height:1.55;">
-            הסעיפים המנוטרים חודשית (מקור: T36) — תת־קבוצה של ההקצאה הכוללת. סה״כ 11.66M ₪ שנתי, מתוכם 4.35M ₪ הוצאו עד סוף אפריל.
+            הסעיפים המנוטרים חודשית (מקור: T36) — תת־קבוצה של ההקצאה הכוללת. סה״כ <span id="bud-util-alloc">11.66M</span> ₪ שנתי, מתוכם <span id="bud-util-used">4.35M</span> ₪ הוצאו עד סוף אפריל.
           </p>
         </div>
         <div id="budget-rows"></div>
         <p class="marginal" style="margin-top: 22px; max-width: 70ch;">
           <span class="em-rule"></span>
-          קצב פרורטה צפוי לתום אפריל: <strong>33.3%</strong> (4 מתוך 12 חודשים). <strong>שירותי תקון</strong> ו־<strong>מנהל הרווחה</strong> מקדימים את הקצב (53.9% ו־53.5% בהתאמה). <strong>שירותי שיקום</strong> מתחת לקצב (22.3%) ו<em>שירותים לעולים</em> בלא ניצול כלל (0%).
+          קצב פרורטה צפוי לתום אפריל: <strong><span id="bud-prorata">33.3%</span></strong> (4 מתוך 12 חודשים). <strong>שירותי תקון</strong> ו־<strong>מנהל הרווחה</strong> מקדימים את הקצב (<span id="bud-tikun">53.9%</span> ו־<span id="bud-minhal">53.5%</span> בהתאמה). <strong>שירותי שיקום</strong> מתחת לקצב (<span id="bud-shikum">22.3%</span>) ו<em>שירותים לעולים</em> בלא ניצול כלל (<span id="bud-olim">0%</span>).
         </p>
       </div>
     </div>
@@ -1033,7 +943,7 @@
     <div class="sect-head">
       <div class="sect-num">VII.</div>
       <div class="sect-title"><small>תשתית טיפול</small>מסגרות, שלוחות, השמות</div>
-      <div class="sect-meta">62 מסגרות פעילות ברשות<br>164 שורות־השמה במסגרות חוצות־רשויות</div>
+      <div class="sect-meta"><span id="fw-count">62</span> מסגרות פעילות ברשות<br><span id="fw-cross">164</span> שורות־השמה במסגרות חוצות־רשויות</div>
     </div>
 
     <div class="grid-3">
@@ -1062,15 +972,15 @@
         </div>
         <div style="margin-top: 10px;">
           <div style="padding: 22px 0; border-bottom: 1px solid rgba(236,229,212,0.18);">
-            <div style="font-family:'Frank Ruhl Libre',serif; font-style:italic; font-size:60px; line-height:1; color: var(--ochre); font-weight:500;">730</div>
+            <div style="font-family:'Frank Ruhl Libre',serif; font-style:italic; font-size:60px; line-height:1; color: var(--ochre); font-weight:500;" id="brief-goal">730</div>
             <div style="margin-top:12px; font-size:15px; line-height:1.55;">מקבלי שירות עם יעד <em>הגברת רווחה אישית ושיפור מצב רגשי</em> — היעד השכיח ביותר.</div>
           </div>
           <div style="padding: 22px 0; border-bottom: 1px solid rgba(236,229,212,0.18);">
-            <div style="font-family:'Frank Ruhl Libre',serif; font-style:italic; font-size:60px; line-height:1; color: var(--ochre); font-weight:500;">28</div>
+            <div style="font-family:'Frank Ruhl Libre',serif; font-style:italic; font-size:60px; line-height:1; color: var(--ochre); font-weight:500;" id="brief-goals-count">28</div>
             <div style="margin-top:12px; font-size:15px; line-height:1.55;">יעדי טיפול שונים פעילים במערכת — מקיף את כל מעגלי הסיוע.</div>
           </div>
           <div style="padding: 22px 0;">
-            <div style="font-family:'Frank Ruhl Libre',serif; font-style:italic; font-size:60px; line-height:1; color: var(--ochre); font-weight:500;">19</div>
+            <div style="font-family:'Frank Ruhl Libre',serif; font-style:italic; font-size:60px; line-height:1; color: var(--ochre); font-weight:500;" id="brief-foster">19</div>
             <div style="margin-top:12px; font-size:15px; line-height:1.55;">משפחות אומנה ברשות — הסוג הנפוץ ביותר של מסגרת חוץ־ביתית.</div>
           </div>
         </div>
@@ -1091,6 +1001,7 @@
 
 </div>
 
+<script src="data.js"></script>
 <script>
 /* ─── chart.js global defaults ─── */
 Chart.defaults.font.family = '"Heebo", sans-serif';
@@ -1115,6 +1026,120 @@ const PAL = {
   crimson: '#8B2A2A'
 };
 
+/* ─── STATIC NUMBERS — filled from DASHDATA (data.js, generated from the Excel) ─── */
+function paintStatics() {
+  const D = window.DASHDATA;
+  const nf  = n => Number(n).toLocaleString('he-IL');
+  const set = (id, v) => { const el = document.getElementById(id); if (el) el.textContent = v; };
+  const recTotal = D.recipients;
+  const marTotal = D.marital.data.reduce((a, b) => a + b, 0);
+  const allocTot = D.budgetAlloc.reduce((s, r) => s + r[1], 0);
+  const moshe = D.budgetAlloc.find(r => /משה/.test(r[0]));
+  const child = D.budgetAlloc.find(r => /ילד/.test(r[0]));
+
+  // headline
+  set('hl-pop', nf(D.population));
+  set('hl-rec', nf(D.recipients));
+  set('hl-rec-pct', (D.recipients / D.population * 100).toFixed(2) + '%');
+  set('hl-rec-nat', (D.compare[0].national * 100).toFixed(2) + '%');
+  set('hl-fam', nf(D.activeFamilies));
+  set('hl-coded', nf(D.individualsCoded));
+  set('hl-uncoded', nf(D.individualsUncoded));
+  set('hl-uncoded-pct', Math.round(D.individualsUncodedPct) + '%');
+  set('hl-gross', (D.grossAlloc / 1e6).toFixed(2));
+  set('hl-moshe-pct', moshe ? (moshe[1] / allocTot * 100).toFixed(1) + '%' : '');
+
+  // comparison table
+  const cmp = document.getElementById('cmp-body');
+  if (cmp) cmp.innerHTML = D.compare.map(r => {
+    const pct = r.rec / r.pop * 100, nat = r.national * 100, sim = r.similar * 100;
+    const gap = pct - nat;
+    const gcls = gap >= 0 ? 'delta-pos' : 'delta-neg';
+    const gtxt = (gap >= 0 ? '+' : '−') + Math.abs(gap).toFixed(2) + '%';
+    const bg = r.color === 'crimson' ? '; background:var(--crimson)'
+             : r.color === 'olive'   ? '; background:var(--olive)' : '';
+    return `<tr>
+        <td class="group">${r.group}</td>
+        <td class="num">${nf(r.pop)}</td>
+        <td class="num">${nf(r.rec)}</td>
+        <td><div class="bar-cell"><span class="pctnum">${pct.toFixed(2)}%</span>
+          <div class="bar-vis"><i style="width:${pct.toFixed(2)}%${bg}"></i></div></div></td>
+        <td class="num">${nat.toFixed(2)}%</td>
+        <td class="num">${sim.toFixed(2)}%</td>
+        <td class="${gcls}">${gtxt}</td>
+      </tr>`;
+  }).join('');
+
+  // demographics captions
+  set('dem-total', nf(D.recipients));
+  set('dem-age-young', ((D.age.data[0] + D.age.data[1]) / recTotal * 100).toFixed(1) + '%');
+  set('dem-age-old', (D.age.data[3] / recTotal * 100).toFixed(1) + '%');
+  set('dem-gen-f', nf(D.gender.data[0]));
+  set('dem-gen-m', nf(D.gender.data[1]));
+  set('dem-gen-gap', nf(Math.abs(D.gender.data[0] - D.gender.data[1])));
+  set('dem-mar-tag', nf(marTotal));
+  set('dem-mar-total', nf(marTotal));
+  set('dem-mar-married', (D.marital.data[0] / marTotal * 100).toFixed(1) + '%');
+  set('dem-mar-single', (D.marital.data[1] / marTotal * 100).toFixed(1) + '%');
+  set('dem-mar-divwid', ((D.marital.data[2] + D.marital.data[3] + D.marital.data[4]) / marTotal * 100).toFixed(1) + '%');
+  set('dem-mar-common', (D.marital.data[5] / marTotal * 100).toFixed(1) + '%');
+
+  // town spotlight cards (top 3 by rate)
+  const tc = document.getElementById('town-cards');
+  if (tc) {
+    const top3 = D.towns.slice().sort((a, b) => (b.rec / b.pop) - (a.rec / a.pop)).slice(0, 3);
+    tc.innerHTML = top3.map((t, idx) => {
+      const rate = (t.rec / t.pop * 100).toFixed(2);
+      const sesLbl = 'אשכול ' + t.ses + (t.ses <= 2 ? ' · נמוך' : '');
+      const border = idx < 2 ? ' border-bottom: 1px solid rgba(236,229,212,0.18);' : '';
+      return `<div style="display:flex; justify-content:space-between; align-items:center; padding: 20px 0;${border} gap: 16px;">
+        <div>
+          <div style="font-family:'Frank Ruhl Libre',serif; font-size: 28px; font-weight: 500;">${t.name}</div>
+          <div style="font-size: 13px; font-weight:600; letter-spacing: 0.2em; text-transform: uppercase; color: rgba(236,229,212,0.6); margin-top: 6px;">${sesLbl}</div>
+        </div>
+        <div style="text-align:left;">
+          <div style="font-family:'Frank Ruhl Libre',serif; font-style:italic; font-size: 42px; font-weight: 500; color: var(--ochre); line-height:1;">${rate}%</div>
+          <div style="font-size: 12px; font-weight:500; letter-spacing: 0.15em; color: rgba(236,229,212,0.65); margin-top: 6px;">${nf(t.rec)} מתוך ${nf(t.pop)}</div>
+        </div>
+      </div>`;
+    }).join('');
+  }
+
+  // needs captions
+  set('needs-fam-total', nf(D.activeFamilies));
+  set('needs-ind-total', nf(D.individualsCoded));
+  set('needs-uncoded-ind', Math.round(D.individualsUncodedPct) + '%');
+  set('needs-uncoded-char', D.charsUncodedPct.toFixed(1) + '%');
+
+  // trend narrative
+  const cur = D.trend.cur, prev = D.trend.prev;
+  set('trend-peak', nf(Math.max(...cur)));
+  set('trend-last3', cur.slice(-3).join(', '));
+  set('trend-apr', nf(cur[cur.length - 1]));
+  set('trend-prev-apr', nf(prev[prev.length - 1]));
+
+  // budget captions
+  set('bud-total-tag', (D.grossAlloc / 1e6).toFixed(2) + 'M');
+  set('bud-moshe-pct', moshe ? (moshe[1] / allocTot * 100).toFixed(1) + '%' : '');
+  set('bud-child-pct', child ? (child[1] / allocTot * 100).toFixed(1) + '%' : '');
+  set('bud-util-alloc', (D.budgetRows.reduce((s, r) => s + r.alloc, 0) / 1e6).toFixed(2) + 'M');
+  set('bud-util-used',  (D.budgetRows.reduce((s, r) => s + r.used,  0) / 1e6).toFixed(2) + 'M');
+  set('bud-prorata', (4 / 12 * 100).toFixed(1) + '%');
+  const util = name => { const r = D.budgetRows.find(x => x.name === name); return r ? r.used / r.alloc * 100 : 0; };
+  set('bud-tikun',  util('שרותי תקון').toFixed(1) + '%');
+  set('bud-minhal', util('מינהל הרווחה').toFixed(1) + '%');
+  set('bud-shikum', util('שרותי שיקום').toFixed(1) + '%');
+  set('bud-olim',   Math.round(util('שירותים לעולים')) + '%');
+
+  // frameworks + in-brief
+  set('fw-count', nf(D.frameworksCount));
+  set('fw-cross', nf(D.crossAuthPlacements));
+  set('brief-goal', nf(D.topGoal));
+  set('brief-goals-count', nf(D.goalsCount));
+  set('brief-foster', nf(D.fosterFamilies));
+}
+paintStatics();
+
 const COMMON_SCALE = (vert=false) => ({
   x: {
     grid: { display: false, drawBorder: false },
@@ -1133,9 +1158,9 @@ const COMMON_SCALE = (vert=false) => ({
 new Chart(document.getElementById('ch-age'), {
   type: 'bar',
   data: {
-    labels: ['0—17', '18—49', '50—64', '65+'],
+    labels: DASHDATA.age.labels,
     datasets: [{
-      data: [1832, 1804, 390, 389],
+      data: DASHDATA.age.data,
       backgroundColor: [PAL.terra, PAL.terraD, PAL.ochre, PAL.olive],
       borderRadius: 0,
       borderSkipped: false,
@@ -1164,9 +1189,9 @@ new Chart(document.getElementById('ch-age'), {
 new Chart(document.getElementById('ch-gender'), {
   type: 'doughnut',
   data: {
-    labels: ['נשים', 'גברים', 'אחר'],
+    labels: DASHDATA.gender.labels,
     datasets: [{
-      data: [2214, 2201, 1],
+      data: DASHDATA.gender.data,
       backgroundColor: [PAL.terra, PAL.ink2, PAL.ochre],
       borderColor: PAL.paper2,
       borderWidth: 3
@@ -1191,16 +1216,16 @@ new Chart(document.getElementById('ch-gender'), {
     },
     animation: { duration: 800 }
   },
-  plugins: [centerLabel('4,415', 'סה״כ')]
+  plugins: [centerLabel(DASHDATA.gender.data.reduce((a,b)=>a+b,0).toLocaleString('he-IL'), 'סה״כ')]
 });
 
 /* ─── 3. FAMILY ─── */
 new Chart(document.getElementById('ch-family'), {
   type: 'bar',
   data: {
-    labels: ['נשוי/ה', 'רווק/ה', 'גרוש/ה', 'אלמן/ה', 'חי/ה בנפרד', 'ידוע/ה בציבור'],
+    labels: DASHDATA.marital.labels,
     datasets: [{
-      data: [1347, 931, 196, 72, 26, 11],
+      data: DASHDATA.marital.data,
       backgroundColor: [PAL.terraD, PAL.terra, PAL.ochre, PAL.olive, PAL.slate, PAL.muted],
       borderRadius: 0,
       borderSkipped: false,
@@ -1228,11 +1253,11 @@ new Chart(document.getElementById('ch-family'), {
 new Chart(document.getElementById('ch-trend'), {
   type: 'line',
   data: {
-    labels: ['מאי', 'יוני', 'יולי', 'אוג׳', 'ספט׳', 'אוק׳', 'נוב׳', 'דצמ׳', 'ינו׳', 'פבר׳', 'מרץ', 'אפר׳'],
+    labels: DASHDATA.trend.labels,
     datasets: [
       {
         label: 'שנה נוכחית · ’25–’26',
-        data: [21, 15, 12, 23, 25, 20, 35, 21, 20, 12, 11, 5],
+        data: DASHDATA.trend.cur,
         borderColor: PAL.terraD,
         backgroundColor: 'rgba(176,90,48,0.08)',
         borderWidth: 2.2,
@@ -1246,7 +1271,7 @@ new Chart(document.getElementById('ch-trend'), {
       },
       {
         label: 'שנה קודמת · ’24–’25',
-        data: [9, 11, 22, 18, 31, 24, 22, 24, 26, 28, 10, 8],
+        data: DASHDATA.trend.prev,
         borderColor: PAL.ink2,
         backgroundColor: 'transparent',
         borderWidth: 1.4,
@@ -1286,17 +1311,7 @@ new Chart(document.getElementById('ch-trend'), {
 });
 
 /* ─── 5. BUDGET — Annual allocation by domain (T33 source, gross) ─── */
-const budgetAlloc = [
-  ['מנהל משה (מוגבלויות)',   14633832],
-  ['שירותים לילד ולנוער',     6400851],
-  ['מינהל הרווחה',            5323802],
-  ['שרותי שיקום',             4771589],
-  ['שרותי תקון',              2185046],
-  ['רווחת הפרט והמשפחה',     1041642],
-  ['אזרחים ותיקים',            965602],
-  ['פעילויות בקהילה',          410083],
-  ['שירותים לעולים',            36133]
-];
+const budgetAlloc = DASHDATA.budgetAlloc;
 const allocTotal = budgetAlloc.reduce((s,r)=>s+r[1],0);
 
 new Chart(document.getElementById('ch-budget'), {
@@ -1354,9 +1369,9 @@ new Chart(document.getElementById('ch-budget'), {
 new Chart(document.getElementById('ch-frames'), {
   type: 'bar',
   data: {
-    labels: ['מרכז טיפולי', 'מועדון/מרכז קהילתי', 'מעון יום', 'מערך דיור', 'טיפול יום', 'מעטפת', 'תעסוקה מוגנת', 'סביבה תומכת', 'פנימיה'],
+    labels: DASHDATA.frames.labels,
     datasets: [{
-      data: [182, 177, 89, 44, 43, 40, 37, 31, 29],
+      data: DASHDATA.frames.data,
       backgroundColor: [PAL.terraD, PAL.terra, PAL.ochre, PAL.olive, PAL.slate, PAL.ink2, PAL.terra, PAL.ochre, PAL.olive],
       borderRadius: 0,
       borderSkipped: false,
@@ -1384,11 +1399,11 @@ new Chart(document.getElementById('ch-frames'), {
 new Chart(document.getElementById('ch-inout'), {
   type: 'bar',
   data: {
-    labels: ['ילד ונוער', 'אזרחים ותיקים', 'רווחת הפרט', 'שיקום ונכים', 'אגף משה', 'נפגעי התמכרויות', 'נוער וצעירים', 'אוטיסטים', 'נשים ונערות'],
+    labels: DASHDATA.inout.labels,
     datasets: [
       {
         label: 'ברשות הנוכחית',
-        data: [294, 116, 57, 49, 44, 41, 22, 0, 9],
+        data: DASHDATA.inout.inside,
         backgroundColor: PAL.terra,
         borderRadius: 0,
         borderSkipped: false,
@@ -1396,7 +1411,7 @@ new Chart(document.getElementById('ch-inout'), {
       },
       {
         label: 'ברשות אחרת',
-        data: [23, 9, 3, 27, 73, 0, 1, 21, 5],
+        data: DASHDATA.inout.outside,
         backgroundColor: PAL.ink2,
         borderRadius: 0,
         borderSkipped: false,
@@ -1494,22 +1509,7 @@ function centerLabel(big, small) {
 }
 
 /* ─── TOWNS ─── */
-const towns = [
-  { name: 'מעלה עמוס',  pop:  906, rec: 353, fam:  75, ses: 2 },
-  { name: 'בת עין',     pop: 1730, rec: 662, fam: 203, ses: 3 },
-  { name: 'אספר',       pop: 1228, rec: 342, fam:  64, ses: 3 },
-  { name: 'תקוע',       pop: 4326, rec: 767, fam: 266, ses: 6 },
-  { name: 'נוקדים',     pop: 3093, rec: 561, fam: 173, ses: 5 },
-  { name: 'כרמי צור',   pop:  979, rec: 162, fam:  48, ses: 5 },
-  { name: 'אלון שבות',  pop: 3046, rec: 470, fam: 191, ses: 7 },
-  { name: 'נווה דניאל', pop: 2355, rec: 325, fam:  99, ses: 7 },
-  { name: 'אלעזר',      pop: 2615, rec: 324, fam:  94, ses: 7 },
-  { name: 'מגדל עוז',   pop:  572, rec:  53, fam:  14, ses: 3 },
-  { name: 'ראש צורים',  pop:  978, rec: 104, fam:  31, ses: 7 },
-  { name: 'קדר',        pop: 1649, rec: 131, fam:  44, ses: 7 },
-  { name: 'הר גילה',    pop: 1656, rec: 111, fam:  43, ses: 7 },
-  { name: 'כפר עציון',  pop: 1370, rec:  79, fam:  19, ses: 4 }
-].sort((a,b) => (b.rec/b.pop) - (a.rec/a.pop));
+const towns = DASHDATA.towns.slice().sort((a,b) => (b.rec/b.pop) - (a.rec/a.pop));
 
 const townsHost = document.getElementById('towns-list');
 towns.forEach(t => {
@@ -1530,31 +1530,8 @@ towns.forEach(t => {
 });
 
 /* ─── NEEDS LISTS ─── */
-const famNeeds = [
-  ['מוגבלות',                        343, 25.2],
-  ['זקנה · אזרח ותיק',                262, 19.2],
-  ['קשיים בין הורים לילדיהם',         180, 13.2],
-  ['אירוע ביטחון / חירום',            91,  6.7],
-  ['קשיים ביחסים בין בני המשפחה',    70,  5.1],
-  ['קשיים ביחסים בין בני הזוג',      67,  4.9],
-  ['מצוקה כלכלית זמנית',             66,  4.8],
-  ['אי־ביטחון תזונתי',               62,  4.5],
-  ['ליקוי בתפקוד הורי',              62,  4.5],
-  ['קונפליקט גירושין בעוצמה',         61,  4.5]
-];
-
-const indNeeds = [
-  ['מצוקה רגשית',                          609, 33.44],
-  ['קושי בטיפול אישי ומיומנויות יומיומיות', 314, 17.24],
-  ['קשיים בצריכת שירותים ומיצוי זכויות',   210, 11.53],
-  ['קשיים בהתפתחות הילד',                  177,  9.72],
-  ['בדידות / היעדר מערכות תמיכה',          143,  7.85],
-  ['קשיים במסגרת תעסוקה (18+)',             95,  5.22],
-  ['קשיים באינטראקציה בין־אישית/זוגית',     64,  3.51],
-  ['קשיים במסגרת חינוכית (עד 21)',          52,  2.86],
-  ['התנהגות סיכונית אחרת',                  44,  2.42],
-  ['חשד או נתון/ה לפגיעה מינית',            41,  2.25]
-];
+const famNeeds = DASHDATA.famNeeds;
+const indNeeds = DASHDATA.indNeeds;
 
 function paintNeeds(host, data) {
   // bar width = actual % (literal). Bars top out at ~33% — accurate, not "filled to look like 100%".
@@ -1580,17 +1557,7 @@ paintNeeds(document.getElementById('ind-needs'), indNeeds);
 /* ─── BUDGET UTILIZATION ROWS — Jan–Apr 2026 (T36 cumulative, fiscal-year 2026) ───
    Source: T36 sheet, last cumulative row (Apr 2026) per domain.
    Pro-rata baseline through April = 4/12 = 33.3%. */
-const budgetRows = [
-  { name: 'שירותים לילד ולנוער', sub: 'תיקי טיפול',          alloc: 3307658, used: 1429641 },
-  { name: 'מנהל משה',           sub: 'מוגבלויות',           alloc: 2671282, used: 1113651 },
-  { name: 'שרותי שיקום',         sub: 'מסגרות שיקום',        alloc: 2157121, used:  480444 },
-  { name: 'רווחת הפרט והמשפחה',  sub: 'תחנות, מרכזים',      alloc: 1041640, used:  364857 },
-  { name: 'שרותי תקון',          sub: 'תיקון, סדנאות',      alloc: 1027104, used:  553909 },
-  { name: 'אזרחים ותיקים',       sub: 'גיל שלישי',          alloc:  890386, used:  243740 },
-  { name: 'פעילויות בקהילה',     sub: 'פעולות שגרתיות',      alloc:  410082, used:   97686 },
-  { name: 'מינהל הרווחה',         sub: 'תקורה',              alloc:  114835, used:   61448 },
-  { name: 'שירותים לעולים',       sub: 'תוכניות עליה',       alloc:   36133, used:       0 }
-];
+const budgetRows = DASHDATA.budgetRows;
 
 const PRORATA = 4/12 * 100; // 33.33% — through April
 const budgetHost = document.getElementById('budget-rows');

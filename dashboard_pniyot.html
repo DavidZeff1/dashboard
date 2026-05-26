@@ -683,11 +683,11 @@
     </h1>
     <div>
       <p class="lede">
-        <strong>1,456 פניות</strong> בין ינואר 2025 לאמצע מאי 2026 — <strong>4.3 ביום פעיל</strong>, <em>89%</em> דרך המוקד, שיא ב־09:00–13:00 ואפס בסוף השבוע. הדו״ח פורש את הכמות, החלוקה למחלקות, זמני הטיפול, עמידה ביעד והתנועות בין השנים.
+        <strong><span id="h-total">1,456</span> פניות</strong> בין ינואר 2025 לאמצע מאי 2026 — <strong><span id="h-perday">4.3</span> ביום פעיל</strong>, <em><span id="h-moked">89%</span></em> דרך המוקד, שיא ב־09:00–13:00 ואפס בסוף השבוע. הדו״ח פורש את הכמות, החלוקה למחלקות, זמני הטיפול, עמידה ביעד והתנועות בין השנים.
       </p>
       <div class="sig">
         מקור · קובץ פניות 14/05/2026
-        <br>1,456 שורות · 497 ימים · 0 חסרים בתאריך פתיחה
+        <br><span id="h-rows">1,456</span> שורות · <span id="h-span">497</span> ימים · <span id="h-missing">0</span> חסרים בתאריך פתיחה
       </div>
     </div>
   </section>
@@ -696,23 +696,23 @@
   <div class="headline-grid">
     <div class="stat">
       <div class="label">סך הפניות</div>
-      <div class="big">1,<em>456</em></div>
-      <div class="sub"><b>1,116</b> ב־2025  ·  <b>340</b> ב־2026 (עד 14.5)</div>
+      <div class="big" id="k-total">1,<em>456</em></div>
+      <div class="sub"><b id="k-2025">1,116</b> ב־2025  ·  <b id="k-2026">340</b> ב־2026 (עד 14.5)</div>
     </div>
     <div class="stat">
       <div class="label">סטטוס טיפול</div>
-      <div class="big">98.<em>1%</em></div>
-      <div class="sub"><b>1,428</b> פניות סגורות · 20 פתוחות · 4 כפולות</div>
+      <div class="big" id="k-closed">98.<em>1%</em></div>
+      <div class="sub"><b id="k-closed-n">1,428</b> פניות סגורות · <span id="k-open-n">20</span> פתוחות · <span id="k-dup-n">4</span> כפולות</div>
     </div>
     <div class="stat">
       <div class="label">חציון זמן טיפול</div>
-      <div class="big"><em>3.4</em> י׳</div>
-      <div class="sub">81.4 שעות · <b>24%</b> נסגרות תוך 24ש׳ · <b>70%</b> תוך שבוע</div>
+      <div class="big" id="k-median"><em>3.4</em> י׳</div>
+      <div class="sub"><span id="k-median-h">81.4</span> שעות · <b id="k-24h">24%</b> נסגרות תוך 24ש׳ · <b id="k-7d">70%</b> תוך שבוע</div>
     </div>
     <div class="stat">
       <div class="label">עמידה ביעד</div>
-      <div class="big">67.<em>2%</em></div>
-      <div class="sub"><b>964</b> נסגרו לפני יעד · <b>471</b> אחרי</div>
+      <div class="big" id="k-sla">67.<em>2%</em></div>
+      <div class="sub"><b id="k-before">964</b> נסגרו לפני יעד · <b id="k-after">471</b> אחרי</div>
     </div>
   </div>
 
@@ -732,38 +732,17 @@
         </div>
         <div class="chart-wrap h-320"><canvas id="chartMonthly"></canvas></div>
         <div class="legend">
-          <span><i style="background: var(--terra);"></i> 2025 · 1,116 פניות (93/חודש)</span>
-          <span><i style="background: var(--olive);"></i> 2026 · 340 פניות (77/חודש · 4.42 חודשים בפועל, עד 13.5)</span>
+          <span><i style="background: var(--terra);"></i> 2025 · <span id="leg-2025">1,116</span> פניות (<span id="leg-2025pm">93</span>/חודש)</span>
+          <span><i style="background: var(--olive);"></i> 2026 · <span id="leg-2026">340</span> פניות (<span id="leg-2026pm">77</span>/חודש · <span id="leg-months">4.42</span> חודשים בפועל, עד 13.5)</span>
         </div>
       </div>
 
       <div class="panel dark">
         <div class="ph"><h3 style="color: var(--paper)">צמתי שיא</h3><span class="tag">10 ימים</span></div>
         <p class="sub">
-          ביום השיא — 30/11/2025 — 14 פניות. רק <strong>7 פניות בכל השבתות</strong> ו־<strong>16 בכל ימי שישי</strong> לאורך 17 חודשים.
+          ביום השיא — <span id="peak-date">30/11/2025</span> — <span id="peak-count">14</span> פניות. רק <strong><span id="sat-total">7</span> פניות בכל השבתות</strong> ו־<strong><span id="fri-total">16</span> בכל ימי שישי</strong> לאורך 17 חודשים.
         </p>
-        <div class="peaks" style="margin-top: 18px;">
-          <div class="peak" style="border-color: rgba(236,229,212,0.2);">
-            <div class="peak-day" style="color: var(--ochre);">30<small style="color: rgba(236,229,212,0.55);">נוב׳</small></div>
-            <div class="peak-meta" style="color: var(--paper);">ראשון, 30.11.2025<small style="color: rgba(236,229,212,0.55);">היום העמוס בשנה</small></div>
-            <div class="peak-count" style="color: var(--paper);">14</div>
-          </div>
-          <div class="peak" style="border-color: rgba(236,229,212,0.2);">
-            <div class="peak-day" style="color: var(--ochre);">27<small style="color: rgba(236,229,212,0.55);">נוב׳</small></div>
-            <div class="peak-meta" style="color: var(--paper);">חמישי, 27.11.2025<small style="color: rgba(236,229,212,0.55);">סוף שבוע ארוך</small></div>
-            <div class="peak-count" style="color: var(--paper);">12</div>
-          </div>
-          <div class="peak" style="border-color: rgba(236,229,212,0.2);">
-            <div class="peak-day" style="color: var(--ochre);">23<small style="color: rgba(236,229,212,0.55);">פבר׳</small></div>
-            <div class="peak-meta" style="color: var(--paper);">ראשון, 23.02.2025<small style="color: rgba(236,229,212,0.55);">ראש שבוע</small></div>
-            <div class="peak-count" style="color: var(--paper);">11</div>
-          </div>
-          <div class="peak" style="border-color: rgba(236,229,212,0.2);">
-            <div class="peak-day" style="color: var(--ochre);">12<small style="color: rgba(236,229,212,0.55);">נוב׳</small></div>
-            <div class="peak-meta" style="color: var(--paper);">רביעי, 12.11.2025<small style="color: rgba(236,229,212,0.55);"></small></div>
-            <div class="peak-count" style="color: var(--paper);">11</div>
-          </div>
-        </div>
+        <div class="peaks" style="margin-top: 18px;" id="peak-cards"></div>
       </div>
     </div>
 
@@ -771,12 +750,12 @@
       <div class="panel">
         <div class="ph"><h3>שעות היום · 09–12 הוא חלון הזהב</h3><span class="tag">1,456 פניות</span></div>
         <div class="chart-wrap h-260"><canvas id="chartHour"></canvas></div>
-        <p class="prose" style="margin-top: 12px;"><strong>854 פניות (58.7%)</strong> בין 09:00 ל־12:59. אחרי 16:00 — שקט.</p>
+        <p class="prose" style="margin-top: 12px;"><strong><span id="hour-9to12">854</span> פניות (<span id="hour-9to12-pct">58.7%</span>)</strong> בין 09:00 ל־12:59. אחרי 16:00 — שקט.</p>
       </div>
       <div class="panel">
         <div class="ph"><h3>ימי השבוע · ראשון הוא היום המעמיס</h3><span class="tag">1,456 פניות</span></div>
         <div class="chart-wrap h-260"><canvas id="chartDow"></canvas></div>
-        <p class="prose" style="margin-top: 12px;"><strong>ראשון</strong> — <em>337 פניות</em>, השיא השבועי. שישי 16, שבת 7.</p>
+        <p class="prose" style="margin-top: 12px;"><strong>ראשון</strong> — <em><span id="dow-sun">337</span> פניות</em>, השיא השבועי. שישי <span id="dow-fri">16</span>, שבת <span id="dow-sat">7</span>.</p>
       </div>
     </div>
   </section>
@@ -797,7 +776,7 @@
         </div>
         <div id="dept-rows"></div>
         <p class="prose" style="margin-top: 18px;">
-          שלוש המחלקות הראשונות מחזיקות <em>92.5%</em> מהנפח. ארבע הנותרות יחד — <strong>109 פניות</strong> בלבד ב־17 חודשים.
+          שלוש המחלקות הראשונות מחזיקות <em><span id="dept-top3">92.5%</span></em> מהנפח. ארבע הנותרות יחד — <strong><span id="dept-rest">109</span> פניות</strong> בלבד ב־17 חודשים.
         </p>
       </div>
 
@@ -808,7 +787,7 @@
         </div>
         <div id="topic-rows"></div>
         <p class="prose" style="margin-top: 18px;">
-          הקטגוריה הגדולה — <strong>צמיד / ילדים בסיכון</strong> (19.8%). אחריה <strong>פנייה למזכירות</strong> ללא שיוך לעו״ס (17.9%) ו<strong>אזרחים ותיקים</strong> (13.5%). חמש קטגוריות משפחתיות יחד (כללי, בת עין, מזרח, הר גילה, מערב) — <em>23.5%</em>.
+          הקטגוריה הגדולה — <strong>צמיד / ילדים בסיכון</strong> (<span id="tp1">19.8%</span>). אחריה <strong>פנייה למזכירות</strong> ללא שיוך לעו״ס (<span id="tp2">17.9%</span>) ו<strong>אזרחים ותיקים</strong> (<span id="tp3">13.5%</span>). חמש קטגוריות משפחתיות יחד (כללי, בת עין, מזרח, הר גילה, מערב) — <em><span id="tp-fam5">23.5%</span></em>.
         </p>
       </div>
     </div>
@@ -817,17 +796,17 @@
       <div class="panel">
         <div class="ph"><h3>מקור הפנייה</h3><span class="tag">100%</span></div>
         <div class="chart-wrap h-200"><canvas id="chartSource"></canvas></div>
-        <p class="prose" style="margin-top: 10px; font-size: 16px;"><strong>89.4%</strong> דרך המוקד. טפסים — 10.5%. וואטסאפ — 2 פניות בלבד.</p>
+        <p class="prose" style="margin-top: 10px; font-size: 16px;"><strong><span id="src-moked">89.4%</span></strong> דרך המוקד. טפסים — <span id="src-forms">10.5%</span>. וואטסאפ — <span id="src-wa">2</span> פניות בלבד.</p>
       </div>
       <div class="panel">
         <div class="ph"><h3>דחיפות</h3><span class="tag">1,456</span></div>
         <div class="chart-wrap h-200"><canvas id="chartUrgency"></canvas></div>
-        <p class="prose" style="margin-top: 10px; font-size: 16px;">רק <strong>7 פניות</strong> סווגו <em>דחוף</em> ב־17 חודשים. תיוג הדחיפות אינו בשימוש בפועל.</p>
+        <p class="prose" style="margin-top: 10px; font-size: 16px;">רק <strong><span id="urg-n">7</span> פניות</strong> סווגו <em>דחוף</em> ב־17 חודשים. תיוג הדחיפות אינו בשימוש בפועל.</p>
       </div>
       <div class="panel">
         <div class="ph"><h3>סטטוס</h3><span class="tag">1,456</span></div>
         <div class="chart-wrap h-200"><canvas id="chartStatus"></canvas></div>
-        <p class="prose" style="margin-top: 10px; font-size: 16px;">סגירה של <strong>98.1%</strong>. 20 פתוחות במוקד — רובן חדשות מאפריל–מאי 2026.</p>
+        <p class="prose" style="margin-top: 10px; font-size: 16px;">סגירה של <strong><span id="st-closed">98.1%</span></strong>. <span id="st-open">20</span> פתוחות במוקד — רובן חדשות מאפריל–מאי 2026.</p>
       </div>
     </div>
   </section>
@@ -837,12 +816,12 @@
     <div class="sect-head">
       <div class="sect-num">III.</div>
       <div class="sect-title"><small>איכות הטיפול</small>זמני סגירה ועמידה ביעדים</div>
-      <div class="sect-meta">1,436 פניות עם מדידה<br>פער יעד מול ביצוע · חציון לפי מחלקה</div>
+      <div class="sect-meta"><span id="meta-measured">1,436</span> פניות עם מדידה<br>פער יעד מול ביצוע · חציון לפי מחלקה</div>
     </div>
 
     <div class="grid-2-1">
       <div class="panel">
-        <div class="ph"><h3>התפלגות זמן טיפול</h3><span class="tag">חציון 3.4 ימים</span></div>
+        <div class="ph"><h3>התפלגות זמן טיפול</h3><span class="tag">חציון <span id="res-median">3.4</span> ימים</span></div>
         <div class="chart-wrap h-320"><canvas id="chartResolution"></canvas></div>
         <div class="legend">
           <span><i style="background: var(--olive);"></i> מהיר · ≤24ש׳</span>
@@ -853,22 +832,22 @@
       </div>
 
       <div class="panel dark">
-        <div class="ph"><h3 style="color: var(--paper)">עמידה ביעד הסגירה</h3><span class="tag">1,435 שורות</span></div>
+        <div class="ph"><h3 style="color: var(--paper)">עמידה ביעד הסגירה</h3><span class="tag"><span id="sla-total">1,435</span> שורות</span></div>
         <div class="sla-figure">
-          <div class="sla-big">67.2<small>נסגרו בזמן</small></div>
+          <div class="sla-big"><span id="sla-pct">67.2</span><small>נסגרו בזמן</small></div>
           <div class="sla-split">
             <div class="ok">
               <span>בזמן</span>
-              <b>964</b>
+              <b id="sla-before">964</b>
             </div>
             <div class="late">
               <span>איחור ביעד</span>
-              <b>471</b>
+              <b id="sla-after">471</b>
             </div>
           </div>
         </div>
         <p class="sub" style="margin-top: 22px;">
-          <strong>471 פניות (32.8%)</strong> נסגרו אחרי מועד היעד. תהליך הסגירה במערכת זקוק לחיזוק.
+          <strong><span id="sla-after-2">471</span> פניות (<span id="sla-after-pct">32.8%</span>)</strong> נסגרו אחרי מועד היעד. תהליך הסגירה במערכת זקוק לחיזוק.
         </p>
       </div>
     </div>
@@ -880,7 +859,7 @@
       </div>
       <div id="dept-time-rows"></div>
       <p class="prose" style="margin-top: 18px;">
-        <strong>מערב הגוש</strong> סוגר ב־<em>2.5 ימים</em>, מזרח ב־<em>4.5</em>. <strong>עו״ס משפחות מזרח</strong> — n=13 בלבד, חציון <em>21.4 ימים</em>: טיפול עומק, לא קצב מוקד.
+        <strong>מערב הגוש</strong> סוגר ב־<em><span id="dt-maarav">2.5</span> ימים</em>, מזרח ב־<em><span id="dt-mizrach">4.5</span></em>. <strong>עו״ס משפחות מזרח</strong> — n=<span id="dt-os-n">13</span> בלבד, חציון <em><span id="dt-os-med">21.4</span> ימים</em>: טיפול עומק, לא קצב מוקד.
       </p>
     </div>
   </section>
@@ -896,11 +875,11 @@
     <div id="trend-rows"></div>
 
     <div class="pull-quote">
-      <b>צמיד / ילדים בסיכון</b> — הקטגוריה היחידה שגדלה בקצב משמעותי (<em class="pct">+17%</em>). שאר התחומים הגדולים — אזרחים ותיקים, מיצוי זכויות, פנייה למזכירות — מתכווצים.
+      <b>צמיד / ילדים בסיכון</b> — הקטגוריה היחידה שגדלה בקצב משמעותי (<em class="pct"><span id="pq-tzamid">+17%</span></em>). שאר התחומים הגדולים — אזרחים ותיקים, מיצוי זכויות, פנייה למזכירות — מתכווצים.
     </div>
 
     <p class="prose" style="margin-top: 8px;">
-      <strong>משפחות · כללי</strong> כמעט הוכפלה (<em class="pct">+99%</em>) — ככל הנראה ארגון סיווג מחדש שמעביר פניות לקטגוריה הגנרית. במקביל, ירידה חדה ב<strong>מיצוי זכויות</strong> (<span class="pct">−70%</span>) וב<strong>אזרחים ותיקים</strong> (<span class="pct">−47%</span>) — נדרשת בדיקה: שינוי באופן הטיפול, או שינוי בסיווג בלבד.
+      <strong>משפחות · כללי</strong> כמעט הוכפלה (<em class="pct"><span id="pr-mishpacha">+99%</span></em>) — ככל הנראה ארגון סיווג מחדש שמעביר פניות לקטגוריה הגנרית. במקביל, ירידה חדה ב<strong>מיצוי זכויות</strong> (<span class="pct" id="pr-mitzuy">−70%</span>) וב<strong>אזרחים ותיקים</strong> (<span class="pct" id="pr-vatikim">−47%</span>) — נדרשת בדיקה: שינוי באופן הטיפול, או שינוי בסיווג בלבד.
     </p>
   </section>
 
@@ -917,18 +896,18 @@
         <div class="ph"><h3 style="color: var(--paper)">המאזן · אפריל 2026</h3><span class="tag">תשומת לב</span></div>
         <div style="display:flex; justify-content:space-between; padding: 20px 0; border-bottom: 1px solid rgba(236,229,212,0.18); align-items: baseline;">
           <span style="font-size: 13px; font-weight:600; letter-spacing: 0.22em; text-transform: uppercase; color: rgba(236,229,212,0.65);">נפתחו</span>
-          <b style="font-family:'Frank Ruhl Libre',serif; font-style:italic; font-size: 46px; color: var(--paper); font-feature-settings:'tnum' 1;">56</b>
+          <b style="font-family:'Frank Ruhl Libre',serif; font-style:italic; font-size: 46px; color: var(--paper); font-feature-settings:'tnum' 1;" id="flow-open">56</b>
         </div>
         <div style="display:flex; justify-content:space-between; padding: 20px 0; border-bottom: 1px solid rgba(236,229,212,0.18); align-items: baseline;">
           <span style="font-size: 13px; font-weight:600; letter-spacing: 0.22em; text-transform: uppercase; color: rgba(236,229,212,0.65);">נסגרו</span>
-          <b style="font-family:'Frank Ruhl Libre',serif; font-style:italic; font-size: 46px; color: var(--paper); font-feature-settings:'tnum' 1;">22</b>
+          <b style="font-family:'Frank Ruhl Libre',serif; font-style:italic; font-size: 46px; color: var(--paper); font-feature-settings:'tnum' 1;" id="flow-closed">22</b>
         </div>
         <div style="display:flex; justify-content:space-between; padding: 20px 0; align-items: baseline;">
           <span style="font-size: 13px; font-weight:600; letter-spacing: 0.22em; text-transform: uppercase; color: rgba(236,229,212,0.65);">פער החודש</span>
-          <b style="font-family:'Frank Ruhl Libre',serif; font-style:italic; font-size: 46px; color: var(--crimson); font-feature-settings:'tnum' 1; direction: ltr; unicode-bidi: isolate;">+34</b>
+          <b style="font-family:'Frank Ruhl Libre',serif; font-style:italic; font-size: 46px; color: var(--crimson); font-feature-settings:'tnum' 1; direction: ltr; unicode-bidi: isolate;" id="flow-gap">+34</b>
         </div>
         <p class="sub" style="margin-top: 18px;">
-          אפריל 2026: 56 נפתחו, 22 נסגרו. במאי (חלקי): 30 נפתחו, <em>71 נסגרו</em> — סגירה מואצת. תחילת הקטנת הבק־לוג שהצטבר ברבעון הראשון.
+          אפריל 2026: <span id="flow-open-2">56</span> נפתחו, <span id="flow-closed-2">22</span> נסגרו. במאי (חלקי): <span id="flow-may-open">30</span> נפתחו, <em><span id="flow-may-closed">71</span> נסגרו</em> — סגירה מואצת. תחילת הקטנת הבק־לוג שהצטבר ברבעון הראשון.
         </p>
       </div>
       <div class="panel">
@@ -951,8 +930,10 @@
 
 </div>
 
+<script src="data_pniyot.js"></script>
 <script>
-/* All numbers verified from source file: ללא שם 14052026 1513 רווחה 2025 -2026.xlsx */
+/* All numbers generated from the source file by build_pniyot.py → data_pniyot.js
+   (source: ללא שם 14052026 1513 רווחה 2025 -2026.xlsx). Re-run after each refresh. */
 
 const C = {
   ink: '#1A1812', ink2: '#3B342A', muted: '#7A6F5E',
@@ -965,13 +946,110 @@ Chart.defaults.font.family = '"Heebo", "Helvetica Neue", sans-serif';
 Chart.defaults.font.size = 12;
 Chart.defaults.color = C.ink2;
 
+/* ─── STATIC NUMBERS — filled from DASHDATA (data_pniyot.js, generated from the Excel) ─── */
+function paintStatics() {
+  const D = window.DASHDATA;
+  const nf  = n => Number(n).toLocaleString('he-IL');
+  const r1  = x => (Math.round(x * 10) / 10).toFixed(1);
+  const set = (id, v) => { const e = document.getElementById(id); if (e) e.textContent = v; };
+  const html = (id, v) => { const e = document.getElementById(id); if (e) e.innerHTML = v; };
+  const total = D.total;
+
+  // hero
+  set('h-total', nf(total)); set('h-perday', r1(D.perActiveDay));
+  set('h-moked', Math.round(D.mokedShare) + '%');
+  set('h-rows', nf(total)); set('h-span', nf(D.spanDays)); set('h-missing', nf(D.missingOpenDate));
+
+  // headline KPI cards (preserve the <em> styling)
+  html('k-total', nf(total).replace(/,(\d+)$/, ',<em>$1</em>'));
+  set('k-2025', nf(D.count2025)); set('k-2026', nf(D.count2026));
+  html('k-closed', r1(D.closedRate).replace(/\.(\d+)$/, '.<em>$1%</em>'));
+  set('k-closed-n', nf(D.closedCount)); set('k-open-n', nf(D.status.data[1])); set('k-dup-n', nf(D.status.data[3]));
+  html('k-median', '<em>' + r1(D.overallMedianH / 24) + '</em> י׳');
+  set('k-median-h', r1(D.overallMedianH));
+  set('k-24h', Math.round(D.share24h) + '%'); set('k-7d', Math.round(D.share7d) + '%');
+  html('k-sla', r1(D.slaPct).replace(/\.(\d+)$/, '.<em>$1%</em>'));
+  set('k-before', nf(D.slaBefore)); set('k-after', nf(D.slaAfter));
+
+  // monthly legend
+  set('leg-2025', nf(D.count2025)); set('leg-2025pm', Math.round(D.count2025 / 12));
+  set('leg-2026', nf(D.count2026)); set('leg-2026pm', Math.round(D.count2026 / D.monthly.months2026));
+  set('leg-months', D.monthly.months2026);
+
+  // peaks
+  const p0 = D.peaks[0];
+  set('peak-date', p0.date.replace(/\./g, '/')); set('peak-count', nf(p0.count));
+  set('sat-total', nf(D.satTotal)); set('fri-total', nf(D.friTotal));
+  const pc = document.getElementById('peak-cards');
+  if (pc) pc.innerHTML = D.peaks.map(p => `
+    <div class="peak" style="border-color: rgba(236,229,212,0.2);">
+      <div class="peak-day" style="color: var(--ochre);">${p.day}<small style="color: rgba(236,229,212,0.55);">${p.mon}</small></div>
+      <div class="peak-meta" style="color: var(--paper);">${p.dow}, ${p.date}<small style="color: rgba(236,229,212,0.55);">${p.note}</small></div>
+      <div class="peak-count" style="color: var(--paper);">${p.count}</div>
+    </div>`).join('');
+
+  // hour / dow captions
+  set('hour-9to12', nf(D.hour9to12)); set('hour-9to12-pct', r1(D.hour9to12 / total * 100) + '%');
+  set('dow-sun', nf(D.dow.data[0])); set('dow-fri', nf(D.friTotal)); set('dow-sat', nf(D.satTotal));
+
+  // departments prose
+  const top3 = D.depts.slice(0, 3).reduce((s, d) => s + d.count, 0);
+  const rest = D.depts.slice(3).reduce((s, d) => s + d.count, 0);
+  set('dept-top3', r1(top3 / total * 100) + '%'); set('dept-rest', nf(rest));
+
+  // topics prose
+  set('tp1', r1(D.topics[0].pct) + '%'); set('tp2', r1(D.topics[1].pct) + '%'); set('tp3', r1(D.topics[2].pct) + '%');
+  const fam = ['משפחות · כללי', 'משפחות · בת עין', 'משפחות · מזרח', 'משפחות · הר גילה', 'משפחות · מערב'];
+  const fam5 = D.topics.filter(t => fam.includes(t.label)).reduce((s, t) => s + t.count, 0);
+  set('tp-fam5', r1(fam5 / total * 100) + '%');
+
+  // source / urgency / status prose
+  set('src-moked', r1(D.mokedShare) + '%');
+  set('src-forms', r1((D.source.data[1] + D.source.data[2]) / total * 100) + '%');
+  set('src-wa', nf(D.source.data[3]));
+  set('urg-n', nf(D.urgency.data[1]));
+  set('st-closed', r1(D.closedRate) + '%'); set('st-open', nf(D.status.data[1]));
+
+  // section III meta + resolution
+  set('meta-measured', nf(D.resMeasured)); set('res-median', r1(D.overallMedianH / 24));
+
+  // SLA figure
+  set('sla-total', nf(D.slaTotal)); set('sla-pct', r1(D.slaPct));
+  set('sla-before', nf(D.slaBefore)); set('sla-after', nf(D.slaAfter)); set('sla-after-2', nf(D.slaAfter));
+  set('sla-after-pct', r1(D.slaAfter / D.slaTotal * 100) + '%');
+
+  // department median prose (by short label)
+  const dBy = s => D.depts.find(d => d.short === s);
+  set('dt-maarav', r1(dBy('מערב הגוש').medianH / 24));
+  set('dt-mizrach', r1(dBy('מזרח הגוש').medianH / 24));
+  const osE = dBy('עו״ס מזרח');
+  set('dt-os-n', nf(osE.count)); set('dt-os-med', r1(osE.medianH / 24));
+
+  // trends prose (by name)
+  const tBy = n => D.trends.find(t => t.name === n);
+  const sgn = d => (d >= 0 ? '+' : '−') + Math.abs(d) + '%';
+  set('pq-tzamid', sgn(tBy('צמיד · ילדים בסיכון').delta));
+  set('pr-mishpacha', sgn(tBy('משפחות · כללי').delta));
+  set('pr-mitzuy', sgn(tBy('מיצוי זכויות').delta));
+  set('pr-vatikim', sgn(tBy('אזרחים ותיקים').delta));
+
+  // flow callout (April = second-to-last month, May = last)
+  const fo = D.flow.opened, fc = D.flow.closed, L = fo.length;
+  set('flow-open', nf(fo[L - 2])); set('flow-closed', nf(fc[L - 2]));
+  const gap = fo[L - 2] - fc[L - 2];
+  set('flow-gap', (gap >= 0 ? '+' : '−') + Math.abs(gap));
+  set('flow-open-2', nf(fo[L - 2])); set('flow-closed-2', nf(fc[L - 2]));
+  set('flow-may-open', nf(fo[L - 1])); set('flow-may-closed', nf(fc[L - 1]));
+}
+paintStatics();
+
 /* ─── MONTHLY VOLUME (Section I) ─── */
 // Verified counts:
 // 2025 — Jan 89, Feb 111, Mar 78, Apr 69, May 103, Jun 80, Jul 89, Aug 74, Sep 106, Oct 77, Nov 138, Dec 102
 // 2026 — Jan 107, Feb 90, Mar 57, Apr 56, May 30 (through 14.5)
-const monthLabels = ['ינו׳','פבר׳','מרץ','אפר׳','מאי','יוני','יולי','אוג׳','ספט׳','אוק׳','נוב׳','דצמ׳'];
-const m2025 = [89,111,78,69,103,80,89,74,106,77,138,102];
-const m2026 = [107,90,57,56,30,null,null,null,null,null,null,null];
+const monthLabels = DASHDATA.monthly.labels;
+const m2025 = DASHDATA.monthly.m2025;
+const m2026 = DASHDATA.monthly.m2026;
 
 new Chart(document.getElementById('chartMonthly'), {
   type: 'bar',
@@ -997,8 +1075,8 @@ new Chart(document.getElementById('chartMonthly'), {
 
 /* ─── HOUR OF DAY ─── */
 // 1456 tickets distributed (verified)
-const hourLabels = ['00','07','08','09','10','11','12','13','14','15','16','17','18','19','20','21','22','23'];
-const hourData   = [   1,    4,  128, 217, 208, 216, 213, 173, 115,  84,  53,  12,  10,   4,   7,   6,   2,   3];
+const hourLabels = DASHDATA.hours.labels;
+const hourData   = DASHDATA.hours.data;
 new Chart(document.getElementById('chartHour'), {
   type: 'bar',
   data: {
@@ -1026,8 +1104,8 @@ new Chart(document.getElementById('chartHour'), {
 });
 
 /* ─── DAY OF WEEK ─── */
-const dowLabels = ['ראשון','שני','שלישי','רביעי','חמישי','שישי','שבת'];
-const dowData = [337, 277, 285, 257, 277, 16, 7];
+const dowLabels = DASHDATA.dow.labels;
+const dowData = DASHDATA.dow.data;
 new Chart(document.getElementById('chartDow'), {
   type: 'bar',
   data: { labels: dowLabels, datasets: [{ data: dowData,
@@ -1050,16 +1128,8 @@ new Chart(document.getElementById('chartDow'), {
 
 /* ─── DEPARTMENTS ─── */
 // Verified from Sheet1 column "מחלקה"
-const depts = [
-  { name: 'שירותים חברתיים מערב הגוש',          short: 'מערב הגוש',     count: 700, medianH: 59.6 },
-  { name: 'שירותים חברתיים — מזכירות אגף',       short: 'מזכירות אגף',   count: 418, medianH: 83.2 },
-  { name: 'שירותים חברתיים מזרח הגוש',          short: 'מזרח הגוש',     count: 229, medianH: 108.4 },
-  { name: 'מיצוי זכויות — שירותים חברתיים',      short: 'מיצוי זכויות',  count:  52, medianH: 107.2 },
-  { name: 'עו״ס משפחות — מערב',                short: 'עו״ס מערב',     count:  39, medianH: 135.2 },
-  { name: 'עו״ס משפחות — מזרח',                short: 'עו״ס מזרח',     count:  13, medianH: 512.5 },
-  { name: 'שירותים חברתיים — התמכרויות ונוער',  short: 'התמכרויות ונוער', count: 5, medianH: 81.7 }
-];
-const TOTAL_TICKETS = 1456;
+const depts = DASHDATA.depts;
+const TOTAL_TICKETS = DASHDATA.total;
 const deptHost = document.getElementById('dept-rows');
 const maxDept = Math.max(...depts.map(d => d.count));
 depts.forEach(d => {
@@ -1093,23 +1163,7 @@ const maxMedian = Math.max(...depts.map(d => d.medianH));
 
 /* ─── TOPIC BUCKETS ─── */
 // Verified counts by topic classifier:
-const topics = [
-  { label: 'צמיד · ילדים בסיכון',      count: 289, pct: 19.8, color: 'terra' },
-  { label: 'פנייה למזכירות',           count: 260, pct: 17.9, color: 'slate' },
-  { label: 'אזרחים ותיקים',            count: 196, pct: 13.5, color: 'ochre' },
-  { label: 'משפחות · כללי',            count: 163, pct: 11.2, color: 'olive' },
-  { label: 'פנייה לעו״ס',              count: 145, pct: 10.0, color: 'terra' },
-  { label: 'משפחות · בת עין',          count:  72, pct:  4.9, color: 'olive' },
-  { label: 'משפחות · מזרח',            count:  72, pct:  4.9, color: 'olive' },
-  { label: 'אחר · לא מסווג',            count:  63, pct:  4.3, color: 'slate' },
-  { label: 'מיצוי זכויות',             count:  51, pct:  3.5, color: 'ochre' },
-  { label: 'נוער / התמכרויות',          count:  50, pct:  3.4, color: 'terra' },
-  { label: 'צרכים מיוחדים',            count:  26, pct:  1.8, color: 'slate' },
-  { label: 'משפחות · הר גילה',         count:  24, pct:  1.6, color: 'olive' },
-  { label: 'סדרי דין',                 count:  18, pct:  1.2, color: 'slate' },
-  { label: 'כללי · שירותים חברתיים',   count:  16, pct:  1.1, color: 'slate' },
-  { label: 'משפחות · מערב',            count:  11, pct:  0.8, color: 'olive' }
-];
+const topics = DASHDATA.topics;
 const topicHost = document.getElementById('topic-rows');
 const maxTopic = Math.max(...topics.map(t => t.count));
 topics.forEach((t, i) => {
@@ -1129,9 +1183,9 @@ topics.forEach((t, i) => {
 new Chart(document.getElementById('chartSource'), {
   type: 'doughnut',
   data: {
-    labels: ['מוקד','טופס · יצירת קשר ראשוני','טופס · יצירת קשר','וואטסאפ'],
+    labels: DASHDATA.source.labels,
     datasets: [{
-      data: [1301, 131, 22, 2],
+      data: DASHDATA.source.data,
       backgroundColor: [C.terraDeep, C.ochre, C.muted, C.olive],
       borderColor: C.paper, borderWidth: 2
     }]
@@ -1141,7 +1195,7 @@ new Chart(document.getElementById('chartSource'), {
     cutout: '62%',
     plugins: {
       legend: { position: 'bottom', labels: { color: C.ink2, font: {size: 11, weight: '600'}, boxWidth: 12, padding: 8 } },
-      tooltip: { rtl: true, callbacks: { label: ctx => ctx.label + ': ' + ctx.parsed + ' (' + (ctx.parsed/1456*100).toFixed(1) + '%)' } }
+      tooltip: { rtl: true, callbacks: { label: ctx => ctx.label + ': ' + ctx.parsed + ' (' + (ctx.parsed/DASHDATA.total*100).toFixed(1) + '%)' } }
     }
   }
 });
@@ -1150,8 +1204,8 @@ new Chart(document.getElementById('chartSource'), {
 new Chart(document.getElementById('chartUrgency'), {
   type: 'bar',
   data: {
-    labels: ['רגיל','דחוף'],
-    datasets: [{ data: [1449, 7], backgroundColor: [C.ink2, C.crimson], borderWidth: 0 }]
+    labels: DASHDATA.urgency.labels,
+    datasets: [{ data: DASHDATA.urgency.data, backgroundColor: [C.ink2, C.crimson], borderWidth: 0 }]
   },
   options: {
     indexAxis: 'y',
@@ -1168,9 +1222,9 @@ new Chart(document.getElementById('chartUrgency'), {
 new Chart(document.getElementById('chartStatus'), {
   type: 'doughnut',
   data: {
-    labels: ['הטיפול הסתיים','פניה במערכת המוקד','הפניה נסגרה','פניה כפולה'],
+    labels: DASHDATA.status.labels,
     datasets: [{
-      data: [1428, 20, 4, 4],
+      data: DASHDATA.status.data,
       backgroundColor: [C.olive, C.ochre, C.muted, C.crimson],
       borderColor: C.paper, borderWidth: 2
     }]
@@ -1180,7 +1234,7 @@ new Chart(document.getElementById('chartStatus'), {
     cutout: '62%',
     plugins: {
       legend: { position: 'bottom', labels: { color: C.ink2, font: {size: 11, weight: '600'}, boxWidth: 12, padding: 8 } },
-      tooltip: { rtl: true, callbacks: { label: ctx => ctx.label + ': ' + ctx.parsed + ' (' + (ctx.parsed/1456*100).toFixed(1) + '%)' } }
+      tooltip: { rtl: true, callbacks: { label: ctx => ctx.label + ': ' + ctx.parsed + ' (' + (ctx.parsed/DASHDATA.total*100).toFixed(1) + '%)' } }
     }
   }
 });
@@ -1189,20 +1243,14 @@ new Chart(document.getElementById('chartStatus'), {
 // 1436 tickets with valid resolution time. Buckets verified:
 // ≤24h: 348 (24.2%) ; 24h–72h: 356 (cum 49.0%, ie 704 ≤72h → 356 in this bucket) ; 72h–7d: 294 (cum 69.5%, 998 ≤7d → 294 in this bucket) ; 7d–30d: ~342 (need to compute) ; 30d+: ~96
 // Let me derive from percentiles + cumulative: total 1436, p90 ≤19.4d, so >30d ≈ 96. 7d-30d ≈ 1436 - 998 - 96 = 342.
-const resBuckets = [
-  { label: '≤ 24 שעות',     count: 348, pct: 24.2, color: C.olive },
-  { label: '24ש׳ – 3 ימים', count: 356, pct: 24.8, color: C.olive },
-  { label: '3 – 7 ימים',    count: 294, pct: 20.5, color: C.ochre },
-  { label: '7 – 30 ימים',   count: 353, pct: 24.6, color: C.terra },
-  { label: '30+ ימים',      count:  85, pct:  5.9, color: C.crimson }
-];
+const resBuckets = DASHDATA.resBuckets;  // color is a C[] key name (e.g. "olive")
 new Chart(document.getElementById('chartResolution'), {
   type: 'bar',
   data: {
     labels: resBuckets.map(b => b.label),
     datasets: [{
       data: resBuckets.map(b => b.count),
-      backgroundColor: resBuckets.map(b => b.color),
+      backgroundColor: resBuckets.map(b => C[b.color]),
       borderWidth: 0
     }]
   },
@@ -1224,22 +1272,7 @@ new Chart(document.getElementById('chartResolution'), {
 /* ─── YOY TRENDS ─── */
 // Monthly rate normalized: 2025 / 12, 2026 / 4.45
 // Rates: 2025 = N/12 months. 2026 = N/4.42 months (Jan 1 – May 13 = 133 days).
-const trends = [
-  { name: 'משפחות · כללי',          r25:  7.8, r26: 15.6, delta:  +99 },
-  { name: 'משפחות · הר גילה',       r25:  1.3, r26:  1.8, delta:  +36 },
-  { name: 'צמיד · ילדים בסיכון',    r25: 16.8, r26: 19.7, delta:  +17 },
-  { name: 'כללי · שירותים חברתיים', r25:  1.0, r26:  0.9, delta:   -9 },
-  { name: 'פנייה לעו״ס',            r25:  9.3, r26:  7.5, delta:  -20 },
-  { name: 'סדרי דין',               r25:  1.2, r26:  0.9, delta:  -23 },
-  { name: 'נוער / התמכרויות',       r25:  3.3, r26:  2.5, delta:  -23 },
-  { name: 'צרכים מיוחדים',          r25:  1.8, r26:  1.1, delta:  -35 },
-  { name: 'פנייה למזכירות',         r25: 17.6, r26: 11.1, delta:  -37 },
-  { name: 'משפחות · מזרח',          r25:  5.0, r26:  2.7, delta:  -46 },
-  { name: 'אזרחים ותיקים',          r25: 13.7, r26:  7.2, delta:  -47 },
-  { name: 'משפחות · בת עין',        r25:  5.1, r26:  2.5, delta:  -51 },
-  { name: 'מיצוי זכויות',           r25:  3.8, r26:  1.1, delta:  -70 },
-  { name: 'משפחות · מערב',          r25:  0.9, r26:  0.0, delta: -100 }
-];
+const trends = DASHDATA.trends;
 const trendHost = document.getElementById('trend-rows');
 trends.forEach(t => {
   const row = document.createElement('div');
@@ -1261,9 +1294,9 @@ trends.forEach(t => {
 
 /* ─── OPEN vs CLOSE FLOW ─── */
 // Verified monthly opened/closed counts
-const flowLabels = ['ינו׳25','פבר׳25','מרץ25','אפר׳25','מאי25','יוני25','יולי25','אוג׳25','ספט׳25','אוק׳25','נוב׳25','דצמ׳25','ינו׳26','פבר׳26','מרץ26','אפר׳26','מאי26'];
-const opened = [89,111,78,69,103,80,89,74,106,77,138,102,107,90,57,56,30];
-const closed = [76,102,83,74,104,81,80,85,80,88,114,113,120,100,43,22,71];
+const flowLabels = DASHDATA.flow.labels;
+const opened = DASHDATA.flow.opened;
+const closed = DASHDATA.flow.closed;
 const balance = opened.map((o, i) => o - closed[i]);
 
 new Chart(document.getElementById('chartFlow'), {
