@@ -1,0 +1,6 @@
+# Sensitive Excel data files — keep local only, do NOT push to GitHub
+*.xlsx
+*.xls
+
+# macOS
+.DS_Store
